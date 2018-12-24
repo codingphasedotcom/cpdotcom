@@ -34,8 +34,8 @@ html {
 
   .button-area {
     a {
+      display: inline-block;
       position: relative;
-      top: 0;
       color: white;
       border: 2px solid white;
       padding: 15px 40px;
@@ -48,12 +48,11 @@ html {
       text-shadow: 0 15px 20px rgba(0, 0, 0, 0);
 
       &:hover {
-        top: -5px;
         background: linear-gradient(45deg, rgba(4, 85, 255, 1) 1%, rgba(239, 55, 238, 1) 100%) !important;
         -webkit-box-shadow: 0 10px 38px 0 rgba(53, 167, 255, 0.67);
         -moz-box-shadow: 0 10px 38px 0 rgba(53, 167, 255, 0.67);
         box-shadow: 0 10px 38px 0 rgba(53, 167, 255, 0.67);
-        transform: scale(1.2, 1.2);
+        transform: scale(1.1, 1.1) translate3d(0, -10px, 0);
         text-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
       }
     }
@@ -95,6 +94,7 @@ html {
       background-size: cover !important;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
+      transform: scale(1, 1);
 
       &:hover {
         // background: linear-gradient(
@@ -109,20 +109,19 @@ html {
 
         h4 {
           position: relative;
-          top: -10px;
+          transform: translate3d(0, -10px, 0);
           text-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
         }
 
         h5 {
           position: relative;
-          top: -10px;
+          transform: translate3d(0, -10px, 0);
           text-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
         }
       }
 
       h4 {
         position: relative;
-        top: 0;
         font-size: 40px;
         color: white;
         font-weight: 600;
@@ -132,7 +131,6 @@ html {
 
       h5 {
         position: relative;
-        top: 0;
         text-shadow: 0 15px 20px rgba(0, 0, 0, 0);
         font-size: 20px;
         color: white;
@@ -252,5 +250,70 @@ html {
         }
       }
     }
+  }
+}
+
+#no-degree {
+  padding: 300px 0;
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../../assets/nodegree.jpg");
+    max-width: 800px;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    -webkit-box-shadow: 0 10px 38px 0 rgba(53, 167, 255, 0.67);
+    -moz-box-shadow: 0 10px 38px 0 rgba(53, 167, 255, 0.67);
+    box-shadow: 0 10px 38px 0 rgba(53, 167, 255, 0.67);
+    margin-bottom: 200px;
+  }
+
+  h2 {
+    font-size: 84px;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 10px 40px rgba(53, 167, 255, 0.30);
+    position: relative;
+    top: 200px;
+  }
+
+  h4 {
+    color: #363534;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+
+  .students-total {
+    font-size: 193px;
+    font-weight: 900;
+    background: linear-gradient(45deg, #3329fd 0%,#9c19e8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+
+  .sub-title {
+    font-size: 40px;
+    font-weight: 300;
+    background: linear-gradient(45deg, #3329fd 0%,#9c19e8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    line-height: 1.3;
   }
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import nodegreeIMG from '../../assets/nodegree.jpg'
 
 import Layout from '../components/layout'
 import Image from '../components/image'
@@ -145,6 +146,20 @@ const IndexPage = () => (
               </div>
               <div class="line4">$84,000</div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="no-degree">
+      <div className="container">
+        <div className="section-content">
+          <h4>Oh did I mention...</h4>
+          <h2>No degree required</h2>
+          <div className="image" />
+          <div className="students-total">50,000</div>
+          <div className="sub-title">
+            students have taken courses <br />
+            from codingphase.com so you are not alone
           </div>
         </div>
       </div>

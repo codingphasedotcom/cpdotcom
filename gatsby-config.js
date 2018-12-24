@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `CodingPhase.com`,
+    description: `Start your journey to become a developer with codingphase and complete your goal faster than any other platform.`,
     author: `Joe Santos Garcia`,
   },
   plugins: [

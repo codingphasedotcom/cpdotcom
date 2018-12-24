@@ -1,10 +1,17 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import nodegreeIMG from '../../assets/nodegree.jpg'
 
 import Layout from '../components/layout'
 import Image from '../components/image'
 import SEO from '../components/seo'
+import nodegreeIMG from '../../assets/nodegree.jpg'
+import chartImg from '../../assets/chart.png'
+import movableinkIMG from '../../assets/logos/movableink.png'
+import paypalIMG from '../../assets/logos/paypal.png'
+import sonyIMG from '../../assets/logos/sony.png'
+import timewarnerIMG from '../../assets/logos/timewarner.png'
+import universalIMG from '../../assets/logos/universal.png'
+import iconcheckIMG from '../../assets/icon-check.png'
 
 const IndexPage = () => (
   <Layout>
@@ -134,7 +141,7 @@ const IndexPage = () => (
           <div class="info-area">
             <div class="chart-column">
               <div className="chartbg">
-                <img src="/img/chart.png" />
+                <img src={chartImg} />
               </div>
             </div>
             <div class="info-column">
@@ -160,6 +167,201 @@ const IndexPage = () => (
           <div className="sub-title">
             students have taken courses <br />
             from codingphase.com so you are not alone
+          </div>
+          <div className="testimonials">
+            <div className="testimonial">
+              <div class="user-img">
+                <div class="img" />
+              </div>
+              <div class="info">
+                <h4>J.Lee</h4>
+                <h5>Front End Developer</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure e aliquam quaerat voluptatem.
+                </p>
+              </div>
+            </div>
+            <div className="testimonial">
+              <div class="user-img">
+                <div class="img" />
+              </div>
+              <div class="info">
+                <h4>A.Rico</h4>
+                <h5>Front End Developer</h5>
+                <p>
+                  I followed Joe's advised many times. After 2 years learning
+                  html, css and javascript i got the job!, follow his advised
+                  too. Thanks, Joe!﻿
+                </p>
+              </div>
+            </div>
+            <div className="testimonial">
+              <div class="user-img">
+                <div class="img" />
+              </div>
+              <div class="info">
+                <h4>J.Lee</h4>
+                <h5>Front End Developer</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure e aliquam quaerat voluptatem.
+                </p>
+              </div>
+            </div>
+            <div className="testimonial">
+              <div class="user-img">
+                <div class="img" />
+              </div>
+              <div class="info">
+                <h4>J.Lee</h4>
+                <h5>Front End Developer</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure e aliquam quaerat voluptatem.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="sub-title">
+            A few of the copanies students that hired students
+          </div>
+          <div className="logos">
+            <div className="logo">
+              <img src={movableinkIMG} />
+            </div>
+            <div className="logo">
+              <img src={paypalIMG} />
+            </div>
+            <div className="logo">
+              <img src={universalIMG} />
+            </div>
+            <div className="logo">
+              <img src={timewarnerIMG} />
+            </div>
+            <div className="logo">
+              <img src={sonyIMG} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="what-you-get">
+      <div className="container">
+        <h2>What do you get?</h2>
+        <div className="list">
+          <div className="item">OVER 300 HOURS OF VIDEOS</div>
+          <div className="item">UNLIMITED ACCESS</div>
+          <div className="item">ALL FILES PROVIDED FOR DOWNLOAD</div>
+          <div className="item">EVERYTHING YOU NEED TO BECOME A DEVELOPER</div>
+          <div className="item">THE SKILLS THAT ARE IN DEMAND</div>
+          <div className="item">WE ARE UPTODATE WITH THE INDUSTRY</div>
+          <div className="item">
+            30 DAYS
+            <br /> MONEY BACK
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="pricing-plans">
+      <div className="bg" />
+      <div className="container">
+        <div className="section-content">
+          <div className="sub-title">Plans</div>
+          <div className="plans-table">
+            {/* Header */}
+            <div className="box header features">Features</div>
+            <div className="box header">Free</div>
+            <div className="box header">Monthly</div>
+            <div className="box header">Yearly</div>
+            <div className="box header">Lifetime</div>
+            {/* Row */}
+            <div className="box  features">Unlimited Access</div>
+            <div className="box ">Limited to Free Courses Only</div>
+            <div className="box ">
+              <img src={iconcheckIMG} />
+            </div>
+            <div className="box ">
+              <img src={iconcheckIMG} />
+            </div>
+            <div className="box ">
+              <img src={iconcheckIMG} />
+            </div>
+
+            {/* Row */}
+            <div className="box  features">Project Files</div>
+            <div className="box " />
+            <div className="box ">
+              <img src={iconcheckIMG} />
+            </div>
+            <div className="box ">
+              <img src={iconcheckIMG} />
+            </div>
+            <div className="box ">
+              <img src={iconcheckIMG} />
+            </div>
+            {/* Row */}
+            <div className="box  features">Discord Chatroom</div>
+            <div className="box " />
+            <div className="box ">
+              <img src={iconcheckIMG} />
+            </div>
+            <div className="box ">
+              <img src={iconcheckIMG} />
+            </div>
+            <div className="box ">
+              <img src={iconcheckIMG} />
+            </div>
+
+            {/* Row */}
+            <div className="box  features">Support</div>
+            <div className="box " />
+            <div className="box ">
+              <img src={iconcheckIMG} />
+            </div>
+            <div className="box ">
+              <img src={iconcheckIMG} />
+            </div>
+            <div className="box ">
+              <img src={iconcheckIMG} />
+            </div>
+            {/* Row */}
+            <div className="box  features">Priority Support</div>
+            <div className="box " />
+            <div className="box " />
+            <div className="box " />
+            <div className="box ">
+              <img src={iconcheckIMG} />
+            </div>
+            {/* Row */}
+            <div className="box  features">Resume and Portfolio Review</div>
+            <div className="box " />
+            <div className="box " />
+            <div className="box " />
+            <div className="box ">
+              <img src={iconcheckIMG} />
+            </div>
+            {/* Row */}
+            <div className="box  features">Savings</div>
+            <div className="box ">None</div>
+            <div className="box ">None</div>
+            <div className="box ">20% OFF</div>
+            <div className="box ">Unlimited</div>
+            {/* Row */}
+            <div className="box  features">Price</div>
+            <div className="box ">$0</div>
+            <div className="box ">$20</div>
+            <div className="box ">$200</div>
+            <div className="box ">$600</div>
           </div>
         </div>
       </div>

@@ -180,7 +180,7 @@ const IndexPage = () => (
                 />
               </div>
               <div class="info">
-                <h4>E.Sanford</h4>
+                <h4>E. Sanford</h4>
                 <h5>Front End Developer</h5>
                 <p>
                   Met with my first client updating his business' WordPress
@@ -196,7 +196,7 @@ const IndexPage = () => (
                 <div class="img" />
               </div>
               <div class="info">
-                <h4>A.Rico</h4>
+                <h4>A. Rico</h4>
                 <h5>Front End Developer</h5>
                 <p>
                   I followed Joe's advised many times. After 2 years learning
@@ -210,7 +210,7 @@ const IndexPage = () => (
                 <div class="img" />
               </div>
               <div class="info">
-                <h4>L.Redman</h4>
+                <h4>L. Redman</h4>
                 <h5>Front End Developer</h5>
                 <p>
                   I am a paid member and with your help I was able to break into
@@ -226,14 +226,16 @@ const IndexPage = () => (
                 <div class="img" />
               </div>
               <div class="info">
-                <h4>J.Lee</h4>
+                <h4>K. Perez</h4>
                 <h5>Front End Developer</h5>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure e aliquam quaerat voluptatem.
+                  Coding Phase Youtube and channel changed my life, i was going
+                  in circles trying to learn how to code and then once i found
+                  coding has it all made sense. He layed out the path to become
+                  a developer really easily with the 3 projects you need and how
+                  to find jobs, once i put myself out there i was able to get a
+                  job and now i’ve gone ahead and begun my second job with an
+                  upgrade in pay :D, thank you Joe!
                 </p>
               </div>
             </div>

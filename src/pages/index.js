@@ -12,6 +12,7 @@ import sonyIMG from '../../assets/logos/sony.png'
 import timewarnerIMG from '../../assets/logos/timewarner.png'
 import universalIMG from '../../assets/logos/universal.png'
 import iconcheckIMG from '../../assets/icon-check.png'
+import esanfordIMG from '../../assets/testimonials/esanford.jpg'
 
 const IndexPage = () => (
   <Layout>
@@ -171,17 +172,22 @@ const IndexPage = () => (
           <div className="testimonials">
             <div className="testimonial">
               <div class="user-img">
-                <div class="img" />
+                <div
+                  class="img"
+                  style={{
+                    background: `url('${esanfordIMG}')`,
+                  }}
+                />
               </div>
               <div class="info">
-                <h4>J.Lee</h4>
+                <h4>E.Sanford</h4>
                 <h5>Front End Developer</h5>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure e aliquam quaerat voluptatem.
+                  Met with my first client updating his business' WordPress
+                  site. Thanks to @codingphase I was able to impress him with
+                  what I learned from your course. I'm excited about the
+                  opportunity and will be getting more engaged on
+                  http://codingphase.com
                 </p>
               </div>
             </div>
@@ -204,14 +210,14 @@ const IndexPage = () => (
                 <div class="img" />
               </div>
               <div class="info">
-                <h4>J.Lee</h4>
+                <h4>L.Redman</h4>
                 <h5>Front End Developer</h5>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure e aliquam quaerat voluptatem.
+                  I am a paid member and with your help I was able to break into
+                  the industry with my first job at Godaddy. It took me 8 months
+                  of studying code everyday for 4 hours and following your
+                  courses and advise and it worked, I made it. Now I continue
+                  working on your courses to start learning more backend php.
                 </p>
               </div>
             </div>
@@ -233,7 +239,7 @@ const IndexPage = () => (
             </div>
           </div>
           <div className="sub-title">
-            A few of the copanies students that hired students
+            A few companies that have hired our students
           </div>
           <div className="logos">
             <div className="logo">
@@ -362,6 +368,9 @@ const IndexPage = () => (
             <div className="box ">$20</div>
             <div className="box ">$200</div>
             <div className="box ">$600</div>
+          </div>
+          <div className="button-area">
+            <a>Register</a>
           </div>
         </div>
       </div>

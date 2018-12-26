@@ -338,6 +338,7 @@ html {
         justify-content: center;
 
         .img {
+          background-size: cover !important;
           border: 1px solid #4292ff;
           width: 70px;
           height: 70px;
@@ -458,6 +459,7 @@ html {
     }
 
     .plans-table {
+      margin-bottom: 100px;
       width: 100%;
       max-width: 800px;
       max-height: 100%;
@@ -513,6 +515,32 @@ html {
           background: linear-gradient(to right, rgba(20, 20, 20, 1) 0%, rgba(53, 53, 53, 1) 100%);
           color: white;
           font-weight: 600;
+        }
+      }
+    }
+
+    .button-area {
+      a {
+        display: inline-block;
+        position: relative;
+        color: white;
+        border: 2px solid white;
+        padding: 15px 40px;
+        text-transform: uppercase;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+        background: linear-gradient(45deg, rgba(4, 85, 255, 0) 1%, rgba(239, 55, 238, 0) 100%) !important;
+        transform: scale(1, 1);
+        text-shadow: 0 15px 20px rgba(0, 0, 0, 0);
+
+        &:hover {
+          background: linear-gradient(45deg, rgba(4, 85, 255, 1) 1%, rgba(239, 55, 238, 1) 100%) !important;
+          -webkit-box-shadow: 0 10px 38px 0 rgba(53, 167, 255, 0.67);
+          -moz-box-shadow: 0 10px 38px 0 rgba(53, 167, 255, 0.67);
+          box-shadow: 0 10px 38px 0 rgba(53, 167, 255, 0.67);
+          transform: scale(1.1, 1.1) translate3d(0, -10px, 0);
+          text-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
         }
       }
     }

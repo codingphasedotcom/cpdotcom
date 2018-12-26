@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
+// import Image from '../components/image'
 import SEO from '../components/seo'
-import nodegreeIMG from '../../assets/nodegree.jpg'
+
 import chartImg from '../../assets/chart.png'
 import movableinkIMG from '../../assets/logos/movableink.png'
 import paypalIMG from '../../assets/logos/paypal.png'
@@ -25,13 +25,13 @@ const IndexPage = () => (
         <h2>Learn to Code Today</h2>
 
         <div className="button-area">
-          <a>Register</a>
+          <a href="/">Register</a>
         </div>
       </div>
     </section>
     <section id="popular-courses">
-      <div class="bg" />
-      <div class="section-content">
+      <div className="bg" />
+      <div className="section-content">
         <div className="container">
           <div className="sub-title">Our Most Popular Courses</div>
           <div className="course-grid">
@@ -126,7 +126,7 @@ const IndexPage = () => (
               <h5>32 Videos</h5>
             </div>
           </div>
-          <div class="courses-total">30+</div>
+          <div className="courses-total">30+</div>
           <div className="sub-title">
             Courses and every month <br />
             we add more
@@ -140,20 +140,20 @@ const IndexPage = () => (
         <div className="container">
           <div className="sub-title">Lets compare the average american job</div>
 
-          <div class="info-area">
-            <div class="chart-column">
+          <div className="info-area">
+            <div className="chart-column">
               <div className="chartbg">
-                <img src={chartImg} />
+                <img src={chartImg} alt="" />
               </div>
             </div>
-            <div class="info-column">
-              <div class="line1">On average it's less than</div>
-              <div class="line2">50k</div>
-              <div class="line3">
+            <div className="info-column">
+              <div className="line1">On average it's less than</div>
+              <div className="line2">50k</div>
+              <div className="line3">
                 At the same time <br />
                 Developers make an average of
               </div>
-              <div class="line4">$84,000</div>
+              <div className="line4">$84,000</div>
             </div>
           </div>
         </div>
@@ -172,15 +172,15 @@ const IndexPage = () => (
           </div>
           <div className="testimonials">
             <div className="testimonial">
-              <div class="user-img">
+              <div className="user-img">
                 <div
-                  class="img"
+                  className="img"
                   style={{
                     background: `url('${esanfordIMG}')`,
                   }}
                 />
               </div>
-              <div class="info">
+              <div className="info">
                 <h4>E. Sanford</h4>
                 <h5>Front End Developer</h5>
                 <p>
@@ -193,10 +193,10 @@ const IndexPage = () => (
               </div>
             </div>
             <div className="testimonial">
-              <div class="user-img">
-                <div class="img" />
+              <div className="user-img">
+                <div className="img" />
               </div>
-              <div class="info">
+              <div className="info">
                 <h4>A. Rico</h4>
                 <h5>Front End Developer</h5>
                 <p>
@@ -207,10 +207,10 @@ const IndexPage = () => (
               </div>
             </div>
             <div className="testimonial">
-              <div class="user-img">
-                <div class="img" />
+              <div className="user-img">
+                <div className="img" />
               </div>
-              <div class="info">
+              <div className="info">
                 <h4>L. Redman</h4>
                 <h5>Front End Developer</h5>
                 <p>
@@ -223,15 +223,15 @@ const IndexPage = () => (
               </div>
             </div>
             <div className="testimonial">
-              <div class="user-img">
+              <div className="user-img">
                 <div
-                  class="img"
+                  className="img"
                   style={{
                     background: `url('${kperezIMG}')`,
                   }}
                 />
               </div>
-              <div class="info">
+              <div className="info">
                 <h4>K. Perez</h4>
                 <h5>Front End Developer</h5>
                 <p>
@@ -251,19 +251,19 @@ const IndexPage = () => (
           </div>
           <div className="logos">
             <div className="logo">
-              <img src={movableinkIMG} />
+              <img src={movableinkIMG} alt="" />
             </div>
             <div className="logo">
-              <img src={paypalIMG} />
+              <img src={paypalIMG} alt="" />
             </div>
             <div className="logo">
-              <img src={universalIMG} />
+              <img src={universalIMG} alt="" />
             </div>
             <div className="logo">
-              <img src={timewarnerIMG} />
+              <img src={timewarnerIMG} alt="" />
             </div>
             <div className="logo">
-              <img src={sonyIMG} />
+              <img src={sonyIMG} alt="" />
             </div>
           </div>
         </div>
@@ -302,51 +302,51 @@ const IndexPage = () => (
             <div className="box  features">Unlimited Access</div>
             <div className="box ">Limited to Free Courses Only</div>
             <div className="box ">
-              <img src={iconcheckIMG} />
+              <img src={iconcheckIMG} alt="" />
             </div>
             <div className="box ">
-              <img src={iconcheckIMG} />
+              <img src={iconcheckIMG} alt="" />
             </div>
             <div className="box ">
-              <img src={iconcheckIMG} />
+              <img src={iconcheckIMG} alt="" />
             </div>
 
             {/* Row */}
             <div className="box  features">Project Files</div>
             <div className="box " />
             <div className="box ">
-              <img src={iconcheckIMG} />
+              <img src={iconcheckIMG} alt="" />
             </div>
             <div className="box ">
-              <img src={iconcheckIMG} />
+              <img src={iconcheckIMG} alt="" />
             </div>
             <div className="box ">
-              <img src={iconcheckIMG} />
+              <img src={iconcheckIMG} alt="" />
             </div>
             {/* Row */}
             <div className="box  features">Discord Chatroom</div>
             <div className="box " />
             <div className="box ">
-              <img src={iconcheckIMG} />
+              <img src={iconcheckIMG} alt="" />
             </div>
             <div className="box ">
-              <img src={iconcheckIMG} />
+              <img src={iconcheckIMG} alt="" />
             </div>
             <div className="box ">
-              <img src={iconcheckIMG} />
+              <img src={iconcheckIMG} alt="" />
             </div>
 
             {/* Row */}
             <div className="box  features">Support</div>
             <div className="box " />
             <div className="box ">
-              <img src={iconcheckIMG} />
+              <img src={iconcheckIMG} alt="" />
             </div>
             <div className="box ">
-              <img src={iconcheckIMG} />
+              <img src={iconcheckIMG} alt="" />
             </div>
             <div className="box ">
-              <img src={iconcheckIMG} />
+              <img src={iconcheckIMG} alt="" />
             </div>
             {/* Row */}
             <div className="box  features">Priority Support</div>
@@ -354,7 +354,7 @@ const IndexPage = () => (
             <div className="box " />
             <div className="box " />
             <div className="box ">
-              <img src={iconcheckIMG} />
+              <img src={iconcheckIMG} alt="" />
             </div>
             {/* Row */}
             <div className="box  features">Resume and Portfolio Review</div>
@@ -362,7 +362,7 @@ const IndexPage = () => (
             <div className="box " />
             <div className="box " />
             <div className="box ">
-              <img src={iconcheckIMG} />
+              <img src={iconcheckIMG} alt="" />
             </div>
             {/* Row */}
             <div className="box  features">Savings</div>
@@ -378,7 +378,7 @@ const IndexPage = () => (
             <div className="box ">$600</div>
           </div>
           <div className="button-area">
-            <a>Register</a>
+            <a href="/">Register</a>
           </div>
         </div>
       </div>

@@ -7,6 +7,38 @@ html {
   font-family: 'Avenir', sans-serif;
 }
 
+header {
+  background: black;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .logo {
+    font-weight: 700;
+  }
+
+  .menu {
+    a {
+      padding-right: 15px;
+    }
+  }
+}
+
 #jumbo-top {
   margin: 0;
   padding: 0;

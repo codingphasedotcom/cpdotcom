@@ -13,6 +13,7 @@ import timewarnerIMG from '../../assets/logos/timewarner.png'
 import universalIMG from '../../assets/logos/universal.png'
 import iconcheckIMG from '../../assets/icon-check.png'
 import esanfordIMG from '../../assets/testimonials/esanford.jpg'
+import kperezIMG from '../../assets/testimonials/kperez.jpeg'
 
 const IndexPage = () => (
   <Layout>
@@ -223,7 +224,12 @@ const IndexPage = () => (
             </div>
             <div className="testimonial">
               <div class="user-img">
-                <div class="img" />
+                <div
+                  class="img"
+                  style={{
+                    background: `url('${kperezIMG}')`,
+                  }}
+                />
               </div>
               <div class="info">
                 <h4>K. Perez</h4>

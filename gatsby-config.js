@@ -5,6 +5,15 @@ module.exports = {
     author: `Joe Santos Garcia`,
   },
   plugins: [
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `coursesdata`,
+        path: `${__dirname}/src/data/coursesData`,
+      },
+    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {

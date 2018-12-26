@@ -35,7 +35,8 @@ const IndexPage = () => (
         <div className="container">
           <div className="sub-title">Our Most Popular Courses</div>
           <div className="course-grid">
-            <div
+            <a
+              href=""
               className="course"
               style={{
                 background:
@@ -44,8 +45,9 @@ const IndexPage = () => (
             >
               <h4>React</h4>
               <h5>32 Videos</h5>
-            </div>
-            <div
+            </a>
+            <a
+              href=""
               className="course"
               style={{
                 background:
@@ -54,8 +56,9 @@ const IndexPage = () => (
             >
               <h4>React</h4>
               <h5>32 Videos</h5>
-            </div>
-            <div
+            </a>
+            <a
+              href=""
               className="course"
               style={{
                 background:
@@ -64,8 +67,9 @@ const IndexPage = () => (
             >
               <h4>React</h4>
               <h5>32 Videos</h5>
-            </div>
-            <div
+            </a>
+            <a
+              href=""
               className="course"
               style={{
                 background:
@@ -74,8 +78,9 @@ const IndexPage = () => (
             >
               <h4>React</h4>
               <h5>32 Videos</h5>
-            </div>
-            <div
+            </a>
+            <a
+              href=""
               className="course"
               style={{
                 background:
@@ -84,8 +89,9 @@ const IndexPage = () => (
             >
               <h4>Music Site</h4>
               <h5>32 Videos</h5>
-            </div>
-            <div
+            </a>
+            <a
+              href=""
               className="course"
               style={{
                 background:
@@ -94,8 +100,9 @@ const IndexPage = () => (
             >
               <h4>React</h4>
               <h5>32 Videos</h5>
-            </div>
-            <div
+            </a>
+            <a
+              href=""
               className="course"
               style={{
                 background:
@@ -104,8 +111,9 @@ const IndexPage = () => (
             >
               <h4>React</h4>
               <h5>32 Videos</h5>
-            </div>
-            <div
+            </a>
+            <a
+              href=""
               className="course"
               style={{
                 background:
@@ -114,8 +122,9 @@ const IndexPage = () => (
             >
               <h4>React</h4>
               <h5>32 Videos</h5>
-            </div>
-            <div
+            </a>
+            <a
+              href=""
               className="course"
               style={{
                 background:
@@ -124,7 +133,7 @@ const IndexPage = () => (
             >
               <h4>React</h4>
               <h5>32 Videos</h5>
-            </div>
+            </a>
           </div>
           <div className="courses-total">30+</div>
           <div className="sub-title">

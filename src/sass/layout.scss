@@ -1,10 +1,24 @@
-@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css');
+// @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css');
 @import 'reset';
+@import 'courses-page';
 
 body,
 html {
   background: #f4f7fc;
   font-family: 'Avenir', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 header {
@@ -42,7 +56,12 @@ header {
 #jumbo-top {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, rgba(76, 5, 113, 0.7) 0%, rgba(76, 5, 113, 0.7) 100%), url("../../assets/adults-chilling.jpg");
+  background: linear-gradient(
+      to right,
+      rgba(76, 5, 113, 0.7) 0%,
+      rgba(76, 5, 113, 0.7) 100%
+    ),
+    url('../../assets/adults-chilling.jpg');
   background-size: cover;
 
   .container-fluid {
@@ -75,12 +94,20 @@ header {
       border-radius: 4px;
       cursor: pointer;
       transition: all 0.4s ease-in-out;
-      background: linear-gradient(45deg, rgba(4, 85, 255, 0) 1%, rgba(239, 55, 238, 0) 100%) !important;
+      background: linear-gradient(
+        45deg,
+        rgba(4, 85, 255, 0) 1%,
+        rgba(239, 55, 238, 0) 100%
+      ) !important;
       transform: scale(1, 1);
       text-shadow: 0 15px 20px rgba(0, 0, 0, 0);
 
       &:hover {
-        background: linear-gradient(45deg, rgba(4, 85, 255, 1) 1%, rgba(239, 55, 238, 1) 100%) !important;
+        background: linear-gradient(
+          45deg,
+          rgba(4, 85, 255, 1) 1%,
+          rgba(239, 55, 238, 1) 100%
+        ) !important;
         -webkit-box-shadow: 0 10px 38px 0 rgba(53, 167, 255, 0.67);
         -moz-box-shadow: 0 10px 38px 0 rgba(53, 167, 255, 0.67);
         box-shadow: 0 10px 38px 0 rgba(53, 167, 255, 0.67);
@@ -127,6 +154,7 @@ header {
       cursor: pointer;
       transition: all 0.3s ease-in-out;
       transform: scale(1, 1);
+      text-decoration: none;
 
       &:hover {
         // background: linear-gradient(
@@ -175,7 +203,11 @@ header {
   .courses-total {
     font-size: 200px;
     font-weight: 900;
-    background: -webkit-linear-gradient(45deg, rgba(232, 25, 83, 1) 40%, rgba(250, 197, 105, 1) 70%);
+    background: -webkit-linear-gradient(
+      45deg,
+      rgba(232, 25, 83, 1) 40%,
+      rgba(250, 197, 105, 1) 70%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -186,7 +218,11 @@ header {
     font-size: 40px;
     font-weight: 400;
     line-height: 1.3;
-    background: -webkit-linear-gradient(45deg, rgba(232, 25, 83, 1) 40%, rgba(250, 197, 105, 1) 70%);
+    background: -webkit-linear-gradient(
+      45deg,
+      rgba(232, 25, 83, 1) 40%,
+      rgba(250, 197, 105, 1) 70%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 40px;
@@ -199,7 +235,11 @@ header {
   .bg {
     position: absolute;
     height: 700px;
-    background: linear-gradient(45deg, rgba(4, 85, 255, 1) 1%, rgba(239, 55, 238, 1) 100%) !important;
+    background: linear-gradient(
+      45deg,
+      rgba(4, 85, 255, 1) 1%,
+      rgba(239, 55, 238, 1) 100%
+    ) !important;
     width: 100%;
     overflow: hidden;
     -webkit-transform: skewY(-12deg);
@@ -239,7 +279,11 @@ header {
       grid-gap: 40px;
 
       .chart-column {
-        background: linear-gradient(45deg, rgba(18, 121, 252, 1) 1%, rgba(89, 174, 255, 1) 100%);
+        background: linear-gradient(
+          45deg,
+          rgba(18, 121, 252, 1) 1%,
+          rgba(89, 174, 255, 1) 100%
+        );
         border-radius: 4px;
         box-shadow: 0 20px 38px 0 rgba(53, 167, 255, 0.67);
         padding: 40px;
@@ -300,7 +344,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("../../assets/nodegree.jpg");
+    background: url('../../assets/nodegree.jpg');
     max-width: 800px;
     width: 100%;
     height: 300px;
@@ -430,7 +474,11 @@ header {
 #what-you-get {
   color: white;
   padding: 100px 0 400px;
-  background: linear-gradient(45deg, rgba(35, 35, 36, 1) 0%, rgba(50, 50, 52, 1) 100%);
+  background: linear-gradient(
+    45deg,
+    rgba(35, 35, 36, 1) 0%,
+    rgba(50, 50, 52, 1) 100%
+  );
 
   h2 {
     font-size: 46px;
@@ -471,7 +519,11 @@ header {
     transform: skewY(-12deg);
     -webkit-transform-origin: 0;
     transform-origin: 0;
-    background: linear-gradient(45deg, rgb(232, 25, 83) 40%, rgb(250, 197, 105) 70%);
+    background: linear-gradient(
+      45deg,
+      rgb(232, 25, 83) 40%,
+      rgb(250, 197, 105) 70%
+    );
     z-index: 2;
   }
 
@@ -544,7 +596,11 @@ header {
         }
 
         &.features {
-          background: linear-gradient(to right, rgba(20, 20, 20, 1) 0%, rgba(53, 53, 53, 1) 100%);
+          background: linear-gradient(
+            to right,
+            rgba(20, 20, 20, 1) 0%,
+            rgba(53, 53, 53, 1) 100%
+          );
           color: white;
           font-weight: 600;
         }
@@ -562,12 +618,20 @@ header {
         border-radius: 4px;
         cursor: pointer;
         transition: all 0.4s ease-in-out;
-        background: linear-gradient(45deg, rgba(4, 85, 255, 0) 1%, rgba(239, 55, 238, 0) 100%) !important;
+        background: linear-gradient(
+          45deg,
+          rgba(4, 85, 255, 0) 1%,
+          rgba(239, 55, 238, 0) 100%
+        ) !important;
         transform: scale(1, 1);
         text-shadow: 0 15px 20px rgba(0, 0, 0, 0);
 
         &:hover {
-          background: linear-gradient(45deg, rgba(4, 85, 255, 1) 1%, rgba(239, 55, 238, 1) 100%) !important;
+          background: linear-gradient(
+            45deg,
+            rgba(4, 85, 255, 1) 1%,
+            rgba(239, 55, 238, 1) 100%
+          ) !important;
           -webkit-box-shadow: 0 10px 38px 0 rgba(53, 167, 255, 0.67);
           -moz-box-shadow: 0 10px 38px 0 rgba(53, 167, 255, 0.67);
           box-shadow: 0 10px 38px 0 rgba(53, 167, 255, 0.67);
@@ -577,4 +641,268 @@ header {
       }
     }
   }
+}
+//extra small
+@media only screen and (max-width: 575px) {
+  header {
+    .menu {
+      display: none;
+    }
+  }
+
+  #jumbo-top {
+    h2 {
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+
+  #popular-courses {
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(9, 200px);
+      grid-gap: 40px;
+      margin-bottom: 100px;
+    }
+  }
+
+  #popular-courses {
+    .courses-total {
+      font-size: 150px;
+    }
+  }
+
+  #americans {
+    .bg {
+      display: grid;
+      height: 1000px;
+    }
+  }
+
+  #americans {
+    .section-content .info-area {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 40px;
+    }
+  }
+
+  #no-degree {
+    padding: 100px 0;
+
+    h2 {
+      font-size: 40px;
+      text-align: center;
+      max-width: 200px;
+    }
+
+    .students-total {
+      font-size: 100px;
+      margin-bottom: 50px;
+    }
+
+    .sub-title {
+      font-size: 28px;
+    }
+
+    .testimonials {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      .testimonial {
+        grid-template-columns: 40% 60%;
+      }
+    }
+
+    .logos {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  #what-you-get {
+    padding: 100px 0;
+
+    h2 {
+      font-size: 28px;
+    }
+
+    .list {
+      grid-template-columns: 1fr;
+
+      .item:nth-child(7) {
+        grid-column: 1 / 2;
+      }
+    }
+  }
+}
+//small
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  header {
+    .menu {
+      display: none;
+    }
+  }
+
+  #jumbo-top {
+    h2 {
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+
+  #popular-courses {
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(9, 200px);
+    }
+  }
+
+  #popular-courses {
+    .course-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 200px);
+    }
+
+    .courses-total {
+      font-size: 150px;
+    }
+  }
+
+  #americans {
+    .bg {
+      display: grid;
+      height: 1200px;
+    }
+
+    .section-content .info-area {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 40px;
+    }
+  }
+
+  #no-degree {
+    padding: 100px 0;
+
+    h2 {
+      font-size: 40px;
+      text-align: center;
+      max-width: 200px;
+    }
+
+    .students-total {
+      font-size: 100px;
+      margin-bottom: 50px;
+    }
+
+    .sub-title {
+      font-size: 36px;
+    }
+
+    .testimonials {
+      grid-template-columns: 1fr;
+
+      .testimonial {
+        grid-template-columns: 40% 60%;
+
+        .user-img .img {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+
+    .logos {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  #what-you-get {
+    padding: 100px 0;
+
+    h2 {
+      font-size: 28px;
+    }
+  }
+}
+//tablet
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #jumbo-top {
+    // h2 {
+    //   font-size: 30px;
+    //   text-align: center;
+    // }
+  }
+
+  #popular-courses {
+    .courses-total {
+      font-size: 150px;
+    }
+  }
+
+  #popular-courses .course-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 200px);
+    grid-gap: 40px;
+    margin-bottom: 100px;
+  }
+
+  #no-degree {
+    padding: 300px 0 100px;
+
+    h4 {
+      margin-bottom: 100px;
+    }
+
+    h2 {
+      font-size: 46px;
+      text-align: center;
+    }
+
+    .students-total {
+      font-size: 100px;
+      text-align: center;
+    }
+
+    .sub-title {
+      font-size: 28px;
+    }
+
+    .image {
+      margin-bottom: 100px;
+    }
+
+    .testimonials {
+      grid-template-columns: 1fr 1fr;
+
+      .testimonial {
+        grid-template-columns: 30% 70%;
+      }
+
+      .testimonial .info {
+        // padding: 20px;
+      }
+    }
+  }
+}
+//laptops
+@media only screen and (max-width: 1199px) {
+  // #jumbo-top {
+  //   h2 {
+  //     font-size: 30px;
+  //     text-align: center;
+  //   }
+  // }
+}
+//desktops
+@media only screen and (min-width: 1200px) {
+  // #jumbo-top {
+  //   h2 {
+  //     font-size: 30px;
+  //     text-align: center;
+  //   }
+  // }
 }

@@ -24,10 +24,15 @@
     display: grid;
     grid-template-columns: 70% 30%;
     margin-bottom: 100px;
+    -webkit-box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.27);
+    box-shadow: 0 10px 38px 0 rgba(0, 0, 0, 0.27);
+    border-radius: 10px;
+    overflow: hidden;
   }
 
   .course-filters {
-    background: linear-gradient(45deg, rgb(150, 55, 239) 30%, rgba(150, 55, 239, 0.1) 100%);
+    background: linear-gradient(45deg, rgba(119, 34, 238, 1) 30%, rgba(119, 34, 238, 1) 100%);
 
     .dropdown {
       padding: 40px;

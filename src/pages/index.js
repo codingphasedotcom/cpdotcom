@@ -40,7 +40,7 @@ const IndexPage = () => (
               className="course"
               style={{
                 background:
-                  'linear-gradient(45deg, rgba(18, 121, 252, 1) 1%, rgba(89, 174, 255, 0.5) 100%), url("https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr")',
+                  'linear-gradient(45deg, rgba(119, 34, 238, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr")',
               }}
             >
               <h4>React</h4>
@@ -51,7 +51,7 @@ const IndexPage = () => (
               className="course"
               style={{
                 background:
-                  'linear-gradient(45deg, rgba(18, 121, 252, 1) 1%, rgba(89, 174, 255, 0.5) 100%), url("https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr")',
+                  'linear-gradient(45deg, rgba(119, 34, 238, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr")',
               }}
             >
               <h4>React</h4>
@@ -62,7 +62,7 @@ const IndexPage = () => (
               className="course"
               style={{
                 background:
-                  'linear-gradient(45deg, rgba(18, 121, 252, 1) 1%, rgba(89, 174, 255, 0.5) 100%), url("https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr")',
+                  'linear-gradient(45deg, rgba(119, 34, 238, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr")',
               }}
             >
               <h4>React</h4>
@@ -73,7 +73,7 @@ const IndexPage = () => (
               className="course"
               style={{
                 background:
-                  'linear-gradient(45deg, rgba(18, 121, 252, 1) 1%, rgba(89, 174, 255, 0.5) 100%), url("https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr")',
+                  'linear-gradient(45deg, rgba(119, 34, 238, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr")',
               }}
             >
               <h4>React</h4>
@@ -84,7 +84,7 @@ const IndexPage = () => (
               className="course"
               style={{
                 background:
-                  'linear-gradient(45deg, rgba(18, 121, 252, 1) 1%, rgba(89, 174, 255, 0.5) 100%), url("https://www.filepicker.io/api/file/fIKS9rBnT9WXsytDLKS8")',
+                  'linear-gradient(45deg, rgba(119, 34, 238, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("https://www.filepicker.io/api/file/fIKS9rBnT9WXsytDLKS8")',
               }}
             >
               <h4>Music Site</h4>
@@ -95,7 +95,7 @@ const IndexPage = () => (
               className="course"
               style={{
                 background:
-                  'linear-gradient(45deg, rgba(18, 121, 252, 1) 1%, rgba(89, 174, 255, 0.5) 100%), url("https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr")',
+                  'linear-gradient(45deg, rgba(119, 34, 238, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr")',
               }}
             >
               <h4>React</h4>
@@ -106,7 +106,7 @@ const IndexPage = () => (
               className="course"
               style={{
                 background:
-                  'linear-gradient(45deg, rgba(18, 121, 252, 1) 1%, rgba(89, 174, 255, 0.5) 100%), url("https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr")',
+                  'linear-gradient(45deg, rgba(119, 34, 238, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr")',
               }}
             >
               <h4>React</h4>
@@ -117,7 +117,7 @@ const IndexPage = () => (
               className="course"
               style={{
                 background:
-                  'linear-gradient(45deg, rgba(18, 121, 252, 1) 1%, rgba(89, 174, 255, 0.5) 100%), url("https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr")',
+                  'linear-gradient(45deg, rgba(119, 34, 238, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr")',
               }}
             >
               <h4>React</h4>
@@ -128,7 +128,7 @@ const IndexPage = () => (
               className="course"
               style={{
                 background:
-                  'linear-gradient(45deg, rgba(18, 121, 252, 1) 1%, rgba(89, 174, 255, 0.5) 100%), url("https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr")',
+                  'linear-gradient(45deg, rgba(119, 34, 238, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr")',
               }}
             >
               <h4>React</h4>

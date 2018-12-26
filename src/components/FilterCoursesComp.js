@@ -82,10 +82,10 @@ class FilterCoursesComp extends Component {
           {this.state.filteredData.map(course => (
             <a
               key={course.slug}
-              href="/"
+              href={course.url}
               className="course"
               style={{
-                background: `linear-gradient(45deg, rgba(150, 55, 239, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("${
+                background: `linear-gradient(45deg, rgba(119, 34, 238, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("${
                   course.imgs.thumbnail
                 }")`,
               }}

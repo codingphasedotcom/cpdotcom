@@ -109,8 +109,8 @@ class FilterCoursesComp extends Component {
             </select>
           </div>
           <AdSense.Google
-            client="ca-pub-7292810486004926"
-            slot="7806394673"
+            client="ca-pub-1876888588409540"
+            slot="6100356041"
             style={{ display: 'block' }}
             format="auto"
             responsive="true"

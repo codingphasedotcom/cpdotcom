@@ -63,6 +63,24 @@
       transform: scale(1, 1);
       text-decoration: none;
 
+      h4 {
+        position: relative;
+        font-size: 30px;
+        color: white;
+        font-weight: 600;
+        transition: all 0.3s ease-in-out;
+        text-shadow: 0 10px 16px rgba(150, 150, 150, 0);
+      }
+
+      h5 {
+        position: relative;
+        text-shadow: 0 15px 20px rgba(0, 0, 0, 0);
+        font-size: 20px;
+        color: white;
+        font-weight: 400;
+        transition: all 0.3s ease-in-out;
+      }
+
       &:hover {
         // background: linear-gradient(
         //   45deg,
@@ -85,24 +103,6 @@
           transform: translate3d(0, -10px, 0);
           text-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
         }
-      }
-
-      h4 {
-        position: relative;
-        font-size: 40px;
-        color: white;
-        font-weight: 600;
-        transition: all 0.3s ease-in-out;
-        text-shadow: 0 10px 16px rgba(150, 150, 150, 0);
-      }
-
-      h5 {
-        position: relative;
-        text-shadow: 0 15px 20px rgba(0, 0, 0, 0);
-        font-size: 20px;
-        color: white;
-        font-weight: 400;
-        transition: all 0.3s ease-in-out;
       }
     }
   }

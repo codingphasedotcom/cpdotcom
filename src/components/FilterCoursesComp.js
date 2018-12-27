@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import AdSense from 'react-adsense'
 
 class FilterCoursesComp extends Component {
   constructor() {
@@ -34,7 +35,7 @@ class FilterCoursesComp extends Component {
     )
   }
   filterTheData = category => {
-    if (category != 'all') {
+    if (category !== 'all') {
       let newdata = this.state.data.filter(item => {
         return item.category.includes(category)
       })
@@ -51,7 +52,7 @@ class FilterCoursesComp extends Component {
     }
   }
   dropdownChange = event => {
-    var name = event.target.name
+    // var name = event.target.name
     var value =
       event.target.type === 'checkbox'
         ? event.target.checked
@@ -85,7 +86,7 @@ class FilterCoursesComp extends Component {
               href={course.url}
               className="course"
               style={{
-                background: `linear-gradient(45deg, rgba(119, 34, 238, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("${
+                background: `linear-gradient(45deg, rgba(67, 1, 124, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("${
                   course.imgs.thumbnail
                 }")`,
               }}
@@ -107,6 +108,13 @@ class FilterCoursesComp extends Component {
               {this.showCategories()}
             </select>
           </div>
+          <AdSense.Google
+            client="ca-pub-7292810486004926"
+            slot="7806394673"
+            style={{ display: 'block' }}
+            format="auto"
+            responsive="true"
+          />
         </div>
       </div>
     )

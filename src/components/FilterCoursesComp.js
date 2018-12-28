@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import AdSense from 'react-adsense'
+import Adsense from './Adsense.js'
 
 class FilterCoursesComp extends Component {
   constructor() {
@@ -8,6 +8,7 @@ class FilterCoursesComp extends Component {
       name: 'Joe',
       filteredData: [],
       categories: [],
+      currentOrder: 'atoz',
     }
   }
   componentDidMount() {
@@ -36,13 +37,13 @@ class FilterCoursesComp extends Component {
   }
   filterTheData = category => {
     if (category !== 'all') {
-      let newdata = this.state.data.filter(item => {
+      let newData = this.state.data.filter(item => {
         return item.category.includes(category)
       })
-      console.log('filter============')
+      newData = this.sortTheData(this.state.currentOrder, 'return', newData)
       this.setState({
         currentCategory: category,
-        filteredData: newdata,
+        filteredData: newData,
       })
     } else {
       this.setState({
@@ -51,22 +52,75 @@ class FilterCoursesComp extends Component {
       })
     }
   }
+  sortTheData = (value, mode, data) => {
+    let newData = mode !== 'normal' ? data : this.state.filteredData
+    if (value == 'atoz') {
+      newData = newData.sort((a, b) => {
+        if (a.title < b.title) {
+          return -1
+        }
+        if (a.title > b.title) {
+          return 1
+        }
+        return 0
+      })
+    }
+
+    if (value == 'ztoa') {
+      newData = newData.sort((a, b) => {
+        if (a.title > b.title) {
+          return -1
+        }
+        if (a.title < b.title) {
+          return 1
+        }
+        return 0
+      })
+    }
+
+    if (value == 'new') {
+      newData = newData.sort((a, b) => {
+        if (a.hours < b.hours) {
+          return -1
+        }
+        if (a.hours > b.hours) {
+          return 1
+        }
+        return 0
+      })
+    }
+    if (value == 'old') {
+      newData = newData.sort((a, b) => {
+        if (a.hours > b.hours) {
+          return -1
+        }
+        if (a.hours < b.hours) {
+          return 1
+        }
+        return 0
+      })
+    }
+    if (mode === 'normal') {
+      this.setState({
+        currentOrder: value,
+        filteredData: newData,
+      })
+    } else {
+      return newData
+    }
+  }
   dropdownChange = event => {
-    // var name = event.target.name
+    var name = event.target.name
     var value =
       event.target.type === 'checkbox'
         ? event.target.checked
         : event.target.value
-
-    // this.setState(
-    //   {
-    //     [name]: value,
-    //   },
-    //   () => {
-    //     console.log(this.state)
-    //   }
-    // )
-    this.filterTheData(value)
+    if (name == 'categories') {
+      this.filterTheData(value)
+    }
+    if (name == 'sortby') {
+      this.sortTheData(value, 'normal')
+    }
     console.log('change')
   }
   showCategories = () => {
@@ -78,43 +132,62 @@ class FilterCoursesComp extends Component {
   }
   render() {
     return (
-      <div id="FilterCoursesComp">
-        <div className="course-grid">
-          {this.state.filteredData.map(course => (
-            <a
-              key={course.slug}
-              href={course.url}
-              className="course"
-              style={{
-                background: `linear-gradient(45deg, rgba(67, 1, 124, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("${
-                  course.imgs.thumbnail
-                }")`,
-              }}
-            >
-              <h4>{course.title}</h4>
-              <h5>32 Videos</h5>
-            </a>
-          ))}
-        </div>
-        <div className="course-filters">
-          <div className="dropdown">
-            <select
-              id="lang"
-              onChange={this.dropdownChange}
-              name="currentCategory"
-              value={this.state.currentCategory}
-            >
-              <option value="all">All</option>
-              {this.showCategories()}
-            </select>
+      <div>
+        <div id="FilterCoursesComp">
+          <div className="course-grid">
+            {this.state.filteredData.map(course => (
+              <a
+                key={course.slug}
+                href={course.url}
+                className="course"
+                style={{
+                  background: `linear-gradient(45deg, rgba(67, 1, 124, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("${
+                    course.imgs.thumbnail
+                  }")`,
+                }}
+              >
+                <h4>{course.title}</h4>
+                <h5>{course.hours} Hours</h5>
+              </a>
+            ))}
           </div>
-          <AdSense.Google
-            client="ca-pub-1876888588409540"
-            slot="6100356041"
-            style={{ display: 'block' }}
-            format="auto"
-            responsive="true"
-          />
+          <div className="course-filters">
+            <div className="dropdown">
+              <label>Categories</label>
+              <select
+                id="lang"
+                onChange={this.dropdownChange}
+                name="categories"
+                value={this.state.currentCategory}
+              >
+                <option value="all">All</option>
+                {this.showCategories()}
+              </select>
+
+              <label>Sort By</label>
+              <select
+                id="lang"
+                onChange={this.dropdownChange}
+                name="sortby"
+                value={this.state.currentOrder}
+              >
+                <option value="atoz">A to Z</option>
+                <option value="ztoa">Z to A</option>
+                <option value="new">Newest</option>
+                <option value="old">Oldest</option>
+                <option value="short">Shortest</option>
+                <option value="long">Longest</option>
+              </select>
+            </div>
+            <Adsense />
+          </div>
+        </div>
+        <div className="courses-total">
+          {this.props.data.coursesDataJson.data.length}+
+        </div>
+        <div className="sub-title">
+          Courses and every month <br />
+          we add more
         </div>
       </div>
     )

@@ -1,10 +1,8 @@
 import React from 'react'
-
-// import { Link } from 'gatsby'
-
+import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
-// import Image from '../components/image'
 import SEO from '../components/seo'
+import FavoriteCoursesComp from '../components/FavoriteCoursesComp'
 
 import chartImg from '../../assets/chart.png'
 import movableinkIMG from '../../assets/logos/movableink.png'
@@ -16,7 +14,7 @@ import iconcheckIMG from '../../assets/icon-check.png'
 import esanfordIMG from '../../assets/testimonials/esanford.jpg'
 import kperezIMG from '../../assets/testimonials/kperez.jpeg'
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <section id="jumbo-top">
@@ -35,112 +33,7 @@ const IndexPage = () => (
       <div className="section-content">
         <div className="container">
           <div className="sub-title">Our Most Popular Courses</div>
-          <div className="course-grid">
-            <a
-              href=""
-              className="course"
-              style={{
-                background:
-                  'linear-gradient(45deg, rgba(67, 1, 124, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr")',
-              }}
-            >
-              <h4>React</h4>
-              <h5>32 Videos</h5>
-            </a>
-            <a
-              href=""
-              className="course"
-              style={{
-                background:
-                  'linear-gradient(45deg, rgba(67, 1, 124, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr")',
-              }}
-            >
-              <h4>React</h4>
-              <h5>32 Videos</h5>
-            </a>
-            <a
-              href=""
-              className="course"
-              style={{
-                background:
-                  'linear-gradient(45deg, rgba(67, 1, 124, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr")',
-              }}
-            >
-              <h4>React</h4>
-              <h5>32 Videos</h5>
-            </a>
-            <a
-              href=""
-              className="course"
-              style={{
-                background:
-                  'linear-gradient(45deg, rgba(67, 1, 124, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr")',
-              }}
-            >
-              <h4>React</h4>
-              <h5>32 Videos</h5>
-            </a>
-            <a
-              href=""
-              className="course"
-              style={{
-                background:
-                  'linear-gradient(45deg, rgba(67, 1, 124, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("https://www.filepicker.io/api/file/fIKS9rBnT9WXsytDLKS8")',
-              }}
-            >
-              <h4>Music Site</h4>
-              <h5>32 Videos</h5>
-            </a>
-            <a
-              href=""
-              className="course"
-              style={{
-                background:
-                  'linear-gradient(45deg, rgba(67, 1, 124, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr")',
-              }}
-            >
-              <h4>React</h4>
-              <h5>32 Videos</h5>
-            </a>
-            <a
-              href=""
-              className="course"
-              style={{
-                background:
-                  'linear-gradient(45deg, rgba(67, 1, 124, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr")',
-              }}
-            >
-              <h4>React</h4>
-              <h5>32 Videos</h5>
-            </a>
-            <a
-              href=""
-              className="course"
-              style={{
-                background:
-                  'linear-gradient(45deg, rgba(67, 1, 124, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr")',
-              }}
-            >
-              <h4>React</h4>
-              <h5>32 Videos</h5>
-            </a>
-            <a
-              href=""
-              className="course"
-              style={{
-                background:
-                  'linear-gradient(45deg, rgba(67, 1, 124, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr")',
-              }}
-            >
-              <h4>React</h4>
-              <h5>32 Videos</h5>
-            </a>
-          </div>
-          <div className="courses-total">30+</div>
-          <div className="sub-title">
-            Courses and every month <br />
-            we add more
-          </div>
+          <FavoriteCoursesComp data={data} />
         </div>
       </div>
     </section>
@@ -396,4 +289,23 @@ const IndexPage = () => (
   </Layout>
 )
 
+export const query = graphql`
+  query IndePageQuery {
+    coursesDataJson {
+      data {
+        title
+        price
+        type
+        category
+        slug
+        url
+        hours
+        favorite
+        imgs {
+          thumbnail
+        }
+      }
+    }
+  }
+`
 export default IndexPage

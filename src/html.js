@@ -15,10 +15,13 @@ export default class HTML extends React.Component {
           {this.props.headComponents}
         </head>
         <body {...this.props.bodyAttributes}>
-          <script
-            async
-            src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+          <div
+            className="google-load"
+            dangerouslySetInnerHTML={{
+              __html: `<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>`,
+            }}
           />
+
           {this.props.preBodyComponents}
           <div
             key={`body`}
@@ -26,6 +29,15 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
+
+          <div
+            dangerouslySetInnerHTML={{
+              __html: `
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>`,
+            }}
+          />
         </body>
       </html>
     )

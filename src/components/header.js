@@ -10,8 +10,10 @@ const Header = ({ siteTitle }) => (
     <div className="menu">
       <Link to="/courses">Courses</Link>
       <Link to="/blog">Blog</Link>
-      <Link to="/chat">Chat</Link>
-      <Link to="/account">Account</Link>
+      <Link to="https://discordapp.com/invite/weTKutq">Chat</Link>
+      <Link to="https://codingphase.teachable.com/courses/enrolled">
+        MembersArea
+      </Link>
       <Link to="/contact">Contact</Link>
     </div>
   </header>

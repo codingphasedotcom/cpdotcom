@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../../components/layout'
 import FilterCoursesComp from '../../components/FilterCoursesComp'
+
 import SEO from '../../components/seo'
 
 // import chartImg from '../../../assets/chart.png'
@@ -18,11 +19,6 @@ const CoursesPage = ({ data }) => (
           <div className="container">
             <div className="sub-title">Our Most Popular Courses</div>
             <FilterCoursesComp data={data} />
-            <div className="courses-total">30+</div>
-            <div className="sub-title">
-              Courses and every month <br />
-              we add more
-            </div>
           </div>
         </div>
       </section>
@@ -40,13 +36,10 @@ export const query = graphql`
         category
         slug
         url
+        hours
+        favorite
         imgs {
-          top
           thumbnail
-        }
-        description {
-          requirements
-          long
         }
       }
     }

@@ -1,0 +1,498 @@
+{
+  "data": [
+    {
+      "title": "Responsive HTML Emails Course",
+      "price": 50,
+      "hours": 10,
+      "type": "premium",
+      "category": ["HTML", "CSS", "Email"],
+      "slug": "responsive-html-emails-course",
+      "url": "https://codingphase.teachable.com/p/responsive-html-emails-course",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/6cKflL1DQFWht85RClc9"
+      }
+    },
+    {
+      "title": "Learn Polymer 3 Course - Code Like A Google Developer",
+      "price": 50,
+      "hours": 10,
+      "type": "premium",
+      "category": ["Javascript", "Polymer"],
+      "slug": "learn-polymer-3-googles-favorite-framework",
+      "url": "https://codingphase.teachable.com/p/learn-polymer-3-googles-favorite-framework",
+      "favorite": true,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/lg3H1AxHQKyvnxEtPozs"
+      }
+    },
+    {
+      "title": "Learn Node JS - Javascript Fullstack",
+      "price": 50,
+      "hours": 10,
+      "type": "premium",
+      "category": ["Javascript", "Node"],
+      "slug": "learn-node-js",
+      "url": "https://codingphase.teachable.com/p/node-adonis-js-javascript-fullstack-course",
+      "favorite": true,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:1440/https://www.filepicker.io/api/file/4dhwfogkTKifToz3LNvt"
+      }
+    },
+    {
+      "title": "Phaser 3 Ultimate Course Make Games with Javascript",
+      "price": 50,
+      "hours": 10,
+      "type": "premium",
+      "category": ["Javascript", "Phaser"],
+      "slug": "phaser-3-make-games-with-javascript-course",
+      "url": "https://codingphase.teachable.com/p/phaser-3-make-games-with-javascript-course",
+      "favorite": true,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/Zi7jWqUQeWQLEhlbJZQg"
+      }
+    },
+    {
+      "title": "Learn Python",
+      "price": 50,
+      "hours": 10,
+      "type": "premium",
+      "category": ["Python"],
+      "slug": "learn-python",
+      "url": "https://codingphase.teachable.com/p/learn-python-for-high-paying-job",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://www.filepicker.io/api/file/jDUkOMFVQdCZOw7YdPpm"
+      }
+    },
+    {
+      "title": "Learn Mysql with Node JS",
+      "price": 50,
+      "hours": 10,
+      "type": "premium",
+      "category": ["Javascript"],
+      "slug": "learn-mysql-by-designing-an-e-commerce-database",
+      "url": "https://codingphase.teachable.com/p/learn-mysql-by-designing-an-e-commerce-database",
+      "favorite": true,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/E8DBFmHdTLWdXWy5AvCq"
+      }
+    },
+    {
+      "title": "Crystal Lang - Learn Programming with Crystal",
+      "price": 0,
+      "hours": 10,
+      "type": "Free",
+      "category": ["Javascript"],
+      "slug": "crystal-lang-learn-programming-with-crystal",
+      "url": "https://codingphase.teachable.com/p/crystal-lang-learn-programming-with-crystal",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/E8DBFmHdTLWdXWy5AvCq"
+      }
+    },
+    {
+      "title": "Build any site into a Wordpress Theme",
+      "price": 50,
+      "hours": 10,
+      "type": "Free",
+      "category": ["PHP", "Wordpress"],
+      "slug": "build-any-site-into-a-wordpress-theme",
+      "url": "https://codingphase.teachable.com/p/build-any-site-into-a-wordpress-theme",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/xD8yVwbXToG3K4e9lCki"
+      }
+    },
+    {
+      "title": "Learn React by Building a Craigslist Clone",
+      "price": 50,
+      "hours": 10,
+      "type": "premium",
+      "category": ["Javascript"],
+      "slug": "learn-react-by-building-a-craigslist-clone",
+      "url": "https://codingphase.teachable.com/p/learn-react-by-building-a-craigslist-clone",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:1440/https://www.filepicker.io/api/file/aXJiG9uTXm0MdSpswLfg"
+      }
+    },
+    {
+      "title": "Gulp - Web Developer Starter Kit",
+      "price": 50,
+      "hours": 4,
+      "type": "premium",
+      "category": ["Javascript"],
+      "slug": "gulp-web-developer-starter-kit",
+      "url": "https://codingphase.teachable.com/p/gulp-web-developer-starter-kit",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/nEeS9uvsROWb1mKHQAXg"
+      }
+    },
+    {
+      "title": "JQUERY – A Beginners best friend",
+      "price": 50,
+      "hours": 4,
+      "type": "premium",
+      "category": ["Javascript"],
+      "slug": "jquery-a-beginners-best-friend",
+      "url": "https://codingphase.teachable.com/p/jquery-a-beginners-best-friend/",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/EIjWpAGpQOGJXmBGzJvt"
+      }
+    },
+    {
+      "title": "PHP 7 and Laravel Master course",
+      "price": 50,
+      "hours": 20,
+      "type": "premium",
+      "category": ["PHP", "Laravel"],
+      "slug": "php-7-and-laravel",
+      "url": "https://codingphase.teachable.com/p/learn-php-7-and-laravel-master-course",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/E8ULhysScmJnU2cmhNaA"
+      }
+    },
+    {
+      "title": "Learn ESNEXT – ES6, ES7, ES8",
+      "price": 50,
+      "hours": 20,
+      "type": "premium",
+      "category": ["Javascript"],
+      "slug": "learn-esnext–es6-es7-8",
+      "url": "https://codingphase.teachable.com/p/esnext-es6-es7-es8",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://www.filepicker.io/api/file/RxSk03j0QBGtZ5s6C2pq"
+      }
+    },
+    {
+      "title": "Learn HTML and CSS by Building a Cool Social Network",
+      "price": 50,
+      "hours": 8,
+      "type": "premium",
+      "category": ["HTML", "CSS"],
+      "slug": "learn-html-and-css",
+      "url": "https://codingphase.teachable.com/p/learn-html-and-css-by-building-a-cool-social-network",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://www.filepicker.io/api/file/IO7EpSNXQSKA5yHO0pgj"
+      }
+    },
+    {
+      "title": "PUG JS – Template Engine",
+      "price": 50,
+      "hours": 2,
+      "type": "premium",
+      "category": ["HTML", "CSS"],
+      "slug": "pug-js–template-engine",
+      "url": "https://codingphase.teachable.com/p/pug-js-template-engine",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://www.filepicker.io/api/file/JIlwezxNS3OU0h4oqKc8"
+      }
+    },
+    {
+      "title": "HTML & CSS: Dashboard",
+      "price": 0,
+      "hours": 3,
+      "type": "free",
+      "category": ["HTML", "CSS"],
+      "slug": "html-and-css-dashboard",
+      "url": "https://codingphase.teachable.com/p/html-css-dashboard",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://www.filepicker.io/api/file/kNEkTTsQmSwSo7f1AqZh"
+      }
+    },
+    {
+      "title": "React – Quick and Easy",
+      "price": 50,
+      "hours": 8,
+      "type": "premium",
+      "category": ["Javascript"],
+      "slug": "react-quick-and-easy",
+      "url": "https://codingphase.teachable.com/p/react-quick-and-easy",
+      "favorite": true,
+      "imgs": {
+        "thumbnail": "https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr"
+      }
+    },
+    {
+      "title": "Ruby on Rails",
+      "price": 50,
+      "hours": 6.5,
+      "type": "premium",
+      "category": ["Ruby"],
+      "slug": "ruby-on-rails",
+      "url": "https://codingphase.teachable.com/p/ruby-on-rails",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:1440/https://www.filepicker.io/api/file/xFNouFlVRBWcZzBugvSP"
+      }
+    },
+    {
+      "title": "Animations for Developers",
+      "price": 50,
+      "hours": 2.5,
+      "type": "premium",
+      "category": ["CSS", "Javascript"],
+      "slug": "animations-for-developers",
+      "url": "https://codingphase.teachable.com/p/animation-for-developers",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:1440/https://www.filepicker.io/api/file/KRLmovesSLKayl3PIw84"
+      }
+    },
+    {
+      "title": "Web Developer Personal Brand and Portfolio",
+      "price": 50,
+      "hours": 5,
+      "type": "premium",
+      "category": ["HTML", "CSS"],
+      "slug": "web-developer-personal-brand",
+      "url": "https://codingphase.teachable.com/p/web-developer-personal-brand",
+      "favorite": true,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/n2dpH8VwSauKFLE0lOX4"
+      }
+    },
+    {
+      "title": "Learn Ruby",
+      "price": 50,
+      "hours": 5,
+      "type": "premium",
+      "category": ["Ruby"],
+      "slug": "learn-ruby",
+      "url": "https://codingphase.teachable.com/p/learn-ruby-backend-developer-master-course",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:1440/https://www.filepicker.io/api/file/ur4bFGquS4GrSsPrNa9l"
+      }
+    },
+    {
+      "title": "Build a Portfolio",
+      "price": 50,
+      "hours": 7.5,
+      "type": "premium",
+      "category": ["HTML", "CSS", "SASS", "Javascript"],
+      "slug": "build-a-portfolio",
+      "url": "https://codingphase.teachable.com/p/sideproject-build-a-static-site-portfolio",
+      "favorite": true,
+      "imgs": {
+        "thumbnail": "https://www.filepicker.io/api/file/JnUnZHCoQka0cLJxkyWk"
+      }
+    },
+    {
+      "title": "Advance CSS with Flexbox and CSS Grid",
+      "price": 55,
+      "hours": 2,
+      "type": "premium",
+      "category": ["HTML", "CSS", "SASS"],
+      "slug": "advance-CSS-with-flexbox-and-css-grid",
+      "url": "https://codingphase.teachable.com/p/learn-advance-css-with-flexbox-and-css-grid-course",
+      "favorite": true,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/Lo0qcAkTcKYlkdSS3YRu"
+      }
+    },
+    {
+      "title": "Learn Parcel JS",
+      "price": 50,
+      "hours": 1,
+      "type": "premium",
+      "category": ["HTML", "CSS", "SASS", "Javascript"],
+      "slug": "learn-parcel-js",
+      "url": "https://codingphase.teachable.com/p/learn-parceljs-web-application-bundler-master-course",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/KWuCwUPCSJa4ta4Djt4k"
+      }
+    },
+    {
+      "title": "Build a Restaurant Web App",
+      "price": 50,
+      "hours": 11,
+      "type": "premium",
+      "category": ["HTML", "CSS", "SASS", "Javascript"],
+      "slug": "build-a-restaurant-web-app",
+      "url": "https://codingphase.teachable.com/p/build-a-restaurant-web-app",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/Uca0XZZzQTWI9Xtpxc6n"
+      }
+    },
+    {
+      "title": "Hyperapp JS",
+      "price": 50,
+      "hours": 2,
+      "type": "free",
+      "category": ["Javascript"],
+      "slug": "hyperapp-js",
+      "url": "https://codingphase.teachable.com/p/hyperapp-js-course",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/6Ran3aSBQgGhroAzqMmb"
+      }
+    },
+    {
+      "title": "SASS like a Pro",
+      "price": 50,
+      "hours": 2,
+      "type": "premium",
+      "category": ["Javascript"],
+      "slug": "sass-like-a-pro",
+      "url": "https://codingphase.teachable.com/p/sass-like-a-pro",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/1YohZyMRgSpjHBktepOY"
+      }
+    },
+    {
+      "title": "Terminal for Developers",
+      "price": 50,
+      "hours": 2,
+      "type": "premium",
+      "category": ["Javascript"],
+      "slug": "terminal-for-developers",
+      "url": "https://codingphase.teachable.com/p/terminal-for-developers",
+      "favorite": true,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/lxmPrJ9CRoCk6dqmqMDL"
+      }
+    },
+    {
+      "title": "All Installations You Will Need",
+      "price": 50,
+      "hours": 2,
+      "type": "premium",
+      "category": ["Javascript", "PHP", "Linux"],
+      "slug": "all-installations-you-will-need-for-web-development",
+      "url": "https://codingphase.teachable.com/p/all-installations-you-will-need-for-web-development",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://www.filepicker.io/api/file/P2jvefOKSzuuaGCQhX9N"
+      }
+    },
+    {
+      "title": "Future-Proof JavaScript",
+      "price": 50,
+      "hours": 10,
+      "type": "premium",
+      "category": ["Javascript"],
+      "slug": "future-proof-javascript",
+      "url": "https://codingphase.teachable.com/p/future-proof-javascript",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:1440/https://www.filepicker.io/api/file/FLqG3OQsSayfGXQWIllc"
+      }
+    },
+    {
+      "title": "Object Oriented Programming with Javascript",
+      "price": 50,
+      "hours": 1,
+      "type": "premium",
+      "category": ["Javascript"],
+      "slug": "object-oriented-programming-with-javascript",
+      "url": "https://codingphase.teachable.com/p/object-oriented-programming-with-javascript-course",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/ChkWGZGITLWXM8SrTy8F"
+      }
+    },
+    {
+      "title": "Atom Text Editor 101",
+      "price": 0,
+      "hours": 1,
+      "type": "free",
+      "category": ["Javascript", "HTML", "CSS"],
+      "slug": "atom-text-editor-101",
+      "url": "https://codingphase.teachable.com/p/visual-studio-code-101",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/vPlRExWiR6eQAGSqA6RS"
+      }
+    },
+    {
+      "title": "Life After Learning To Code",
+      "price": 50,
+      "hours": 2,
+      "type": "premium",
+      "category": ["Javascript", "HTML", "CSS"],
+      "slug": "life-after-learning-to-code",
+      "url": "https://codingphase.teachable.com/p/life-after-learning-to-code",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/KUH9GZUR5yU0o9Svs7TK"
+      }
+    },
+    {
+      "title": "Build a Music Site for Tekashi69",
+      "price": 50,
+      "hours": 2,
+      "type": "premium",
+      "category": ["HTML", "CSS"],
+      "slug": "build-a-music-site-for-tekashi69",
+      "url": "https://codingphase.teachable.com/p/build-a-music-site-for-tekashi69",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/fIKS9rBnT9WXsytDLKS8"
+      }
+    },
+    {
+      "title": "Project Build an HTML5 Website",
+      "price": 25,
+      "hours": 2,
+      "type": "premium",
+      "category": ["HTML", "CSS"],
+      "slug": "project-build-an-html5-website",
+      "url": "https://codingphase.teachable.com/p/project-build-an-html5-website",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/qfwvT5Rlmqxhab8XSVSw"
+      }
+    },
+    {
+      "title": "CSS Framework Bulma.io Course",
+      "price": 25,
+      "hours": 2,
+      "type": "premium",
+      "category": ["HTML", "CSS"],
+      "slug": "css-framework-bulma-io-course",
+      "url": "https://codingphase.teachable.com/p/css-framework-bulma-io-course",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/kdXz9yIxQmyrzoahqMXp"
+      }
+    },
+    {
+      "title": "How to make money independently?",
+      "price": 50,
+      "hours": 6,
+      "type": "premium",
+      "category": ["Javascript", "HTML", "CSS"],
+      "slug": "how-to-make-money-independently",
+      "url": "https://codingphase.teachable.com/p/how-to-make-money-independently",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/Ha2MxbYsRmikojG1L23V"
+      }
+    },
+    {
+      "title": "Build a Responsive Web App?",
+      "price": 50,
+      "hours": 6,
+      "type": "premium",
+      "category": ["Javascript", "HTML", "CSS"],
+      "slug": "build-a-responsive-web-app",
+      "url": "https://codingphase.teachable.com/p/how-to-make-money-independently",
+      "favorite": false,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/fooaw7iZRfiKKnq5FbXb"
+      }
+    }
+  ]
+}

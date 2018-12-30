@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Prompt');
 @import 'reset';
 @import 'courses-page';
-//test
 
 body,
 html {
   background: #f4f7fc;
   font-family: 'Avenir', 'Prompt', sans-serif;
+}
 
 .container {
   width: 100%;
@@ -182,7 +182,7 @@ header {
 
       h4 {
         position: relative;
-        font-size: 40px;
+        font-size: 30px;
         color: white;
         font-weight: 600;
         transition: all 0.3s ease-in-out;

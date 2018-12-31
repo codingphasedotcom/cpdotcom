@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
+import sr from './ScrollReveal'
 
 import courseLogoIMG from '../../../assets/courses/phaser_3/course-logo.png'
 import codeExampleIMG from '../../../assets/courses/phaser_3/code-example.png'

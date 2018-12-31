@@ -23,6 +23,7 @@
     "react-adsense": "0.0.6",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
+    "scrollreveal": "^4.0.5",
     "wow": "0.0.6"
   },
   "keywords": [

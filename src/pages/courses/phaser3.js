@@ -1,18 +1,12 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
-import FavoriteCoursesComp from '../../components/FavoriteCoursesComp'
 
-import chartImg from '../../../assets/chart.png'
-import movableinkIMG from '../../../assets/logos/movableink.png'
-import paypalIMG from '../../../assets/logos/paypal.png'
-import sonyIMG from '../../../assets/logos/sony.png'
-import timewarnerIMG from '../../../assets/logos/timewarner.png'
-import universalIMG from '../../../assets/logos/universal.png'
-import iconcheckIMG from '../../../assets/icon-check.png'
-import esanfordIMG from '../../../assets/testimonials/esanford.jpg'
-import kperezIMG from '../../../assets/testimonials/kperez.jpeg'
+import courseLogoIMG from '../../../assets/courses/phaser_3/course-logo.png'
+import codeExampleIMG from '../../../assets/courses/phaser_3/code-example.png'
+import tiledToolIMG from '../../../assets/courses/phaser_3/tiled-tool.png'
+import shoeboxToolIMG from '../../../assets/courses/phaser_3/shoebox-tool.png'
+import iphonePreviewIMG from '../../../assets/courses/phaser_3/iphone-preview.png'
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -31,20 +25,22 @@ const IndexPage = ({ data }) => (
         <div className="bg" />
         <div className="section-content">
           <div className="container">
-            <div className="column">img</div>
+            <div className="column">
+              <img src={courseLogoIMG} alt="Phaser 3 Logo" />
+            </div>
             <div className="column">
               <h2>Learn the best javascript game engine</h2>
               <ul>
-                <li>item</li>
-                <li>OVER 300 HOURS OF VIDEOS</li>
-                <li>UNLIMITED ACCESS</li>
-                <li>ALL FILES PROVIDED FOR DOWNLOAD</li>
-                <li>EVERYTHING YOU NEED TO BECOME A DEVELOPER</li>
-                <li>THE SKILLS THAT ARE IN DEMAND</li>
-                <li>WE ARE UPTODATE WITH THE INDUSTRY</li>
+                <li>Learn to read the documentation</li>
+                <li>Load Assets</li>
+                <li>Sprites Animations</li>
+                <li>Transforming Gameobjects</li>
+                <li>User input</li>
+                <li>Work with the physics engine</li>
+                <li>Create animations with tweens</li>
+                <li>Work with audio in your games</li>
                 <li>
-                  30 DAYS
-                  <br /> MONEY BACK
+                  build a tictactoe game to reenforce everything you learned
                 </li>
               </ul>
             </div>
@@ -58,11 +54,11 @@ const IndexPage = ({ data }) => (
             <h3>Modern Javascript</h3>
             <div className="grid-container">
               <div className="column">
-                <h1>ES6</h1>
+                <h1>ES6+</h1>
                 <p>We made sure we used the latest Javascript</p>
               </div>
               <div className="column">
-                <div>Code IMG</div>
+                <img src={codeExampleIMG} alt="Code Example" />
               </div>
             </div>
           </div>
@@ -75,40 +71,66 @@ const IndexPage = ({ data }) => (
             <h3>Tools</h3>
             <div className="grid-container">
               <div className="column">
-                <h1>ES6</h1>
-                <p>We made sure we used the latest Javascript</p>
+                <img src={tiledToolIMG} alt="tiled program" />
               </div>
               <div className="column">
-                <div>Code IMG</div>
+                <h1>Tiled</h1>
+                <p>Design and prototype your games levels</p>
+              </div>
+            </div>
+            <div className="grid-container">
+              <div className="column">
+                <img src={shoeboxToolIMG} alt="shoebox sprite application" />
+              </div>
+              <div className="column">
+                <h1>Shoebox</h1>
+                <p>Design and prototype your games levels</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="americans">
+      <section id="project-preview">
         <div className="bg" />
         <div className="section-content">
           <div className="container">
-            <div className="sub-title">
-              Lets compare the average american job
-            </div>
-
+            <h2>
+              Learn to build your own games <br />
+              Not just follow an instructor
+            </h2>
             <div className="info-area">
-              <div className="chart-column">
-                <div className="chartbg">
-                  <img src={chartImg} alt="" />
-                </div>
-              </div>
               <div className="info-column">
-                <div className="line1">On average it's less than</div>
-                <div className="line2">50k</div>
-                <div className="line3">
-                  At the same time <br />
-                  Developers make an average of
-                </div>
-                <div className="line4">$84,000</div>
+                <h2>
+                  Tic Tac Toe <br />
+                  Championship
+                </h2>
               </div>
+              <div className="img-column">
+                <div className="chartbg">
+                  <img src={iphonePreviewIMG} alt="tictactoe game on iphone" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="payment-section">
+        <div className="section-content">
+          <div className="container">
+            <h2>Love what you are seeing right now? Choose a payment!</h2>
+            <div className="payment-grid">
+              <div>
+                <a href="/" className="button">
+                  Enroll in Course for $50
+                </a>
+              </div>
+              <div>OR</div>
+              <a href="/">
+                Sign up for a subscription and receive unlimited access to all
+                the courses
+              </a>
             </div>
           </div>
         </div>
@@ -117,23 +139,4 @@ const IndexPage = ({ data }) => (
   </Layout>
 )
 
-export const query = graphql`
-  query Phaser3PageQuery {
-    coursesDataJson {
-      data {
-        title
-        price
-        type
-        category
-        slug
-        url
-        hours
-        favorite
-        imgs {
-          thumbnail
-        }
-      }
-    }
-  }
-`
 export default IndexPage

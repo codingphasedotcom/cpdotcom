@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Adsense from './Adsense.js'
 
 class FavoriteCoursesComp extends Component {
   constructor() {

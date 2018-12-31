@@ -17,7 +17,9 @@ class FilterCoursesComp extends Component {
     this.props.data.coursesDataJson.data.map(course => {
       course.category.map(item => {
         categories.push(item)
+        return ''
       })
+      return ''
     })
     categories = categories.filter(value => {
       return !this[value] && (this[value] = true)
@@ -54,7 +56,7 @@ class FilterCoursesComp extends Component {
   }
   sortTheData = (value, mode, data) => {
     let newData = mode !== 'normal' ? data : this.state.filteredData
-    if (value == 'atoz') {
+    if (value === 'atoz') {
       newData = newData.sort((a, b) => {
         if (a.title < b.title) {
           return -1
@@ -66,7 +68,7 @@ class FilterCoursesComp extends Component {
       })
     }
 
-    if (value == 'ztoa') {
+    if (value === 'ztoa') {
       newData = newData.sort((a, b) => {
         if (a.title > b.title) {
           return -1
@@ -78,7 +80,7 @@ class FilterCoursesComp extends Component {
       })
     }
 
-    if (value == 'new') {
+    if (value === 'new') {
       newData = newData.sort((a, b) => {
         if (a.hours < b.hours) {
           return -1
@@ -89,7 +91,7 @@ class FilterCoursesComp extends Component {
         return 0
       })
     }
-    if (value == 'old') {
+    if (value === 'old') {
       newData = newData.sort((a, b) => {
         if (a.hours > b.hours) {
           return -1
@@ -115,10 +117,10 @@ class FilterCoursesComp extends Component {
       event.target.type === 'checkbox'
         ? event.target.checked
         : event.target.value
-    if (name == 'categories') {
+    if (name === 'categories') {
       this.filterTheData(value)
     }
-    if (name == 'sortby') {
+    if (name === 'sortby') {
       this.sortTheData(value, 'normal')
     }
     console.log('change')

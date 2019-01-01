@@ -1,14 +1,24 @@
 import React, { Component } from 'react'
 
-class Adsense extends Component {
+class Watchers extends Component {
   constructor() {
     super()
     this.state = {}
   }
   componentDidMount() {}
+  userNumber(min, max) {
+    return Math.floor(Math.random() * (max - min) + min)
+  }
   render() {
-    return <div>34 People watching this courses 17,234 Have already signed</div>
+    return (
+      <div id="watchers-comp">
+        <div className="user" />
+        <div className="info">
+          {this.userNumber(20, 80)} People watching this now!
+        </div>
+      </div>
+    )
   }
 }
 
-export default Adsense
+export default Watchers

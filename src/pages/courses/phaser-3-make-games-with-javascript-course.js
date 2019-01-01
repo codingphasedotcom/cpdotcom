@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
+import { getUrlParam } from '../../components/GetParams'
+import Watchers from '../../components/Watchers'
 import sr from '../../components/ScrollReveal'
 
 import courseLogoIMG from '../../../assets/courses/phaser_3/course-logo.png'
@@ -12,9 +14,29 @@ import iphonePreviewIMG from '../../../assets/courses/phaser_3/iphone-preview.pn
 class Page extends Component {
   constructor() {
     super()
-    this.state = {}
+    this.state = {
+      coursePrice: 50,
+      couponActive: false,
+    }
   }
   componentDidMount = () => {
+    if (
+      getUrlParam('coupon', '0') !== '0' &&
+      getUrlParam('percent', '0') !== '0'
+    ) {
+      function priceAfterDiscount(price, discountPercent) {
+        return price - (discountPercent * price) / 100
+      }
+      var finalPrice = priceAfterDiscount(
+        this.state.coursePrice,
+        getUrlParam('percent', '0')
+      )
+      this.setState({
+        coursePrice: finalPrice,
+        couponActive: true,
+      })
+    }
+
     sr.reveal(this.refs.logo, {
       origin: 'left',
       duration: 1000,
@@ -61,10 +83,31 @@ class Page extends Component {
       <div id="courses-layout">
         <section id="jumbo-top">
           <div className="container-fluid ">
-            <h1>Phaser 3 </h1>
-
+            <h1>{this.props.data.title} </h1>
+            <div className="price">
+              <div
+                id="coupon"
+                className={`${this.state.couponActive ? 'active' : ''}`}
+              >
+                Applied {getUrlParam('coupon', '0').toUpperCase()}
+                <br />
+                Original $50 saving {getUrlParam('percent', '0')}% OFF
+              </div>
+            </div>
             <div className="button-area">
-              <a href="/">Enroll in course</a>
+              <a
+                href={`${
+                  this.state.couponActive
+                    ? `https://sso.teachable.com/secure/117955/checkout/909879/phaser-3-make-games-with-javascript-course?coupon_code=${getUrlParam(
+                        'coupon',
+                        '0'
+                      ).toUpperCase()}`
+                    : `https://sso.teachable.com/secure/117955/checkout/909879/phaser-3-make-games-with-javascript-course`
+                }`}
+                className="button"
+              >
+                Enroll in Course for ${this.state.coursePrice}
+              </a>
             </div>
           </div>
         </section>
@@ -175,31 +218,92 @@ class Page extends Component {
           <div className="section-content">
             <div className="container">
               <h2>Love what you are seeing right now? Choose a payment!</h2>
+              <div className="price">
+                <div
+                  id="coupon"
+                  className={`${this.state.couponActive ? 'active' : ''}`}
+                >
+                  Applied {getUrlParam('coupon', '0').toUpperCase()}
+                  <br />
+                  Original $50 saving {getUrlParam('percent', '0')}% OFF
+                </div>
+              </div>
               <div className="payment-grid">
                 <div>
-                  <a href="/" className="button">
-                    Enroll in Course for $50
+                  <a
+                    href={`${
+                      this.state.couponActive
+                        ? `https://sso.teachable.com/secure/117955/checkout/909879/phaser-3-make-games-with-javascript-course?coupon_code=${getUrlParam(
+                            'coupon',
+                            '0'
+                          ).toUpperCase()}`
+                        : `https://sso.teachable.com/secure/117955/checkout/909879/phaser-3-make-games-with-javascript-course`
+                    }`}
+                    className="button"
+                  >
+                    Enroll in Course for ${this.state.coursePrice}
                   </a>
                 </div>
                 <div>OR</div>
-                <a href="/">
+                <a
+                  href={`${
+                    this.state.couponActive
+                      ? `https://codingphase.teachable.com/p/all-courses-subscription?coupon_code=${getUrlParam(
+                          'coupon',
+                          '0'
+                        ).toUpperCase()}`
+                      : `https://codingphase.teachable.com/p/all-courses-subscription`
+                  }`}
+                >
                   Sign up for a subscription and receive unlimited access to all
-                  the courses
+                  the courses{' '}
+                  {getUrlParam('percent', '0') === '0'
+                    ? ``
+                    : `with ${getUrlParam('percent', '0')}% OFF`}
                 </a>
               </div>
             </div>
           </div>
         </section>
+        <Watchers />
       </div>
     )
   }
 }
 
-const IndexPage = ({ data }) => (
-  <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <Page />
-  </Layout>
-)
+const IndexPage = ({ data, location }) => {
+  const pageData = data.coursesDataJson.data.filter(
+    course => course.slug === 'phaser-3-make-games-with-javascript-course'
+  )[0]
+  console.log(pageData)
+  return (
+    <Layout>
+      <SEO
+        title={pageData.title}
+        keywords={[`gatsby`, `application`, `react`]}
+      />
+      <Page data={pageData} />
+    </Layout>
+  )
+}
+export const query = graphql`
+  query Phaser3PageQuery {
+    coursesDataJson {
+      data {
+        title
+        price
+        type
+        category
+        slug
+        url
+        hours
+        favorite
+        imgs {
+          thumbnail
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage

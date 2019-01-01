@@ -36,7 +36,7 @@ class FavoriteCoursesComp extends Component {
             {this.state.filteredData.map(course => (
               <a
                 key={course.slug}
-                href={course.url}
+                href={`/courses/${course.slug}`}
                 className="course"
                 style={{
                   background: `linear-gradient(45deg, rgba(67, 1, 124, 1) 30%, rgba(150, 55, 239, 0.1) 100%), url("${

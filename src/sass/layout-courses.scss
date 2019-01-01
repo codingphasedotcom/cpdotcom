@@ -421,6 +421,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          cursor: pointer;
 
           .button {
             color: white;
@@ -442,6 +443,7 @@
           font-size: 20px;
           color: #0060ff;
           text-align: center;
+          cursor: pointer;
         }
 
         & > a:nth-child(3) {
@@ -453,6 +455,7 @@
           line-height: 1.3;
           text-decoration: none;
           text-align: center;
+          cursor: pointer;
         }
       }
     }

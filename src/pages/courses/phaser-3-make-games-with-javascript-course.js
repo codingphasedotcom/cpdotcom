@@ -233,7 +233,7 @@ class Page extends Component {
                   <a
                     href={`${
                       this.state.couponActive
-                        ? `https://sso.teachable.com/secure/117955/checkout/909879/phaser-3-make-games-with-javascript-course?coupon_code=${getUrlParam(
+                        ? `${this.props.data.url}?coupon_code=${getUrlParam(
                             'coupon',
                             '0'
                           ).toUpperCase()}`

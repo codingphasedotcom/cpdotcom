@@ -1,20 +1,27 @@
 function getUrlVars() {
-  var vars = {}
-  var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(
-    m,
-    key,
-    value
-  ) {
-    vars[key] = value
-  })
+  if (typeof window !== 'undefined') {
+    var vars = {}
+    var parts = window.location.href.replace(
+      /[?&]+([^=&]+)=([^&]*)/gi,
+      function(m, key, value) {
+        vars[key] = value
+      }
+    )
 
-  return vars
+    return vars
+  } else {
+    return '0'
+  }
 }
 function getUrlParam(parameter, defaultvalue) {
   var urlparameter = defaultvalue
-  if (window.location.href.indexOf(parameter) > -1) {
-    urlparameter = getUrlVars()[parameter]
+  if (typeof window !== 'undefined') {
+    if (window.location.href.indexOf(parameter) > -1) {
+      urlparameter = getUrlVars()[parameter]
+    }
+    return urlparameter
+  } else {
+    return '0'
   }
-  return urlparameter
 }
 export { getUrlVars, getUrlParam }

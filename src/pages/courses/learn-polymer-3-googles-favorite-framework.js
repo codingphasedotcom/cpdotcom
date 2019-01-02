@@ -3,13 +3,12 @@ import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 import { getUrlParam } from '../../components/GetParams'
 import Watchers from '../../components/watchers.js'
-import sr from '../../components/ScrollReveal'
+// import ScrollReveal from 'scrollreveal'
 
 import courseLogoIMG from '../../../assets/courses/polymer_3/course-logo.png'
 import codeExampleIMG from '../../../assets/courses/polymer_3/code-example.png'
-import tiledToolIMG from '../../../assets/courses/polymer_3/tiled-tool.png'
-import shoeboxToolIMG from '../../../assets/courses/polymer_3/shoebox-tool.png'
-import iphonePreviewIMG from '../../../assets/courses/polymer_3/iphone-preview.png'
+import toolAtomIMG from '../../../assets/courses/polymer_3/tool-atom.png'
+import previewLaptopProject1IMG from '../../../assets/courses/polymer_3/preview-laptop-project1.png'
 import jumboBGIMG from '../../../assets/courses/polymer_3/mario.png'
 class Page extends Component {
   constructor() {
@@ -36,47 +35,51 @@ class Page extends Component {
         couponActive: true,
       })
     }
-
-    sr.reveal(this.refs.logo, {
-      origin: 'left',
-      duration: 1000,
-      delay: 150,
-      distance: '500px',
-      scale: 1,
-      easing: 'ease',
-    })
-    sr.reveal(this.refs.code, {
-      origin: 'right',
-      duration: 1000,
-      delay: 150,
-      distance: '500px',
-      scale: 1,
-      easing: 'ease',
-    })
-    sr.reveal(this.refs.tool1, {
-      origin: 'bottom',
-      duration: 1000,
-      delay: 150,
-      distance: '300px',
-      scale: 1,
-      easing: 'ease',
-    })
-    sr.reveal(this.refs.tool2, {
-      origin: 'bottom',
-      duration: 1000,
-      delay: 150,
-      distance: '300px',
-      scale: 1,
-      easing: 'ease',
-    })
-    sr.reveal(this.refs.project1, {
-      origin: 'bottom',
-      duration: 1000,
-      delay: 150,
-      distance: '300px',
-      scale: 1,
-      easing: 'ease',
-    })
+    // let ScrollReveal = function() {}
+    if (typeof window !== 'undefined') {
+      window.sr = ScrollReveal()
+      const sr = window.sr
+      sr.reveal(this.refs.logo, {
+        origin: 'left',
+        duration: 1000,
+        delay: 150,
+        distance: '500px',
+        scale: 1,
+        easing: 'ease',
+      })
+      sr.reveal(this.refs.code, {
+        origin: 'right',
+        duration: 1000,
+        delay: 150,
+        distance: '500px',
+        scale: 1,
+        easing: 'ease',
+      })
+      sr.reveal(this.refs.tool1, {
+        origin: 'bottom',
+        duration: 1000,
+        delay: 150,
+        distance: '300px',
+        scale: 1,
+        easing: 'ease',
+      })
+      sr.reveal(this.refs.tool2, {
+        origin: 'bottom',
+        duration: 1000,
+        delay: 150,
+        distance: '300px',
+        scale: 1,
+        easing: 'ease',
+      })
+      sr.reveal(this.refs.project1, {
+        origin: 'bottom',
+        duration: 1000,
+        delay: 150,
+        distance: '300px',
+        scale: 1,
+        easing: 'ease',
+      })
+    }
   }
   render() {
     return (
@@ -162,24 +165,14 @@ class Page extends Component {
               <h3>Tools</h3>
               <div className="grid-container">
                 <div className="column">
-                  <img src={tiledToolIMG} alt="tiled program" ref="tool1" />
+                  <img src={toolAtomIMG} alt="tiled program" ref="tool1" />
                 </div>
                 <div className="column">
-                  <h1>Tiled</h1>
-                  <p>Design and prototype your games levels</p>
-                </div>
-              </div>
-              <div className="grid-container">
-                <div className="column">
-                  <img
-                    src={shoeboxToolIMG}
-                    alt="shoebox sprite application"
-                    ref="tool2"
-                  />
-                </div>
-                <div className="column">
-                  <h1>Shoebox</h1>
-                  <p>Design and prototype your games levels</p>
+                  <h1>Atom</h1>
+                  <p>
+                    Text editor with syntax highlighting to help write better
+                    code
+                  </p>
                 </div>
               </div>
             </div>
@@ -196,15 +189,12 @@ class Page extends Component {
               </h2>
               <div className="info-area">
                 <div className="info-column">
-                  <h2>
-                    Tic Tac Toe <br />
-                    Championship
-                  </h2>
+                  <h2>Phonebook App</h2>
                 </div>
                 <div className="img-column">
                   <div className="chartbg">
                     <img
-                      src={iphonePreviewIMG}
+                      src={previewLaptopProject1IMG}
                       alt="tictactoe game on iphone"
                       ref="project1"
                     />

@@ -36,6 +36,7 @@ export default class HTML extends React.Component {
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+
 `,
             }}
           />
@@ -70,6 +71,7 @@ export default class HTML extends React.Component {
       drift.load('7xrggzxt4wz5');
       </script>
       <!-- End of Async Drift Code -->
+      <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
       `,
             }}
           />

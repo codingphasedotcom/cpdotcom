@@ -3,7 +3,7 @@ import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 import { getUrlParam } from '../../components/GetParams'
 import Watchers from '../../components/watchers.js'
-import sr from '../../components/ScrollReveal'
+// import ScrollReveal from 'scrollreveal'
 
 import courseLogoIMG from '../../../assets/courses/phaser_3/course-logo.png'
 import codeExampleIMG from '../../../assets/courses/phaser_3/code-example.png'
@@ -36,47 +36,50 @@ class Page extends Component {
         couponActive: true,
       })
     }
-
-    sr.reveal(this.refs.logo, {
-      origin: 'left',
-      duration: 1000,
-      delay: 150,
-      distance: '500px',
-      scale: 1,
-      easing: 'ease',
-    })
-    sr.reveal(this.refs.code, {
-      origin: 'right',
-      duration: 1000,
-      delay: 150,
-      distance: '500px',
-      scale: 1,
-      easing: 'ease',
-    })
-    sr.reveal(this.refs.tool1, {
-      origin: 'bottom',
-      duration: 1000,
-      delay: 150,
-      distance: '300px',
-      scale: 1,
-      easing: 'ease',
-    })
-    sr.reveal(this.refs.tool2, {
-      origin: 'bottom',
-      duration: 1000,
-      delay: 150,
-      distance: '300px',
-      scale: 1,
-      easing: 'ease',
-    })
-    sr.reveal(this.refs.project1, {
-      origin: 'bottom',
-      duration: 1000,
-      delay: 150,
-      distance: '300px',
-      scale: 1,
-      easing: 'ease',
-    })
+    if (typeof window !== 'undefined') {
+      window.sr = ScrollReveal()
+      const sr = window.sr
+      sr.reveal(this.refs.logo, {
+        origin: 'left',
+        duration: 1000,
+        delay: 150,
+        distance: '500px',
+        scale: 1,
+        easing: 'ease',
+      })
+      sr.reveal(this.refs.code, {
+        origin: 'right',
+        duration: 1000,
+        delay: 150,
+        distance: '500px',
+        scale: 1,
+        easing: 'ease',
+      })
+      sr.reveal(this.refs.tool1, {
+        origin: 'bottom',
+        duration: 1000,
+        delay: 150,
+        distance: '300px',
+        scale: 1,
+        easing: 'ease',
+      })
+      sr.reveal(this.refs.tool2, {
+        origin: 'bottom',
+        duration: 1000,
+        delay: 150,
+        distance: '300px',
+        scale: 1,
+        easing: 'ease',
+      })
+      sr.reveal(this.refs.project1, {
+        origin: 'bottom',
+        duration: 1000,
+        delay: 150,
+        distance: '300px',
+        scale: 1,
+        easing: 'ease',
+      })
+    }
   }
   render() {
     return (

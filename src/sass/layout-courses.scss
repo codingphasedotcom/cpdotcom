@@ -21,7 +21,7 @@
   z-index: 9;
   background: white;
   bottom: 50px;
-  right: 50px;
+  right: 120px;
   width: 100%;
   max-width: 300px;
   padding: 10px;
@@ -72,7 +72,7 @@
   #jumbo-top {
     margin: 0;
     padding: 0;
-    background-size: cover;
+    background-size: cover !important;
 
     .container-fluid {
       display: flex;
@@ -362,7 +362,7 @@
 
       .info-area {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 35% 65%;
         grid-gap: 40px;
         margin-bottom: 100px;
 

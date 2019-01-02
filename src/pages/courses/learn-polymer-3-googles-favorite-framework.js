@@ -9,7 +9,7 @@ import courseLogoIMG from '../../../assets/courses/polymer_3/course-logo.png'
 import codeExampleIMG from '../../../assets/courses/polymer_3/code-example.png'
 import toolAtomIMG from '../../../assets/courses/polymer_3/tool-atom.png'
 import previewLaptopProject1IMG from '../../../assets/courses/polymer_3/preview-laptop-project1.png'
-import jumboBGIMG from '../../../assets/courses/polymer_3/mario.png'
+import jumboBGIMG from '../../../assets/courses/polymer_3/jumbobg.png'
 class Page extends Component {
   constructor() {
     super()
@@ -35,7 +35,7 @@ class Page extends Component {
         couponActive: true,
       })
     }
-    // let ScrollReveal = function() {}
+    let ScrollReveal = function() {}
     if (typeof window !== 'undefined') {
       window.sr = ScrollReveal()
       const sr = window.sr
@@ -184,7 +184,7 @@ class Page extends Component {
           <div className="section-content">
             <div className="container">
               <h2>
-                Learn to build your own games <br />
+                Learn to build your own apps <br />
                 Not just follow an instructor
               </h2>
               <div className="info-area">

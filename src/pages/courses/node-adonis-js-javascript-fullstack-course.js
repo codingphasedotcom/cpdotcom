@@ -36,7 +36,6 @@ class Page extends Component {
         couponActive: true,
       })
     }
-    let ScrollReveal = function() {}
     if (typeof window !== 'undefined') {
       window.sr = ScrollReveal()
       const sr = window.sr

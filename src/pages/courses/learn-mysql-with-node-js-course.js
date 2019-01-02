@@ -4,15 +4,15 @@ import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 import { getUrlParam } from '../../components/GetParams'
 import Watchers from '../../components/watchers.js'
+
 // import ScrollReveal from 'scrollreveal'
 
-import courseLogoIMG from '../../../assets/courses/phaser_3/course-logo.png'
-import codeExampleIMG from '../../../assets/courses/phaser_3/code-example.png'
-import tiledToolIMG from '../../../assets/courses/phaser_3/tiled-tool.png'
-import shoeboxToolIMG from '../../../assets/courses/phaser_3/shoebox-tool.png'
-import iphonePreviewIMG from '../../../assets/courses/phaser_3/iphone-preview.png'
-import jumboBGIMG from '../../../assets/courses/phaser_3/jumbobg.png'
-
+import courseLogoIMG from '../../../assets/courses/mysql_node/course-logo.png'
+import codeExampleIMG from '../../../assets/courses/mysql_node/code-example.png'
+import toolAtomIMG from '../../../assets/courses/mysql_node/tool-atom.png'
+import toolWorkbenchIMG from '../../../assets/courses/mysql_node/tool-workbench.png'
+import previewLaptopProject1IMG from '../../../assets/courses/mysql_node/preview-laptop-project1.png'
+import jumboBGIMG from '../../../assets/courses/mysql_node/jumbobg.png'
 class Page extends Component {
   constructor() {
     super()
@@ -101,7 +101,8 @@ class Page extends Component {
               >
                 Applied {getUrlParam('coupon', '0').toUpperCase()}
                 <br />
-                Original $50 saving {getUrlParam('percent', '0')}% OFF
+                Original ${this.props.data.price} saving
+                {getUrlParam('percent', '0')}% OFF
               </div>
             </div>
             <div className="button-area">
@@ -133,19 +134,13 @@ class Page extends Component {
                 />
               </div>
               <div className="column">
-                <h2>Learn the best javascript game engine</h2>
+                <h2>MYSQL IS THE MOST USED DATABASE IN THE WORLD</h2>
                 <ul>
-                  <li>Learn to read the documentation</li>
-                  <li>Load Assets</li>
-                  <li>Sprites Animations</li>
-                  <li>Transforming Gameobjects</li>
-                  <li>User input</li>
-                  <li>Work with the physics engine</li>
-                  <li>Create animations with tweens</li>
-                  <li>Work with audio in your games</li>
-                  <li>
-                    build a tictactoe game to reenforce everything you learned
-                  </li>
+                  <li>Learn MYSQL syntax</li>
+                  <li>Database relationships</li>
+                  <li>Build a Inventory Management System</li>
+                  <li>CRUD</li>
+                  <li>REST API</li>
                 </ul>
               </div>
             </div>
@@ -158,8 +153,11 @@ class Page extends Component {
               <h3>Modern Javascript</h3>
               <div className="grid-container">
                 <div className="column">
-                  <h1>ES6+</h1>
-                  <p>We made sure we used the latest Javascript</p>
+                  <h1>Adonis</h1>
+                  <p>
+                    The best fullstack framework to help you build applications
+                    quickly.{' '}
+                  </p>
                 </div>
                 <div className="column">
                   <img src={codeExampleIMG} alt="Code Example" ref="code" />
@@ -175,24 +173,23 @@ class Page extends Component {
               <h3>Tools</h3>
               <div className="grid-container">
                 <div className="column">
-                  <img src={tiledToolIMG} alt="tiled program" ref="tool1" />
+                  <img src={toolAtomIMG} alt="tiled program" ref="tool1" />
                 </div>
                 <div className="column">
-                  <h1>Tiled</h1>
-                  <p>Design and prototype your games levels</p>
+                  <h1>Atom</h1>
+                  <p>
+                    Text editor with syntax highlighting to help write better
+                    code
+                  </p>
                 </div>
               </div>
               <div className="grid-container">
                 <div className="column">
-                  <img
-                    src={shoeboxToolIMG}
-                    alt="shoebox sprite application"
-                    ref="tool2"
-                  />
+                  <img src={toolWorkbenchIMG} alt="tiled program" ref="tool2" />
                 </div>
                 <div className="column">
-                  <h1>Shoebox</h1>
-                  <p>Design and prototype your games levels</p>
+                  <h1>Workbench</h1>
+                  <p>We use workbench to learn and use mysql.</p>
                 </div>
               </div>
             </div>
@@ -204,20 +201,17 @@ class Page extends Component {
           <div className="section-content">
             <div className="container">
               <h2>
-                Learn to build your own games <br />
+                Learn to build your own apps <br />
                 Not just follow an instructor
               </h2>
               <div className="info-area">
                 <div className="info-column">
-                  <h2>
-                    Tic Tac Toe <br />
-                    Championship
-                  </h2>
+                  <h2>Fullstack Inventory Manament System</h2>
                 </div>
                 <div className="img-column">
                   <div className="chartbg">
                     <img
-                      src={iphonePreviewIMG}
+                      src={previewLaptopProject1IMG}
                       alt="tictactoe game on iphone"
                       ref="project1"
                     />
@@ -251,7 +245,7 @@ class Page extends Component {
                             'coupon',
                             '0'
                           ).toUpperCase()}`
-                        : `https://sso.teachable.com/secure/117955/checkout/909879/phaser-3-make-games-with-javascript-course`
+                        : `${this.props.data.url}`
                     }`}
                     className="button"
                   >
@@ -287,7 +281,7 @@ class Page extends Component {
 
 const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
-    course => course.slug === 'phaser-3-make-games-with-javascript-course'
+    course => course.slug === 'learn-mysql-with-node-js-course'
   )[0]
   console.log(pageData)
   return (
@@ -301,7 +295,7 @@ const IndexPage = ({ data, location }) => {
   )
 }
 export const query = graphql`
-  query Phaser3PageQuery {
+  query MYSQLNODEPageQuery {
     coursesDataJson {
       data {
         title

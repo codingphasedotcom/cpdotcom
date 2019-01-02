@@ -657,8 +657,10 @@
 }
 //tablet
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  #courses-layout #project-preview .bg {
-    height: 600px;
+  #courses-layout {
+    #project-preview .bg {
+      height: 600px;
+    }
   }
 }
 //laptops

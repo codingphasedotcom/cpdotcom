@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { graphql } from 'gatsby'
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 import { getUrlParam } from '../../components/GetParams'
@@ -36,7 +37,7 @@ class Page extends Component {
         couponActive: true,
       })
     }
-    if (typeof window !== 'undefined') {
+    import('scrollreveal').then(({ default: ScrollReveal }) => {
       window.sr = ScrollReveal()
       const sr = window.sr
       sr.reveal(this.refs.logo, {
@@ -79,7 +80,7 @@ class Page extends Component {
         scale: 1,
         easing: 'ease',
       })
-    }
+    })
   }
   render() {
     return (
@@ -125,7 +126,11 @@ class Page extends Component {
           <div className="section-content">
             <div className="container">
               <div className="column">
-                <img src={courseLogoIMG} alt="Phaser 3 Logo" ref="logo" />
+                <img
+                  src={courseLogoIMG}
+                  alt={`${this.props.data.title} Logo`}
+                  ref="logo"
+                />
               </div>
               <div className="column">
                 <h2>Use Javascript in the FrontEnd and Backend</h2>

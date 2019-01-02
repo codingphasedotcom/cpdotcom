@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 import { getUrlParam } from '../../components/GetParams'
-import Watchers from '../../components/Watchers'
+import Watchers from '../../components/watchers.js'
 import sr from '../../components/ScrollReveal'
 
 import courseLogoIMG from '../../../assets/courses/phaser_3/course-logo.png'

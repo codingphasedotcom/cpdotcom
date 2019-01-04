@@ -186,10 +186,11 @@ class Page extends Component {
           <div className="bg" />
           <div className="section-content">
             <div className="container">
-              <h2>
+              <h2>Projects</h2>
+              <h3>
                 Learn to build your own apps <br />
                 Not just follow an instructor
-              </h2>
+              </h3>
               <div className="info-area">
                 <div className="info-column">
                   <h2>Phonebook App</h2>

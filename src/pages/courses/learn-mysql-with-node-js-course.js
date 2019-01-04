@@ -173,7 +173,7 @@ class Page extends Component {
               <h3>Tools</h3>
               <div className="grid-container">
                 <div className="column">
-                  <img src={toolAtomIMG} alt="tiled program" ref="tool1" />
+                  <img src={toolAtomIMG} alt="atom program" ref="tool1" />
                 </div>
                 <div className="column">
                   <h1>Atom</h1>
@@ -185,7 +185,11 @@ class Page extends Component {
               </div>
               <div className="grid-container">
                 <div className="column">
-                  <img src={toolWorkbenchIMG} alt="tiled program" ref="tool2" />
+                  <img
+                    src={toolWorkbenchIMG}
+                    alt="workbench program"
+                    ref="tool2"
+                  />
                 </div>
                 <div className="column">
                   <h1>Workbench</h1>

@@ -8,7 +8,7 @@
       "category": ["HTML", "CSS", "Email"],
       "slug": "responsive-html-emails-course",
       "url": "https://sso.teachable.com/secure/117955/checkout/682848/responsive-html-emails-course",
-      "favorite": false,
+      "favorite": true,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/6cKflL1DQFWht85RClc9"
       }
@@ -281,7 +281,7 @@
       "category": ["HTML", "CSS", "SASS", "Javascript"],
       "slug": "build-a-portfolio",
       "url": "https://sso.teachable.com/secure/117955/checkout/702544/sideproject-build-a-static-site-portfolio",
-      "favorite": true,
+      "favorite": false,
       "imgs": {
         "thumbnail": "https://www.filepicker.io/api/file/JnUnZHCoQka0cLJxkyWk"
       }

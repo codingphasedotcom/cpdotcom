@@ -856,6 +856,16 @@ header {
     .course-grid {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(5, 200px);
+      .course {
+        h4 {
+          position: relative;
+          font-size: 24px;
+          color: #fff;
+          font-weight: 600;
+          transition: all .3s ease-in-out;
+          text-shadow: 0 10px 16px hsla(0,0%,58.8%,0);
+        }
+      }
     }
 
     .courses-total {
@@ -922,6 +932,7 @@ header {
 }
 //tablet
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  
   #jumbo-top {
     h2 {
       font-size: 35px;

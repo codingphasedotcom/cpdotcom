@@ -149,9 +149,9 @@
       "hours": 20,
       "type": "premium",
       "category": ["PHP", "Laravel"],
-      "slug": "php-7-and-laravel",
+      "slug": "learn-php-7-and-laravel-master-course",
       "url": "https://sso.teachable.com/secure/117955/checkout/450074/learn-php-7-and-laravel-master-course",
-      "favorite": false,
+      "favorite": true,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/E8ULhysScmJnU2cmhNaA"
       }
@@ -359,7 +359,7 @@
       "category": ["Javascript"],
       "slug": "terminal-for-developers",
       "url": "https://sso.teachable.com/secure/117955/checkout/400399/terminal-for-developers",
-      "favorite": true,
+      "favorite": false,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/lxmPrJ9CRoCk6dqmqMDL"
       }

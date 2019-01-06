@@ -7,12 +7,12 @@ import Watchers from '../../components/watchers.js'
 
 // import ScrollReveal from 'scrollreveal'
 
-import courseLogoIMG from '../../../assets/courses/mysql_node/course-logo.png'
-import codeExampleIMG from '../../../assets/courses/mysql_node/code-example.png'
-import toolAtomIMG from '../../../assets/courses/mysql_node/tool-atom.png'
-import toolWorkbenchIMG from '../../../assets/courses/mysql_node/tool-workbench.png'
-import previewLaptopProject1IMG from '../../../assets/courses/mysql_node/preview-laptop-project1.png'
-import jumboBGIMG from '../../../assets/courses/mysql_node/jumbobg.png'
+import courseLogoIMG from '../../../assets/courses/php_laravel/course-logo.png'
+import codeExampleIMG from '../../../assets/courses/php_laravel/code-example.png'
+import toolAtomIMG from '../../../assets/courses/php_laravel/tool-atom.png'
+import toolWorkbenchIMG from '../../../assets/courses/php_laravel/tool-workbench.png'
+import previewLaptopProject1IMG from '../../../assets/courses/php_laravel/preview-laptop-project1.png'
+import jumboBGIMG from '../../../assets/courses/php_laravel/jumbobg.png'
 class Page extends Component {
   constructor() {
     super()
@@ -76,7 +76,7 @@ class Page extends Component {
       sr.reveal(this.refs.project1, {
         origin: 'bottom',
         duration: 1000,
-        delay: 150,
+        delay: 500,
         distance: '300px',
         scale: 1,
         easing: 'ease',
@@ -134,13 +134,21 @@ class Page extends Component {
                 />
               </div>
               <div className="column">
-                <h2>MYSQL IS THE MOST USED DATABASE IN THE WORLD</h2>
+                <h2>A Framework to build apps quickly</h2>
                 <ul>
-                  <li>Learn MYSQL syntax</li>
-                  <li>Database relationships</li>
-                  <li>Build a Inventory Management System</li>
+                  <li>Learn to code PHP</li>
+                  <li>Object Oriented Programming with PHP</li>
+                  <li>Build A website with PHP</li>
+                  <li>Learn to connect to a database (MYSQL)</li>
+                  <li>Create Migrations</li>
+                  <li>Form Validation</li>
+                  <li>Eloquent ORM</li>
                   <li>CRUD</li>
                   <li>REST API</li>
+                  <li>Learn to use the asset pipeline with laravel</li>
+                  <li>Blade Templates and Layouts</li>
+                  <li>User Authentication</li>
+                  <li>Build an application that connects to an API</li>
                 </ul>
               </div>
             </div>
@@ -153,10 +161,10 @@ class Page extends Component {
               <h3>Modern Javascript</h3>
               <div className="grid-container">
                 <div className="column">
-                  <h1>Adonis</h1>
+                  <h1>Blade</h1>
                   <p>
-                    The best fullstack framework to help you build applications
-                    quickly.{' '}
+                    One of the best template engines that just make building
+                    websites easier to maintain.{' '}
                   </p>
                 </div>
                 <div className="column">
@@ -211,7 +219,7 @@ class Page extends Component {
               </h3>
               <div className="info-area">
                 <div className="info-column">
-                  <h2>Fullstack Inventory Manament System</h2>
+                  <h2>Fullstack Design Scrapbook</h2>
                 </div>
                 <div className="img-column">
                   <div className="chartbg">
@@ -286,7 +294,7 @@ class Page extends Component {
 
 const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
-    course => course.slug === 'learn-mysql-with-node-js-course'
+    course => course.slug === 'learn-php-7-and-laravel-master-course'
   )[0]
   console.log(pageData)
   return (
@@ -300,7 +308,7 @@ const IndexPage = ({ data, location }) => {
   )
 }
 export const query = graphql`
-  query MYSQLNODEPageQuery {
+  query PHPLaravelPageQuery {
     coursesDataJson {
       data {
         title

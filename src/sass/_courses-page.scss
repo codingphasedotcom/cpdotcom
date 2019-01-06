@@ -239,13 +239,6 @@
     }
   }
 
-  #jumbo-top {
-    h2 {
-      font-size: 30px;
-      text-align: center;
-    }
-  }
-
   #courses-page{
     #popular-courses {
       #FilterCoursesComp {
@@ -273,63 +266,6 @@
       }
     }
   }
-
-  #americans {
-    .bg {
-      display: grid;
-      height: 1200px;
-    }
-
-    .section-content .info-area {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap: 40px;
-    }
-  }
-
-  #no-degree {
-    padding: 100px 0;
-
-    h2 {
-      font-size: 40px;
-      text-align: center;
-      max-width: 200px;
-    }
-
-    .students-total {
-      font-size: 100px;
-      margin-bottom: 50px;
-    }
-
-    .sub-title {
-      font-size: 36px;
-    }
-
-    .testimonials {
-      grid-template-columns: 1fr;
-
-      .testimonial {
-        grid-template-columns: 40% 60%;
-
-        .user-img .img {
-          width: 150px;
-          height: 150px;
-        }
-      }
-    }
-
-    .logos {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  #what-you-get {
-    padding: 100px 0;
-
-    h2 {
-      font-size: 28px;
-    }
-  }
 }
 //tablet
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -340,54 +276,31 @@
     // }
   }
 
-  #popular-courses {
-    .courses-total {
-      font-size: 150px;
-    }
-  }
-
-  #popular-courses .course-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 200px);
-    grid-gap: 40px;
-    margin-bottom: 100px;
-  }
-
-  #no-degree {
-    padding: 300px 0 100px;
-
-    h4 {
-      margin-bottom: 100px;
-    }
-
-    h2 {
-      font-size: 46px;
-      text-align: center;
-    }
-
-    .students-total {
-      font-size: 100px;
-      text-align: center;
-    }
-
-    .sub-title {
-      font-size: 28px;
-    }
-
-    .image {
-      margin-bottom: 100px;
-    }
-
-    .testimonials {
-      grid-template-columns: 1fr 1fr;
-
-      .testimonial {
-        grid-template-columns: 30% 70%;
+  
+  #courses-page{
+    #popular-courses {
+      #FilterCoursesComp {
+        display: grid;
+        grid-template-columns: 100%;
       }
-
-      .testimonial .info {
-        // padding: 20px;
+      .course-filters{
+        grid-column: 1 / 2;
+  grid-row: 1 / 2;
+      }
+      .course-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, 200px);
+        grid-gap: 40px;
+        margin-bottom: 100px;
+        .course{
+          h4{
+            font-size: 24px;
+          }
+        }
+      }
+      .courses-total {
+        font-size: 150px;
       }
     }
   }

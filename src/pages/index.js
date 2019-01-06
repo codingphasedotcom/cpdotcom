@@ -24,7 +24,7 @@ const IndexPage = ({ data }) => (
         <h2>Learn to Code Today</h2>
 
         <div className="button-area">
-          <a href="/">Register</a>
+          <a href="https://codingphase.teachable.com/p/all-courses-subscription">Register</a>
         </div>
       </div>
     </section>
@@ -281,7 +281,7 @@ const IndexPage = ({ data }) => (
             <div className="box ">$600</div>
           </div>
           <div className="button-area">
-            <a href="/">Register</a>
+            <a href="https://codingphase.teachable.com/p/all-courses-subscription">Register</a>
           </div>
         </div>
       </div>

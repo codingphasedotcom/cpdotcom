@@ -17,7 +17,7 @@ const CoursesPage = ({ data }) => (
         <div className="bg" />
         <div className="section-content">
           <div className="container">
-            <div className="sub-title">Our Most Popular Courses</div>
+            <div className="sub-title">Top Courses</div>
             <FilterCoursesComp data={data} />
           </div>
         </div>

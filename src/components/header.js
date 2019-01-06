@@ -1,30 +1,61 @@
+import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
-import React from 'react'
 
-const Header = ({ siteTitle }) => (
-  <header>
-    <div className="logo">
-      <Link to="/">{siteTitle}</Link>
-    </div>
-    <div className="menu">
-      <Link to="/courses">Courses</Link>
-      <Link to="/blog">Blog</Link>
-      <a href="https://discordapp.com/invite/weTKutq">Chat</a>
-      <a href="https://codingphase.teachable.com/courses/enrolled">
-        Members Area
-      </a>
-      <Link to="/contact">Contact</Link>
-    </div>
-  </header>
-)
+class Header extends Component {
+  constructor() {
+    super()
+    this.state = {
+      mobileMenuActive: false
+    }
+  }
+  componentDidMount() {}
+  clickedHamburger = () => {
+    var element = document.getElementById("myDIV");
+    this.setState({mobileMenuActive: !this.state.mobileMenuActive})
+    console.log('clicked')
+  }
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
+  render() {
+    return (
+      <div>
+        <header>
+          <div className="logo">
+            <Link to="/">{this.props.siteTitle}</Link>
+          </div>
+          <div className="menu">
+            <Link to="/courses">Courses</Link>
+            {/* <Link to="/blog">Blog</Link> */}
+            <a href="https://discordapp.com/invite/weTKutq">Chat</a>
+            <a href="https://codingphase.teachable.com/courses/enrolled">
+              Members Area
+            </a>
+            <Link to="/contact">Contact</Link>
+            <div
+              id="hamburger-icon"
+              title="Menu"
+              className={this.state.mobileMenuActive ? "active" : ""}
+              onClick={this.clickedHamburger}
+            >
+              <span className="line line-1" />
+              <span className="line line-2" />
+              <span className="line line-3" />
+            </div>
+          
+          </div>
+          
+        </header>
+        <div id="mobileMenu" className={this.state.mobileMenuActive ? 'active': ''}>
+          <Link to="/courses">Courses</Link>
+          {/* <Link to="/blog">Blog</Link> */}
+          <a href="https://discordapp.com/invite/weTKutq">Chat</a>
+          <a href="https://codingphase.teachable.com/courses/enrolled">
+            Members Area
+          </a>
+          <Link to="/contact">Contact</Link>
+        </div>
+      </div>
+    )
+  }
 }
 
 export default Header

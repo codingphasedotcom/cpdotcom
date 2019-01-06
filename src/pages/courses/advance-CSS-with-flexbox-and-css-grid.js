@@ -11,7 +11,6 @@ import courseLogoIMG from '../../../assets/courses/flex_grid/course-logo.png'
 import codeExampleIMG from '../../../assets/courses/flex_grid/code-example.png'
 import toolAtomIMG from '../../../assets/courses/flex_grid/tool-atom.png'
 import previewLaptopProject1IMG from '../../../assets/courses/flex_grid/preview-laptop-project1.png'
-import previewIphoneIMG from '../../../assets/courses/flex_grid/iphone-preview.png'
 import jumboBGIMG from '../../../assets/courses/flex_grid/jumbobg.png'
 class Page extends Component {
   constructor() {

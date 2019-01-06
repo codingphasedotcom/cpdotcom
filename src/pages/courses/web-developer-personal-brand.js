@@ -10,7 +10,6 @@ import Watchers from '../../components/watchers.js'
 import courseLogoIMG from '../../../assets/courses/web_dev_brand/course-logo.png'
 import codeExampleIMG from '../../../assets/courses/web_dev_brand/code-example.png'
 import toolAtomIMG from '../../../assets/courses/web_dev_brand/tool-atom.png'
-import toolWorkbenchIMG from '../../../assets/courses/web_dev_brand/tool-workbench.png'
 import previewLaptopProject1IMG from '../../../assets/courses/web_dev_brand/preview-laptop-project1.png'
 import jumboBGIMG from '../../../assets/courses/web_dev_brand/jumbobg.png'
 class Page extends Component {

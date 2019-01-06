@@ -143,30 +143,31 @@
       display: none;
     }
   }
-
-  #jumbo-top {
-    h2 {
-      font-size: 30px;
-      text-align: center;
+  
+  #courses-page{
+    #popular-courses {
+      #FilterCoursesComp {
+        display: grid;
+        grid-template-columns: 100%;
+      }
+      .course-filters{
+        grid-column: 1 / 2;
+  grid-row: 1 / 2;
+      }
+      .course-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 200px);
+        grid-gap: 40px;
+        margin-bottom: 100px;
+      }
+      .courses-total {
+        font-size: 150px;
+      }
     }
   }
-
-  #popular-courses {
-    .course-grid {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(9, 200px);
-      grid-gap: 40px;
-      margin-bottom: 100px;
-    }
-  }
-
-  #popular-courses {
-    .courses-total {
-      font-size: 150px;
-    }
-  }
-
+  
+  
   #americans {
     .bg {
       display: grid;
@@ -245,22 +246,31 @@
     }
   }
 
-  #popular-courses {
-    .course-grid {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(9, 200px);
-    }
-  }
-
-  #popular-courses {
-    .course-grid {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(5, 200px);
-    }
-
-    .courses-total {
-      font-size: 150px;
+  #courses-page{
+    #popular-courses {
+      #FilterCoursesComp {
+        display: grid;
+        grid-template-columns: 100%;
+      }
+      .course-filters{
+        grid-column: 1 / 2;
+  grid-row: 1 / 2;
+      }
+      .course-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, 200px);
+        grid-gap: 40px;
+        margin-bottom: 100px;
+        .course{
+          h4{
+            font-size: 24px;
+          }
+        }
+      }
+      .courses-total {
+        font-size: 150px;
+      }
     }
   }
 

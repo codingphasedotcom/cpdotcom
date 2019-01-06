@@ -29,7 +29,7 @@ class Header extends Component {
             <a href="https://codingphase.teachable.com/courses/enrolled">
               Members Area
             </a>
-            <Link to="/contact">Contact</Link>
+            {/* <Link to="/contact">Contact</Link> */}
             <div
               id="hamburger-icon"
               title="Menu"
@@ -51,7 +51,7 @@ class Header extends Component {
           <a href="https://codingphase.teachable.com/courses/enrolled">
             Members Area
           </a>
-          <Link to="/contact">Contact</Link>
+          {/* <Link to="/contact">Contact</Link> */}
         </div>
       </div>
     )

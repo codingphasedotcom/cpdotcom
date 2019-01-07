@@ -188,18 +188,6 @@ class Page extends Component {
                   </p>
                 </div>
               </div>
-              <div className="grid-container">
-                <div className="column">
-                  <img src={toolTablePlusIMG} alt="tiled program" ref="tool2" />
-                </div>
-                <div className="column">
-                  <h1>Table Plus</h1>
-                  <p>
-                    A UI Interface to help you manage your database. Great for
-                    SQLite, MYSQL, POSTGRES
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </section>

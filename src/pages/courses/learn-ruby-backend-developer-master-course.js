@@ -141,7 +141,7 @@ class Page extends Component {
               <div className="column">
                 <h2>One of the fastest programming languages</h2>
                 <ul>
-                  <li>Learn to code Crystal</li>
+                  <li>Learn to code Ruby</li>
                   <li>Methods & Blocks</li>
                   <li>Collections</li>
                   <li>Iterators</li>

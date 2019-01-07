@@ -4,43 +4,45 @@ import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 import { getUrlParam } from '../../components/GetParams'
 import Watchers from '../../components/watchers.js'
+
 // import ScrollReveal from 'scrollreveal'
 
-import courseLogoIMG from '../../../assets/courses/node_adonis/course-logo.png'
-import codeExampleIMG from '../../../assets/courses/node_adonis/code-example.png'
-import toolAtomIMG from '../../../assets/courses/node_adonis/tool-atom.png'
-import toolTablePlusIMG from '../../../assets/courses/node_adonis/tool-tableplus.png'
-import previewLaptopProject1IMG from '../../../assets/courses/node_adonis/preview-laptop-project1.png'
-import jumboBGIMG from '../../../assets/courses/node_adonis/jumbobg.png'
+import courseLogoIMG from '../../../assets/courses/crystal_lang/course-logo.png'
+import codeExampleIMG from '../../../assets/courses/crystal_lang/code-example.png'
+import toolAtomIMG from '../../../assets/courses/crystal_lang/tool-atom.png'
+import toolWorkbenchIMG from '../../../assets/courses/crystal_lang/tool-workbench.png'
+import previewLaptopProject1IMG from '../../../assets/courses/crystal_lang/preview-laptop-project1.png'
+import jumboBGIMG from '../../../assets/courses/crystal_lang/jumbobg.png'
 class Page extends Component {
   constructor() {
     super()
     this.state = {
-      coursePrice: 50,
+      coursePrice: 0,
       couponActive: false,
     }
   }
   componentDidMount = () => {
     this.setState({
       coursePrice: this.props.data.price
-    }, () => {
-      if (
-        getUrlParam('coupon', '0') !== '0' &&
-        getUrlParam('percent', '0') !== '0'
-      ) {
-        function priceAfterDiscount(price, discountPercent) {
-          return price - (discountPercent * price) / 100
+    },() => {
+        if (
+          getUrlParam('coupon', '0') !== '0' &&
+          getUrlParam('percent', '0') !== '0'
+        ) {
+          function priceAfterDiscount(price, discountPercent) {
+            return price - (discountPercent * price) / 100
+          }
+          var finalPrice = priceAfterDiscount(
+            this.state.coursePrice,
+            getUrlParam('percent', '0')
+          )
+          this.setState({
+            coursePrice: finalPrice,
+            couponActive: true,
+          })
         }
-        var finalPrice = priceAfterDiscount(
-          this.state.coursePrice,
-          getUrlParam('percent', '0')
-        )
-        this.setState({
-          coursePrice: finalPrice,
-          couponActive: true,
-        })
-      }
     })
+    
     import('scrollreveal').then(({ default: ScrollReveal }) => {
       window.sr = ScrollReveal()
       const sr = window.sr
@@ -79,7 +81,7 @@ class Page extends Component {
       sr.reveal(this.refs.project1, {
         origin: 'bottom',
         duration: 1000,
-        delay: 150,
+        delay: 500,
         distance: '300px',
         scale: 1,
         easing: 'ease',
@@ -137,18 +139,15 @@ class Page extends Component {
                 />
               </div>
               <div className="column">
-                <h2>Use Javascript in the FrontEnd and Backend</h2>
+                <h2>One of the fastest programming languages</h2>
                 <ul>
-                  <li>The basics Node JS</li>
-                  <li>Work with modules</li>
-                  <li>Build Your own server</li>
-                  <li>Async Await</li>
-                  <li>
-                    Understand how to intergrate front end frameworks with Node
-                  </li>
-                  <li>Use Adonis Js a backend framework</li>
-                  <li>Server Side Rendering</li>
-                  <li>and much more</li>
+                  <li>Learn to code Crystal</li>
+                  <li>Methods & Blocks</li>
+                  <li>Collections</li>
+                  <li>Iterators</li>
+                  <li>Conditionals</li>
+                  <li>Object Oriented Programming</li>
+                  <li>and much more...</li>
                 </ul>
               </div>
             </div>
@@ -158,13 +157,12 @@ class Page extends Component {
         <section id="course-highlight">
           <div className="section-content">
             <div className="container">
-              <h3>Modern Javascript</h3>
+              <h3>Modern Development</h3>
               <div className="grid-container">
                 <div className="column">
-                  <h1>Adonis</h1>
+                  <h1>FAST</h1>
                   <p>
-                    The best fullstack framework to help you build applications
-                    quickly.{' '}
+                    One thing I love about crystal is how fast it is and how quickly I can pick up the language{' '}
                   </p>
                 </div>
                 <div className="column">
@@ -181,7 +179,7 @@ class Page extends Component {
               <h3>Tools</h3>
               <div className="grid-container">
                 <div className="column">
-                  <img src={toolAtomIMG} alt="tiled program" ref="tool1" />
+                  <img src={toolAtomIMG} alt="atom program" ref="tool1" />
                 </div>
                 <div className="column">
                   <h1>Atom</h1>
@@ -193,21 +191,22 @@ class Page extends Component {
               </div>
               <div className="grid-container">
                 <div className="column">
-                  <img src={toolTablePlusIMG} alt="tiled program" ref="tool2" />
+                  <img
+                    src={toolWorkbenchIMG}
+                    alt="workbench program"
+                    ref="tool2"
+                  />
                 </div>
                 <div className="column">
-                  <h1>Table Plus</h1>
-                  <p>
-                    A UI Interface to help you manage your database. Great for
-                    SQLite, MYSQL, POSTGRES
-                  </p>
+                  <h1>Workbench</h1>
+                  <p>We use workbench to learn and use mysql.</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="project-preview">
+        {/* <section id="project-preview">
           <div className="bg" />
           <div className="section-content">
             <div className="container">
@@ -218,7 +217,7 @@ class Page extends Component {
               </h3>
               <div className="info-area">
                 <div className="info-column">
-                  <h2>Fullstack Facebook Clone</h2>
+                  <h2>Fullstack Design Scrapbook</h2>
                 </div>
                 <div className="img-column">
                   <div className="chartbg">
@@ -232,7 +231,7 @@ class Page extends Component {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section id="payment-section">
           <div className="section-content">
@@ -293,7 +292,7 @@ class Page extends Component {
 
 const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
-    course => course.slug === 'node-adonis-js-javascript-fullstack-course'
+    course => course.slug === 'crystal-lang-programming-language-master-course'
   )[0]
   console.log(pageData)
   return (
@@ -307,7 +306,7 @@ const IndexPage = ({ data, location }) => {
   )
 }
 export const query = graphql`
-  query NodeAdonisPageQuery {
+  query CrystalLangPageQuery {
     coursesDataJson {
       data {
         title

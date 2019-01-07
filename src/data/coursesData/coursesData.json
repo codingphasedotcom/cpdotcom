@@ -53,19 +53,6 @@
       }
     },
     {
-      "title": "Learn Python",
-      "price": 50,
-      "hours": 10,
-      "type": "premium",
-      "category": ["Python"],
-      "slug": "learn-python",
-      "url": "https://codingphase.teachable.com/p/learn-python-for-high-paying-job",
-      "favorite": false,
-      "imgs": {
-        "thumbnail": "https://www.filepicker.io/api/file/jDUkOMFVQdCZOw7YdPpm"
-      }
-    },
-    {
       "title": "Learn Mysql with Node JS",
       "price": 50,
       "hours": 10,
@@ -79,12 +66,12 @@
       }
     },
     {
-      "title": "Crystal Lang - Learn Programming with Crystal",
+      "title": "Crystal Lang - Master Course",
       "price": 0,
       "hours": 10,
       "type": "Free",
       "category": ["Javascript"],
-      "slug": "crystal-lang-learn-programming-with-crystal",
+      "slug": "crystal-lang-programming-language-master-course",
       "url": "https://codingphase.teachable.com/p/crystal-lang-learn-programming-with-crystal",
       "favorite": false,
       "imgs": {
@@ -261,12 +248,12 @@
       }
     },
     {
-      "title": "Learn Ruby",
-      "price": 50,
+      "title": "Ruby Backend Developer Master Course",
+      "price": 30,
       "hours": 5,
       "type": "premium",
       "category": ["Ruby"],
-      "slug": "learn-ruby",
+      "slug": "learn-ruby-backend-developer-master-course",
       "url": "https://sso.teachable.com/secure/117955/checkout/547328/learn-ruby-backend-developer-master-course",
       "favorite": false,
       "imgs": {
@@ -396,7 +383,7 @@
       "hours": 1,
       "type": "premium",
       "category": ["Javascript"],
-      "slug": "object-oriented-programming-with-javascript",
+      "slug": "object-oriented-programming-with-javascript-course",
       "url": "https://sso.teachable.com/secure/117955/checkout/448351/object-oriented-programming-with-javascript-course",
       "favorite": false,
       "imgs": {

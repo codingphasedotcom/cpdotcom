@@ -22,22 +22,26 @@ class Page extends Component {
     }
   }
   componentDidMount = () => {
-    if (
-      getUrlParam('coupon', '0') !== '0' &&
-      getUrlParam('percent', '0') !== '0'
-    ) {
-      function priceAfterDiscount(price, discountPercent) {
-        return price - (discountPercent * price) / 100
+    this.setState({
+      coursePrice: this.props.data.price
+    }, () => {
+      if (
+        getUrlParam('coupon', '0') !== '0' &&
+        getUrlParam('percent', '0') !== '0'
+      ) {
+        function priceAfterDiscount(price, discountPercent) {
+          return price - (discountPercent * price) / 100
+        }
+        var finalPrice = priceAfterDiscount(
+          this.state.coursePrice,
+          getUrlParam('percent', '0')
+        )
+        this.setState({
+          coursePrice: finalPrice,
+          couponActive: true,
+        })
       }
-      var finalPrice = priceAfterDiscount(
-        this.state.coursePrice,
-        getUrlParam('percent', '0')
-      )
-      this.setState({
-        coursePrice: finalPrice,
-        couponActive: true,
-      })
-    }
+    })
     import('scrollreveal').then(({ default: ScrollReveal }) => {
       window.sr = ScrollReveal()
       const sr = window.sr
@@ -246,7 +250,7 @@ class Page extends Component {
                 >
                   Applied {getUrlParam('coupon', '0').toUpperCase()}
                   <br />
-                  Original $50 saving {getUrlParam('percent', '0')}% OFF
+                  Original ${this.props.data.price} saving {getUrlParam('percent', '0')}% OFF
                 </div>
               </div>
               <div className="payment-grid">

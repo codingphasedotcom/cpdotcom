@@ -6,12 +6,13 @@ import { getUrlParam } from '../../components/GetParams'
 import Watchers from '../../components/watchers.js'
 // import ScrollReveal from 'scrollreveal'
 
-import courseLogoIMG from '../../../assets/courses/node_adonis/course-logo.png'
-import codeExampleIMG from '../../../assets/courses/node_adonis/code-example.png'
-import toolAtomIMG from '../../../assets/courses/node_adonis/tool-atom.png'
-import toolTablePlusIMG from '../../../assets/courses/node_adonis/tool-tableplus.png'
-import previewLaptopProject1IMG from '../../../assets/courses/node_adonis/preview-laptop-project1.png'
-import jumboBGIMG from '../../../assets/courses/node_adonis/jumbobg.png'
+import courseLogoIMG from '../../../assets/courses/oop_js/course-logo.png'
+import codeExampleIMG from '../../../assets/courses/oop_js/code-example.png'
+import toolAtomIMG from '../../../assets/courses/oop_js/tool-atom.png'
+import previewLaptopProject1IMG from '../../../assets/courses/oop_js/preview-laptop-project1.png'
+import previewLaptopProject2IMG from '../../../assets/courses/oop_js/preview-laptop-project2.png'
+import jumboBGIMG from '../../../assets/courses/oop_js/jumbobg.png'
+
 class Page extends Component {
   constructor() {
     super()
@@ -139,15 +140,9 @@ class Page extends Component {
               <div className="column">
                 <h2>Use Javascript in the FrontEnd and Backend</h2>
                 <ul>
-                  <li>The basics Node JS</li>
-                  <li>Work with modules</li>
-                  <li>Build Your own server</li>
-                  <li>Async Await</li>
-                  <li>
-                    Understand how to intergrate front end frameworks with Node
-                  </li>
-                  <li>Use Adonis Js a backend framework</li>
-                  <li>Server Side Rendering</li>
+                  <li>Learn Object Oriented Programming</li>
+                  <li>Prototypical Inheritance</li>
+                  <li>Function Constructors</li>
                   <li>and much more</li>
                 </ul>
               </div>
@@ -158,13 +153,12 @@ class Page extends Component {
         <section id="course-highlight">
           <div className="section-content">
             <div className="container">
-              <h3>Modern Javascript</h3>
+              <h3>Modern Development</h3>
               <div className="grid-container">
                 <div className="column">
-                  <h1>Adonis</h1>
+                  <h1>ES5</h1>
                   <p>
-                    The best fullstack framework to help you build applications
-                    quickly.{' '}
+                    Learn all the fundamentals of Javascript{' '}
                   </p>
                 </div>
                 <div className="column">
@@ -191,23 +185,11 @@ class Page extends Component {
                   </p>
                 </div>
               </div>
-              <div className="grid-container">
-                <div className="column">
-                  <img src={toolTablePlusIMG} alt="tiled program" ref="tool2" />
-                </div>
-                <div className="column">
-                  <h1>Table Plus</h1>
-                  <p>
-                    A UI Interface to help you manage your database. Great for
-                    SQLite, MYSQL, POSTGRES
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </section>
 
-        <section id="project-preview">
+        {/* <section id="project-preview">
           <div className="bg" />
           <div className="section-content">
             <div className="container">
@@ -218,7 +200,7 @@ class Page extends Component {
               </h3>
               <div className="info-area">
                 <div className="info-column">
-                  <h2>Fullstack Facebook Clone</h2>
+                  <h2>Notifications System</h2>
                 </div>
                 <div className="img-column">
                   <div className="chartbg">
@@ -230,9 +212,23 @@ class Page extends Component {
                   </div>
                 </div>
               </div>
+              <div className="info-area">
+                <div className="info-column">
+                  <h2>Pokemon Rock Pape Scissors</h2>
+                </div>
+                <div className="img-column">
+                  <div className="chartbg">
+                    <img
+                      src={previewLaptopProject2IMG}
+                      alt="Pokemon Game"
+                      ref="project2"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section id="payment-section">
           <div className="section-content">
@@ -293,7 +289,7 @@ class Page extends Component {
 
 const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
-    course => course.slug === 'node-adonis-js-javascript-fullstack-course'
+    course => course.slug === 'object-oriented-programming-with-javascript-course'
   )[0]
   console.log(pageData)
   return (
@@ -307,7 +303,7 @@ const IndexPage = ({ data, location }) => {
   )
 }
 export const query = graphql`
-  query NodeAdonisPageQuery {
+  query OOPJSPageQuery {
     coursesDataJson {
       data {
         title

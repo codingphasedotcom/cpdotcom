@@ -339,12 +339,12 @@
       }
     },
     {
-      "title": "SASS like a Pro",
+      "title": "SASS like a Pro Course",
       "price": 25,
       "hours": 2,
       "type": "premium",
       "category": ["Javascript"],
-      "slug": "sass-like-a-pro",
+      "slug": "sass-like-a-pro-course",
       "url": "https://sso.teachable.com/secure/117955/checkout/399106/sass-like-a-pro",
       "favorite": false,
       "imgs": {
@@ -378,12 +378,12 @@
       }
     },
     {
-      "title": "Future-Proof JavaScript",
+      "title": "Future-Proof JavaScript Course",
       "price": 50,
       "hours": 10,
       "type": "premium",
       "category": ["Javascript"],
-      "slug": "future-proof-javascript",
+      "slug": "future-proof-javascript-course",
       "url": "https://sso.teachable.com/secure/117955/checkout/702550/future-proof-javascript",
       "favorite": false,
       "imgs": {

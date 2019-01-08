@@ -25,6 +25,9 @@ class Header extends Component {
           <div className="menu">
             <a href="/courses">Courses</a>
             {/* <Link to="/blog">Blog</Link> */}
+            <a href="/timeline">
+              Timeline
+            </a>
             <a href="https://discordapp.com/invite/weTKutq">Chat</a>
             <a href="https://codingphase.teachable.com/courses/enrolled">
               Members Area

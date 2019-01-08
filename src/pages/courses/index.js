@@ -10,7 +10,7 @@ import SEO from '../../components/seo'
 
 const CoursesPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="All Courses - CodingPhase.com" keywords={[`gatsby`, `application`, `react`]} />
     <section id="courses-page">
       {console.log(data)}
       <section id="popular-courses">

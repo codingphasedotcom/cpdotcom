@@ -17,6 +17,9 @@ const CoursesPage = ({ data }) => (
           <div className="legend">
             <p>Follow this timeline to become a fullstack developer. All courses are in order but you will notice that there's icons before the name of each course. 🖥️ The computer means it's required for your to take. Now the 📗 green book means its an elective course which is optional. I do recommend for you guys to take all the courses but for example if you are comfortable enough with a topic and feel you don't need to the projects then thats your choice to make.</p>
           </div>
+          <div className="adspot">
+            <Adsense />
+          </div>
           {/* The Timeline */}
           <h1>Front End Developer</h1>
           <ul className="timeline">

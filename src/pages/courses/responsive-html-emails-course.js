@@ -152,7 +152,7 @@ class Page extends Component {
         <section id="course-highlight">
           <div className="section-content">
             <div className="container">
-              <h3>Modern HTML Emails</h3>
+              <h3>Modern Development</h3>
               <div className="grid-container">
                 <div className="column">
                   <h1>Media Queries</h1>

@@ -27,6 +27,22 @@
       }
     },
     {
+      "title": "Node and NPM Basics",
+      "price": 0,
+      "hours": 10,
+      "type": "premium",
+      "category": [
+        "Javascript",
+        "Node"
+      ],
+      "slug": "node-and-npm-basics",
+      "url": "https://codingphase.teachable.com/p/node-and-npm-basics",
+      "favorite": true,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:1440/https://www.filepicker.io/api/file/4dhwfogkTKifToz3LNvt"
+      }
+    },
+    {
       "title": "Learn Node JS - Javascript Fullstack",
       "price": 50,
       "hours": 10,
@@ -162,7 +178,7 @@
       "hours": 8,
       "type": "premium",
       "category": ["HTML", "CSS"],
-      "slug": "learn-html-and-css",
+      "slug": "learn-html-and-css-by-building-a-cool-social-network",
       "url": "https://sso.teachable.com/secure/117955/checkout/702542/learn-html-and-css-by-building-a-cool-social-network",
       "favorite": false,
       "imgs": {

@@ -4,16 +4,13 @@ import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 import { getUrlParam } from '../../components/GetParams'
 import Watchers from '../../components/watchers.js'
-
 // import ScrollReveal from 'scrollreveal'
 
-import courseLogoIMG from '../../../assets/courses/web_dev_brand/course-logo.png'
-import codeExampleIMG from '../../../assets/courses/web_dev_brand/code-example.png'
-import toolAtomIMG from '../../../assets/tools/tool-atom.png'
-import toolChromeIMG from '../../../assets/tools/tool-chrome.png'
-import toolTerminalIMG from '../../../assets/tools/tool-terminal.png'
-import previewLaptopProject1IMG from '../../../assets/courses/web_dev_brand/preview-laptop-project1.png'
-import jumboBGIMG from '../../../assets/courses/web_dev_brand/jumbobg.png'
+import courseLogoIMG from '../../../assets/courses/node_npm/course-logo.png'
+import codeExampleIMG from '../../../assets/courses/node_npm/code-example.png'
+import toolTerminalIMG from '../../../assets/courses/node_npm/tool-terminal.png'
+import previewLaptopProject1IMG from '../../../assets/courses/node_npm/preview-laptop-project1.png'
+import jumboBGIMG from '../../../assets/courses/node_npm/jumbobg.png'
 class Page extends Component {
   constructor() {
     super()
@@ -139,20 +136,13 @@ class Page extends Component {
                 />
               </div>
               <div className="column">
-                <h2>Lets make sure you build your brand</h2>
-                <p>
-                  If you are a junior developer looking to get hired ASAP this
-                  is the best courses for you. I will teach you how to create a
-                  brand for yourself as a web developer that will impress your
-                  future employer. We will also build a portfolio that will show
-                  that you are a professional developer not just a junior
-                  developer. We will start with all the major social network
-                  platforms and then we will build your portfolio.
-                </p>
+                <h2>Use Javascript in the FrontEnd and Backend</h2>
                 <ul>
-                  <li>Learn to use social media to promote your self</li>
-                  <li>Learn the tricks to help you get a job</li>
-                  <li>Build a portfolio that will help you get a job</li>
+                  <li>The basics Node JS</li>
+                  <li>Work with modules</li>
+                  <li>Build Your own server</li>
+                  <li>Get a quick introduction to node and npm</li>
+                  
                 </ul>
               </div>
             </div>
@@ -165,10 +155,9 @@ class Page extends Component {
               <h3>Modern Javascript</h3>
               <div className="grid-container">
                 <div className="column">
-                  <h1>SASS</h1>
+                  <h1>NPM</h1>
                   <p>
-                    We use all the modern tools like sass and web dev starter
-                    kit.{' '}
+                    The biggest package manager in the world{' '}
                   </p>
                 </div>
                 <div className="column">
@@ -194,34 +183,12 @@ class Page extends Component {
                   </p>
                 </div>
               </div>
-              <div className="grid-container">
-                <div className="column">
-                  <img src={toolChromeIMG} alt="Chrome program" ref="tool2" />
-                </div>
-                <div className="column">
-                  <h1>Google Chrome</h1>
-                  <p>
-                    The best browser for development and debugging
-                  </p>
-                </div>
-              </div>
-              <div className="grid-container">
-                <div className="column">
-                  <img src={toolAtomIMG} alt="tiled program" ref="tool1" />
-                </div>
-                <div className="column">
-                  <h1>Atom</h1>
-                  <p>
-                    Text editor with syntax highlighting to help write better
-                    code
-                  </p>
-                </div>
-              </div>
+              
             </div>
           </div>
         </section>
 
-        <section id="project-preview">
+        {/* <section id="project-preview">
           <div className="bg" />
           <div className="section-content">
             <div className="container">
@@ -232,13 +199,13 @@ class Page extends Component {
               </h3>
               <div className="info-area">
                 <div className="info-column">
-                  <h2>Web Developer Portfolio</h2>
+                  <h2>Fullstack Facebook Clone</h2>
                 </div>
                 <div className="img-column">
                   <div className="chartbg">
                     <img
                       src={previewLaptopProject1IMG}
-                      alt={`${this.props.data.title} on macbook pro`}
+                      alt="tictactoe game on iphone"
                       ref="project1"
                     />
                   </div>
@@ -246,7 +213,7 @@ class Page extends Component {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section id="payment-section">
           <div className="section-content">
@@ -307,21 +274,21 @@ class Page extends Component {
 
 const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
-    course => course.slug === 'web-developer-personal-brand'
+    course => course.slug === 'node-and-npm-basics'
   )[0]
   console.log(pageData)
   return (
     <Layout>
       <SEO
         title={pageData.title}
-        keywords={[`gatsby`, `application`, `react`]}
+        keywords={[`node`, `npm`, `react`]}
       />
       <Page data={pageData} />
     </Layout>
   )
 }
 export const query = graphql`
-  query WebDevBrandPageQuery {
+  query NodeNPMPageQuery {
     coursesDataJson {
       data {
         title

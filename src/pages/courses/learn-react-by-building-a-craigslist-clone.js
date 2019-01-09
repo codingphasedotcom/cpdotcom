@@ -7,13 +7,11 @@ import Watchers from '../../components/watchers.js'
 
 // import ScrollReveal from 'scrollreveal'
 
-import courseLogoIMG from '../../../assets/courses/web_dev_brand/course-logo.png'
-import codeExampleIMG from '../../../assets/courses/web_dev_brand/code-example.png'
-import toolAtomIMG from '../../../assets/tools/tool-atom.png'
-import toolChromeIMG from '../../../assets/tools/tool-chrome.png'
-import toolTerminalIMG from '../../../assets/tools/tool-terminal.png'
-import previewLaptopProject1IMG from '../../../assets/courses/web_dev_brand/preview-laptop-project1.png'
-import jumboBGIMG from '../../../assets/courses/web_dev_brand/jumbobg.png'
+import courseLogoIMG from '../../../assets/courses/react_router/course-logo.png'
+import codeExampleIMG from '../../../assets/courses/react_router/code-example.png'
+import toolAtomIMG from '../../../assets/courses/react_router/tool-atom.png'
+import previewLaptopProject1IMG from '../../../assets/courses/react_router/preview-laptop-project1.png'
+import jumboBGIMG from '../../../assets/courses/react_router/jumbobg.png'
 class Page extends Component {
   constructor() {
     super()
@@ -139,20 +137,14 @@ class Page extends Component {
                 />
               </div>
               <div className="column">
-                <h2>Lets make sure you build your brand</h2>
-                <p>
-                  If you are a junior developer looking to get hired ASAP this
-                  is the best courses for you. I will teach you how to create a
-                  brand for yourself as a web developer that will impress your
-                  future employer. We will also build a portfolio that will show
-                  that you are a professional developer not just a junior
-                  developer. We will start with all the major social network
-                  platforms and then we will build your portfolio.
-                </p>
+                <h2>React Router is a must!</h2>
                 <ul>
-                  <li>Learn to use social media to promote your self</li>
-                  <li>Learn the tricks to help you get a job</li>
-                  <li>Build a portfolio that will help you get a job</li>
+                  <li>Learn React Router</li>
+                  <li>Get variables from url</li>
+                  <li>Filter Data</li>
+                  <li>Build a slider</li>
+                  <li>Create pages out of components</li>
+                  <li>Build a craigslist clone</li>
                 </ul>
               </div>
             </div>
@@ -165,11 +157,8 @@ class Page extends Component {
               <h3>Modern Javascript</h3>
               <div className="grid-container">
                 <div className="column">
-                  <h1>SASS</h1>
-                  <p>
-                    We use all the modern tools like sass and web dev starter
-                    kit.{' '}
-                  </p>
+                  <h1>ES6+</h1>
+                  <p>We made sure we used the latest Javascript. </p>
                 </div>
                 <div className="column">
                   <img src={codeExampleIMG} alt="Code Example" ref="code" />
@@ -183,28 +172,6 @@ class Page extends Component {
           <div className="section-content">
             <div className="container">
               <h3>Tools</h3>
-              <div className="grid-container">
-                <div className="column">
-                  <img src={toolTerminalIMG} alt="terminal program" ref="tool1" />
-                </div>
-                <div className="column">
-                  <h1>terminal</h1>
-                  <p>
-                    use your favorite terminal for commands
-                  </p>
-                </div>
-              </div>
-              <div className="grid-container">
-                <div className="column">
-                  <img src={toolChromeIMG} alt="Chrome program" ref="tool2" />
-                </div>
-                <div className="column">
-                  <h1>Google Chrome</h1>
-                  <p>
-                    The best browser for development and debugging
-                  </p>
-                </div>
-              </div>
               <div className="grid-container">
                 <div className="column">
                   <img src={toolAtomIMG} alt="tiled program" ref="tool1" />
@@ -232,7 +199,7 @@ class Page extends Component {
               </h3>
               <div className="info-area">
                 <div className="info-column">
-                  <h2>Web Developer Portfolio</h2>
+                  <h2>Craigslist Clone</h2>
                 </div>
                 <div className="img-column">
                   <div className="chartbg">
@@ -307,7 +274,7 @@ class Page extends Component {
 
 const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
-    course => course.slug === 'web-developer-personal-brand'
+    course => course.slug === 'learn-react-by-building-a-craigslist-clone'
   )[0]
   console.log(pageData)
   return (
@@ -321,7 +288,7 @@ const IndexPage = ({ data, location }) => {
   )
 }
 export const query = graphql`
-  query WebDevBrandPageQuery {
+  query ReactRouterPageQuery {
     coursesDataJson {
       data {
         title

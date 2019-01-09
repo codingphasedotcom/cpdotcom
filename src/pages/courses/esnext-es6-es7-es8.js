@@ -7,13 +7,13 @@ import Watchers from '../../components/watchers.js'
 
 // import ScrollReveal from 'scrollreveal'
 
-import courseLogoIMG from '../../../assets/courses/web_dev_brand/course-logo.png'
-import codeExampleIMG from '../../../assets/courses/web_dev_brand/code-example.png'
+import courseLogoIMG from '../../../assets/courses/esnext/course-logo.png'
+import codeExampleIMG from '../../../assets/courses/esnext/code-example.png'
+import toolTerminalIMG from '../../../assets/tools/tool-terminal.png'
 import toolAtomIMG from '../../../assets/tools/tool-atom.png'
 import toolChromeIMG from '../../../assets/tools/tool-chrome.png'
-import toolTerminalIMG from '../../../assets/tools/tool-terminal.png'
-import previewLaptopProject1IMG from '../../../assets/courses/web_dev_brand/preview-laptop-project1.png'
-import jumboBGIMG from '../../../assets/courses/web_dev_brand/jumbobg.png'
+import previewLaptopProject1IMG from '../../../assets/courses/esnext/preview-laptop-project1.png'
+import jumboBGIMG from '../../../assets/courses/esnext/jumbobg.png'
 class Page extends Component {
   constructor() {
     super()
@@ -139,20 +139,14 @@ class Page extends Component {
                 />
               </div>
               <div className="column">
-                <h2>Lets make sure you build your brand</h2>
-                <p>
-                  If you are a junior developer looking to get hired ASAP this
-                  is the best courses for you. I will teach you how to create a
-                  brand for yourself as a web developer that will impress your
-                  future employer. We will also build a portfolio that will show
-                  that you are a professional developer not just a junior
-                  developer. We will start with all the major social network
-                  platforms and then we will build your portfolio.
-                </p>
+                <h2>React Is The Most Popular Front End Framework</h2>
                 <ul>
-                  <li>Learn to use social media to promote your self</li>
-                  <li>Learn the tricks to help you get a job</li>
-                  <li>Build a portfolio that will help you get a job</li>
+                  <li>Learn JSX</li>
+                  <li>Create Reusable Components</li>
+                  <li>Use ES6+ with React</li>
+                  <li>React lifecycles</li>
+                  <li>Learn to filter data</li>
+                  <li>Build a Real Estate Websites</li>
                 </ul>
               </div>
             </div>
@@ -165,11 +159,8 @@ class Page extends Component {
               <h3>Modern Javascript</h3>
               <div className="grid-container">
                 <div className="column">
-                  <h1>SASS</h1>
-                  <p>
-                    We use all the modern tools like sass and web dev starter
-                    kit.{' '}
-                  </p>
+                  <h1>ES6+</h1>
+                  <p>We made sure we used the latest Javascript. </p>
                 </div>
                 <div className="column">
                   <img src={codeExampleIMG} alt="Code Example" ref="code" />
@@ -185,12 +176,12 @@ class Page extends Component {
               <h3>Tools</h3>
               <div className="grid-container">
                 <div className="column">
-                  <img src={toolTerminalIMG} alt="terminal program" ref="tool1" />
+                  <img src={toolTerminalIMG} alt="atom program" ref="tool1" />
                 </div>
                 <div className="column">
-                  <h1>terminal</h1>
+                  <h1>Terminal</h1>
                   <p>
-                    use your favorite terminal for commands
+                    use a text editor to write your code
                   </p>
                 </div>
               </div>
@@ -221,7 +212,7 @@ class Page extends Component {
           </div>
         </section>
 
-        <section id="project-preview">
+        {/* <section id="project-preview">
           <div className="bg" />
           <div className="section-content">
             <div className="container">
@@ -232,7 +223,7 @@ class Page extends Component {
               </h3>
               <div className="info-area">
                 <div className="info-column">
-                  <h2>Web Developer Portfolio</h2>
+                  <h2>Real Estate Listing App</h2>
                 </div>
                 <div className="img-column">
                   <div className="chartbg">
@@ -246,7 +237,7 @@ class Page extends Component {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section id="payment-section">
           <div className="section-content">
@@ -307,7 +298,7 @@ class Page extends Component {
 
 const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
-    course => course.slug === 'web-developer-personal-brand'
+    course => course.slug === 'esnext-es6-es7-es8'
   )[0]
   console.log(pageData)
   return (
@@ -321,7 +312,7 @@ const IndexPage = ({ data, location }) => {
   )
 }
 export const query = graphql`
-  query WebDevBrandPageQuery {
+  query ESNEXTPageQuery {
     coursesDataJson {
       data {
         title

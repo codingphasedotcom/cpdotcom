@@ -37,7 +37,7 @@
       ],
       "slug": "node-and-npm-basics",
       "url": "https://codingphase.teachable.com/p/node-and-npm-basics",
-      "favorite": true,
+      "favorite": false,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:1440/https://www.filepicker.io/api/file/4dhwfogkTKifToz3LNvt"
       }
@@ -109,7 +109,7 @@
     },
     {
       "title": "Learn React by Building a Craigslist Clone",
-      "price": 50,
+      "price": 30,
       "hours": 10,
       "type": "premium",
       "category": ["Javascript"],
@@ -165,7 +165,7 @@
       "hours": 20,
       "type": "premium",
       "category": ["Javascript"],
-      "slug": "learn-esnext–es6-es7-8",
+      "slug": "esnext-es6-es7-es8",
       "url": "https://sso.teachable.com/secure/117955/checkout/805978/esnext-es6-es7-es8",
       "favorite": false,
       "imgs": {

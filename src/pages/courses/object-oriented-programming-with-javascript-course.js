@@ -113,11 +113,11 @@ class Page extends Component {
               <a
                 href={`${
                   this.state.couponActive
-                    ? `${this.props.data.url}?coupon_code=${getUrlParam(
+                    ? `${this.props.data.urlOld}?coupon_code=${getUrlParam(
                         'coupon',
                         '0'
                       ).toUpperCase()}`
-                    : `${this.props.data.url}`
+                    : `${this.props.data.urlOld}`
                 }`}
                 className="button"
               >
@@ -249,11 +249,11 @@ class Page extends Component {
                   <a
                     href={`${
                       this.state.couponActive
-                        ? `${this.props.data.url}?coupon_code=${getUrlParam(
+                        ? `${this.props.data.urlOld}?coupon_code=${getUrlParam(
                             'coupon',
                             '0'
                           ).toUpperCase()}`
-                        : `${this.props.data.url}`
+                        : `${this.props.data.urlOld}`
                     }`}
                     className="button"
                   >
@@ -312,6 +312,7 @@ export const query = graphql`
         category
         slug
         url
+        urlOld
         hours
         favorite
         imgs {

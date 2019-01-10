@@ -23,14 +23,14 @@ class Header extends Component {
             <Link to="/">{this.props.siteTitle}</Link>
           </div>
           <div className="menu">
-            <a href="/courses">Courses</a>
+            <a href="/courses">All Courses</a>
             {/* <Link to="/blog">Blog</Link> */}
             <a href="/timeline">
               Timeline
             </a>
             <a href="https://discordapp.com/invite/weTKutq">Chat</a>
             <a href="https://codingphase.teachable.com/courses/enrolled">
-              Members Area
+              My Courses
             </a>
             {/* <Link to="/contact">Contact</Link> */}
             <div
@@ -48,11 +48,11 @@ class Header extends Component {
           
         </header>
         <div id="mobileMenu" className={this.state.mobileMenuActive ? 'active': ''}>
-          <a href="/courses">Courses</a>
+          <a href="/courses">All Courses</a>
           {/* <Link to="/blog">Blog</Link> */}
           <a href="https://discordapp.com/invite/weTKutq">Chat</a>
           <a href="https://codingphase.teachable.com/courses/enrolled">
-            Members Area
+            My Courses
           </a>
           {/* <Link to="/contact">Contact</Link> */}
         </div>

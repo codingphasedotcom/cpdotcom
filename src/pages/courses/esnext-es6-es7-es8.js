@@ -114,11 +114,11 @@ class Page extends Component {
               <a
                 href={`${
                   this.state.couponActive
-                    ? `${this.props.data.url}?coupon_code=${getUrlParam(
+                    ? `${this.props.data.urlOld}?coupon_code=${getUrlParam(
                         'coupon',
                         '0'
                       ).toUpperCase()}`
-                    : `${this.props.data.url}`
+                    : `${this.props.data.urlOld}`
                 }`}
                 className="button"
               >
@@ -139,14 +139,14 @@ class Page extends Component {
                 />
               </div>
               <div className="column">
-                <h2>React Is The Most Popular Front End Framework</h2>
+                <h2>ESNEXT</h2>
                 <ul>
-                  <li>Learn JSX</li>
-                  <li>Create Reusable Components</li>
-                  <li>Use ES6+ with React</li>
-                  <li>React lifecycles</li>
-                  <li>Learn to filter data</li>
-                  <li>Build a Real Estate Websites</li>
+                  <li>Learn all the latest Javascript features that are added to the language</li>
+                  <li>ES6 2015</li>
+                  <li>ES7 2016</li>
+                  <li>ES8 2017</li>
+                  <li>ES9 2018</li>
+                  <li>ES10 2019</li>
                 </ul>
               </div>
             </div>
@@ -258,11 +258,11 @@ class Page extends Component {
                   <a
                     href={`${
                       this.state.couponActive
-                        ? `${this.props.data.url}?coupon_code=${getUrlParam(
+                        ? `${this.props.data.urlOld}?coupon_code=${getUrlParam(
                             'coupon',
                             '0'
                           ).toUpperCase()}`
-                        : `${this.props.data.url}`
+                        : `${this.props.data.urlOld}`
                     }`}
                     className="button"
                   >
@@ -321,6 +321,7 @@ export const query = graphql`
         category
         slug
         url
+        urlOld
         hours
         favorite
         imgs {

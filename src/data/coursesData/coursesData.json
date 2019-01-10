@@ -7,7 +7,8 @@
       "type": "premium",
       "category": ["HTML", "CSS", "Email"],
       "slug": "responsive-html-emails-course",
-      "url": "https://sso.teachable.com/secure/117955/checkout/682848/responsive-html-emails-course",
+      "url": "/courses/responsive-html-emails-course",
+      "urlOld": "https://sso.teachable.com/secure/117955/checkout/682848/responsive-html-emails-course",
       "favorite": true,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/6cKflL1DQFWht85RClc9"
@@ -36,7 +37,8 @@
         "Node"
       ],
       "slug": "node-and-npm-basics",
-      "url": "https://codingphase.teachable.com/p/node-and-npm-basics",
+      "url": "/courses/node-and-npm-basics",
+      "urlOld": "https://codingphase.teachable.com/p/node-and-npm-basics",
       "favorite": false,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:1440/https://www.filepicker.io/api/file/4dhwfogkTKifToz3LNvt"
@@ -49,7 +51,8 @@
       "type": "premium",
       "category": ["Javascript", "Node"],
       "slug": "node-adonis-js-javascript-fullstack-course",
-      "url": "https://sso.teachable.com/secure/117955/checkout/587814/node-adonis-js-javascript-fullstack-course",
+      "url": "/courses/node-adonis-js-javascript-fullstack-course",
+      "urlOld": "https://sso.teachable.com/secure/117955/checkout/587814/node-adonis-js-javascript-fullstack-course",
       "favorite": true,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:1440/https://www.filepicker.io/api/file/4dhwfogkTKifToz3LNvt"
@@ -62,7 +65,8 @@
       "type": "premium",
       "category": ["Javascript", "Phaser"],
       "slug": "phaser-3-make-games-with-javascript-course",
-      "url": "https://sso.teachable.com/secure/117955/checkout/909879/phaser-3-make-games-with-javascript-course",
+      "url": "/courses/phaser-3-make-games-with-javascript-course",
+      "urlOld": "https://sso.teachable.com/secure/117955/checkout/909879/phaser-3-make-games-with-javascript-course",
       "favorite": true,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/Zi7jWqUQeWQLEhlbJZQg"
@@ -75,7 +79,8 @@
       "type": "premium",
       "category": ["Javascript"],
       "slug": "learn-mysql-with-node-js-course",
-      "url": "https://sso.teachable.com/secure/117955/checkout/807471/learn-mysql-with-node-js-course",
+      "url": "/courses/learn-mysql-with-node-js-course",
+      "urlOld": "https://sso.teachable.com/secure/117955/checkout/807471/learn-mysql-with-node-js-course",
       "favorite": true,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/E8DBFmHdTLWdXWy5AvCq"
@@ -88,7 +93,8 @@
       "type": "Free",
       "category": ["Javascript"],
       "slug": "crystal-lang-programming-language-master-course",
-      "url": "https://codingphase.teachable.com/p/crystal-lang-learn-programming-with-crystal",
+      "url": "/courses/crystal-lang-learn-programming-with-crystal",
+      "urlOld": "https://codingphase.teachable.com/p/crystal-lang-learn-programming-with-crystal",
       "favorite": false,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/E8DBFmHdTLWdXWy5AvCq"
@@ -101,7 +107,8 @@
       "type": "Free",
       "category": ["PHP", "Wordpress"],
       "slug": "build-any-site-into-a-wordpress-theme",
-      "url": "https://sso.teachable.com/secure/117955/checkout/754526/build-any-site-into-a-wordpress-theme",
+      "url": "/courses/build-any-site-into-a-wordpress-theme",
+      "urlOld": "https://sso.teachable.com/secure/117955/checkout/754526/build-any-site-into-a-wordpress-theme",
       "favorite": false,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/xD8yVwbXToG3K4e9lCki"
@@ -114,7 +121,8 @@
       "type": "premium",
       "category": ["Javascript"],
       "slug": "learn-react-by-building-a-craigslist-clone",
-      "url": "https://sso.teachable.com/secure/117955/checkout/554783/learn-react-by-building-a-craigslist-clone",
+      "url": "/courses/learn-react-by-building-a-craigslist-clone",
+      "urlOld": "https://sso.teachable.com/secure/117955/checkout/554783/learn-react-by-building-a-craigslist-clone",
       "favorite": false,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:1440/https://www.filepicker.io/api/file/aXJiG9uTXm0MdSpswLfg"
@@ -127,7 +135,8 @@
       "type": "premium",
       "category": ["Javascript"],
       "slug": "gulp-web-developer-starter-kit",
-      "url": "https://sso.teachable.com/secure/117955/checkout/805969/gulp-web-developer-starter-kit",
+      "url": "/courses/gulp-web-developer-starter-kit",
+      "urlOld": "https://sso.teachable.com/secure/117955/checkout/805969/gulp-web-developer-starter-kit",
       "favorite": false,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/nEeS9uvsROWb1mKHQAXg"
@@ -140,7 +149,8 @@
       "type": "premium",
       "category": ["Javascript"],
       "slug": "jquery-a-beginners-best-friend",
-      "url": "https://sso.teachable.com/secure/117955/checkout/805967/jquery-a-beginners-best-friend",
+      "url": "/courses/jquery-a-beginners-best-friend",
+      "urlOld": "https://sso.teachable.com/secure/117955/checkout/805967/jquery-a-beginners-best-friend",
       "favorite": false,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/EIjWpAGpQOGJXmBGzJvt"
@@ -153,7 +163,8 @@
       "type": "premium",
       "category": ["PHP", "Laravel"],
       "slug": "learn-php-7-and-laravel-master-course",
-      "url": "https://sso.teachable.com/secure/117955/checkout/450074/learn-php-7-and-laravel-master-course",
+      "url": "/courses/learn-php-7-and-laravel-master-course",
+      "urlOld": "https://sso.teachable.com/secure/117955/checkout/450074/learn-php-7-and-laravel-master-course",
       "favorite": true,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/E8ULhysScmJnU2cmhNaA"
@@ -166,7 +177,8 @@
       "type": "premium",
       "category": ["Javascript"],
       "slug": "esnext-es6-es7-es8",
-      "url": "https://sso.teachable.com/secure/117955/checkout/805978/esnext-es6-es7-es8",
+      "url": "/courses/esnext-es6-es7-es8",
+      "urlOld": "https://sso.teachable.com/secure/117955/checkout/805978/esnext-es6-es7-es8",
       "favorite": false,
       "imgs": {
         "thumbnail": "https://www.filepicker.io/api/file/RxSk03j0QBGtZ5s6C2pq"
@@ -179,7 +191,8 @@
       "type": "premium",
       "category": ["HTML", "CSS"],
       "slug": "learn-html-and-css-by-building-a-cool-social-network",
-      "url": "https://sso.teachable.com/secure/117955/checkout/702542/learn-html-and-css-by-building-a-cool-social-network",
+      "url": "/courses/learn-html-and-css-by-building-a-cool-social-network",
+      "urlOld": "https://sso.teachable.com/secure/117955/checkout/702542/learn-html-and-css-by-building-a-cool-social-network",
       "favorite": false,
       "imgs": {
         "thumbnail": "https://www.filepicker.io/api/file/IO7EpSNXQSKA5yHO0pgj"
@@ -187,12 +200,13 @@
     },
     {
       "title": "PUG JS – Template Engine",
-      "price": 50,
+      "price": 30,
       "hours": 2,
       "type": "premium",
       "category": ["HTML", "CSS"],
-      "slug": "pug-js–template-engine",
-      "url": "https://sso.teachable.com/secure/117955/checkout/805971/pug-js-template-engine",
+      "slug": "pug-js-template-engine",
+      "url": "/courses/pug-js-template-engine",
+      "urlOld": "https://sso.teachable.com/secure/117955/checkout/948845/pug-js-template-engine",
       "favorite": false,
       "imgs": {
         "thumbnail": "https://www.filepicker.io/api/file/JIlwezxNS3OU0h4oqKc8"
@@ -206,6 +220,7 @@
       "category": ["HTML", "CSS"],
       "slug": "html-and-css-dashboard",
       "url": "https://codingphase.teachable.com/p/html-css-dashboard",
+      "urlOld": "https://codingphase.teachable.com/p/html-css-dashboard",
       "favorite": false,
       "imgs": {
         "thumbnail": "https://www.filepicker.io/api/file/kNEkTTsQmSwSo7f1AqZh"
@@ -218,7 +233,8 @@
       "type": "premium",
       "category": ["Javascript"],
       "slug": "react-quick-and-easy",
-      "url": "https://sso.teachable.com/secure/117955/checkout/702547/react-quick-and-easy",
+      "url": "/courses/react-quick-and-easy",
+      "urlOld": "https://sso.teachable.com/secure/117955/checkout/702547/react-quick-and-easy",
       "favorite": true,
       "imgs": {
         "thumbnail": "https://www.filepicker.io/api/file/RX9eR6VTrKKkdIak3Xmr"
@@ -231,7 +247,8 @@
       "type": "premium",
       "category": ["Ruby"],
       "slug": "ruby-on-rails",
-      "url": "https://sso.teachable.com/secure/117955/checkout/702543/ruby-on-rails",
+      "url": "/courses/ruby-on-rails",
+      "urlOld": "https://sso.teachable.com/secure/117955/checkout/702543/ruby-on-rails",
       "favorite": false,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:1440/https://www.filepicker.io/api/file/xFNouFlVRBWcZzBugvSP"
@@ -257,7 +274,8 @@
       "type": "premium",
       "category": ["HTML", "CSS"],
       "slug": "web-developer-personal-brand",
-      "url": "https://sso.teachable.com/secure/117955/checkout/702475/web-developer-personal-brand",
+      "url": "/courses/web-developer-personal-brand",
+      "urlOld": "https://sso.teachable.com/secure/117955/checkout/702475/web-developer-personal-brand",
       "favorite": true,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/n2dpH8VwSauKFLE0lOX4"
@@ -270,7 +288,8 @@
       "type": "premium",
       "category": ["Ruby"],
       "slug": "learn-ruby-backend-developer-master-course",
-      "url": "https://sso.teachable.com/secure/117955/checkout/547328/learn-ruby-backend-developer-master-course",
+      "url": "/courses/learn-ruby-backend-developer-master-course",
+      "urlOld": "https://sso.teachable.com/secure/117955/checkout/547328/learn-ruby-backend-developer-master-course",
       "favorite": false,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:1440/https://www.filepicker.io/api/file/ur4bFGquS4GrSsPrNa9l"
@@ -296,7 +315,8 @@
       "type": "premium",
       "category": ["HTML", "CSS", "SASS"],
       "slug": "advance-CSS-with-flexbox-and-css-grid",
-      "url": "https://sso.teachable.com/secure/117955/checkout/486269/learn-advance-css-with-flexbox-and-css-grid-course",
+      "url": "/courses/learn-advance-css-with-flexbox-and-css-grid-course",
+      "urlOld": "https://sso.teachable.com/secure/117955/checkout/486269/learn-advance-css-with-flexbox-and-css-grid-course",
       "favorite": true,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/Lo0qcAkTcKYlkdSS3YRu"
@@ -348,7 +368,8 @@
       "type": "premium",
       "category": ["Javascript"],
       "slug": "sass-like-a-pro-course",
-      "url": "https://sso.teachable.com/secure/117955/checkout/399106/sass-like-a-pro",
+      "url": "/courses/sass-like-a-pro",
+      "urlOld": "https://sso.teachable.com/secure/117955/checkout/399106/sass-like-a-pro",
       "favorite": false,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/1YohZyMRgSpjHBktepOY"
@@ -387,7 +408,8 @@
       "type": "premium",
       "category": ["Javascript"],
       "slug": "future-proof-javascript-course",
-      "url": "https://sso.teachable.com/secure/117955/checkout/702550/future-proof-javascript",
+      "url": "/courses/future-proof-javascript",
+      "urlOld": "https://sso.teachable.com/secure/117955/checkout/702550/future-proof-javascript",
       "favorite": false,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:1440/https://www.filepicker.io/api/file/FLqG3OQsSayfGXQWIllc"
@@ -400,7 +422,8 @@
       "type": "premium",
       "category": ["Javascript"],
       "slug": "object-oriented-programming-with-javascript-course",
-      "url": "https://sso.teachable.com/secure/117955/checkout/448351/object-oriented-programming-with-javascript-course",
+      "url": "/courses/object-oriented-programming-with-javascript-course",
+      "urlOld": "https://sso.teachable.com/secure/117955/checkout/448351/object-oriented-programming-with-javascript-course",
       "favorite": false,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/ChkWGZGITLWXM8SrTy8F"

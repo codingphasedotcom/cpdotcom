@@ -4,45 +4,46 @@ import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 import { getUrlParam } from '../../components/GetParams'
 import Watchers from '../../components/watchers.js'
+
 // import ScrollReveal from 'scrollreveal'
 
-import courseLogoIMG from '../../../assets/courses/jquery/course-logo.png'
-import codeExampleIMG from '../../../assets/courses/jquery/code-example.png'
-
+import courseLogoIMG from '../../../assets/courses/ruby_rails/course-logo.png'
+import codeExampleIMG from '../../../assets/courses/ruby_rails/code-example.png'
+import toolAtomIMG from '../../../assets/courses/ruby_rails/tool-atom.png'
 import toolTerminalIMG from '../../../assets/tools/tool-terminal.png'
-import toolAtomIMG from '../../../assets/tools/tool-atom.png'
 import toolChromeIMG from '../../../assets/tools/tool-chrome.png'
-import previewLaptopProject1IMG from '../../../assets/courses/jquery/preview-laptop-project1.png'
-import jumboBGIMG from '../../../assets/courses/jquery/jumbobg.png'
+import previewLaptopProject1IMG from '../../../assets/courses/ruby_rails/preview-laptop-project1.png'
+import jumboBGIMG from '../../../assets/courses/ruby_rails/jumbobg.png'
 class Page extends Component {
   constructor() {
     super()
     this.state = {
-      coursePrice: 50,
+      coursePrice: 0,
       couponActive: false,
     }
   }
   componentDidMount = () => {
     this.setState({
       coursePrice: this.props.data.price
-    }, () => {
-      if (
-        getUrlParam('coupon', '0') !== '0' &&
-        getUrlParam('percent', '0') !== '0'
-      ) {
-        function priceAfterDiscount(price, discountPercent) {
-          return price - (discountPercent * price) / 100
+    },() => {
+        if (
+          getUrlParam('coupon', '0') !== '0' &&
+          getUrlParam('percent', '0') !== '0'
+        ) {
+          function priceAfterDiscount(price, discountPercent) {
+            return price - (discountPercent * price) / 100
+          }
+          var finalPrice = priceAfterDiscount(
+            this.state.coursePrice,
+            getUrlParam('percent', '0')
+          )
+          this.setState({
+            coursePrice: finalPrice,
+            couponActive: true,
+          })
         }
-        var finalPrice = priceAfterDiscount(
-          this.state.coursePrice,
-          getUrlParam('percent', '0')
-        )
-        this.setState({
-          coursePrice: finalPrice,
-          couponActive: true,
-        })
-      }
     })
+    
     import('scrollreveal').then(({ default: ScrollReveal }) => {
       window.sr = ScrollReveal()
       const sr = window.sr
@@ -81,7 +82,7 @@ class Page extends Component {
       sr.reveal(this.refs.project1, {
         origin: 'bottom',
         duration: 1000,
-        delay: 150,
+        delay: 500,
         distance: '300px',
         scale: 1,
         easing: 'ease',
@@ -139,18 +140,15 @@ class Page extends Component {
                 />
               </div>
               <div className="column">
-                <h2>Working with the DOM can be simple with JQuery</h2>
+                <h2>One of the fastest programming languages</h2>
                 <ul>
-                  <li>Understand the DOM</li>
-                  <li>Event Handlers</li>
-                  <li>Event Objects</li>
-                  <li>Form Events</li>
-                  <li>DOM manipulation</li>
-                  <li>Traversing</li>
-                  <li>AJAX</li>
-                  <li>Create Your Own Pokedex API</li>
-                  
-                  
+                  <li>Build sites quick with rails</li>
+                  <li>Rails file structure</li>
+                  <li>Controllers</li>
+                  <li>Models</li>
+                  <li>View</li>
+                  <li>Build a blog with rails</li>
+                  <li>and much more...</li>
                 </ul>
               </div>
             </div>
@@ -160,12 +158,12 @@ class Page extends Component {
         <section id="course-highlight">
           <div className="section-content">
             <div className="container">
-              <h3>Modern Javascript</h3>
+              <h3>Modern Development</h3>
               <div className="grid-container">
                 <div className="column">
-                  <h1>NPM</h1>
+                  <h1>FAST</h1>
                   <p>
-                    The biggest package manager in the world{' '}
+                    The beauty of rails is that you can build any startup yourself because all the tools are provided to you{' '}
                   </p>
                 </div>
                 <div className="column">
@@ -180,13 +178,12 @@ class Page extends Component {
           <div className="section-content">
             <div className="container">
               <h3>Tools</h3>
-              
               <div className="grid-container">
                 <div className="column">
-                  <img src={toolAtomIMG} alt="atom program" ref="tool1" />
+                  <img src={toolTerminalIMG} alt="atom program" ref="tool1" />
                 </div>
                 <div className="column">
-                  <h1>Atom</h1>
+                  <h1>Terminal</h1>
                   <p>
                     use a text editor to write your code
                   </p>
@@ -203,11 +200,23 @@ class Page extends Component {
                   </p>
                 </div>
               </div>
+              <div className="grid-container">
+                <div className="column">
+                  <img src={toolAtomIMG} alt="tiled program" ref="tool1" />
+                </div>
+                <div className="column">
+                  <h1>Atom</h1>
+                  <p>
+                    Text editor with syntax highlighting to help write better
+                    code
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* <section id="project-preview">
+        <section id="project-preview">
           <div className="bg" />
           <div className="section-content">
             <div className="container">
@@ -218,7 +227,7 @@ class Page extends Component {
               </h3>
               <div className="info-area">
                 <div className="info-column">
-                  <h2>Fullstack Facebook Clone</h2>
+                  <h2>Build a blog</h2>
                 </div>
                 <div className="img-column">
                   <div className="chartbg">
@@ -232,7 +241,7 @@ class Page extends Component {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
 
         <section id="payment-section">
           <div className="section-content">
@@ -293,21 +302,21 @@ class Page extends Component {
 
 const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
-    course => course.slug === 'jquery-a-beginners-best-friend'
+    course => course.slug === 'ruby-on-rails'
   )[0]
   console.log(pageData)
   return (
     <Layout>
       <SEO
         title={pageData.title}
-        keywords={[`javascript`, `jquery`, `ajax`]}
+        keywords={[`Ruby`, `Ruby On Rails`, `Web Development`]}
       />
       <Page data={pageData} />
     </Layout>
   )
 }
 export const query = graphql`
-  query JQUERYPageQuery {
+  query RubyOnRailsPageQuery {
     coursesDataJson {
       data {
         title

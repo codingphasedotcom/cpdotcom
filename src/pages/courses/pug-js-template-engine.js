@@ -4,16 +4,16 @@ import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 import { getUrlParam } from '../../components/GetParams'
 import Watchers from '../../components/watchers.js'
+
 // import ScrollReveal from 'scrollreveal'
 
-import courseLogoIMG from '../../../assets/courses/jquery/course-logo.png'
-import codeExampleIMG from '../../../assets/courses/jquery/code-example.png'
-
+import courseLogoIMG from '../../../assets/courses/pug/course-logo.png'
+import codeExampleIMG from '../../../assets/courses/pug/code-example.png'
 import toolTerminalIMG from '../../../assets/tools/tool-terminal.png'
 import toolAtomIMG from '../../../assets/tools/tool-atom.png'
 import toolChromeIMG from '../../../assets/tools/tool-chrome.png'
-import previewLaptopProject1IMG from '../../../assets/courses/jquery/preview-laptop-project1.png'
-import jumboBGIMG from '../../../assets/courses/jquery/jumbobg.png'
+import previewLaptopProject1IMG from '../../../assets/courses/pug/preview-laptop-project1.png'
+import jumboBGIMG from '../../../assets/courses/pug/jumbobg.png'
 class Page extends Component {
   constructor() {
     super()
@@ -139,18 +139,15 @@ class Page extends Component {
                 />
               </div>
               <div className="column">
-                <h2>Working with the DOM can be simple with JQuery</h2>
+                <h2>Pug make HTML fun again!</h2>
                 <ul>
-                  <li>Understand the DOM</li>
-                  <li>Event Handlers</li>
-                  <li>Event Objects</li>
-                  <li>Form Events</li>
-                  <li>DOM manipulation</li>
-                  <li>Traversing</li>
-                  <li>AJAX</li>
-                  <li>Create Your Own Pokedex API</li>
-                  
-                  
+                  <li>Learn Pug syntax</li>
+                  <li>Use with Codepen.io, node, and many other platforms</li>
+                  <li>Loops</li>
+                  <li>Mixins</li>
+                  <li>Includes</li>
+                  <li>Run Locally</li>
+                  <li>Create Layouts</li>
                 </ul>
               </div>
             </div>
@@ -163,10 +160,8 @@ class Page extends Component {
               <h3>Modern Javascript</h3>
               <div className="grid-container">
                 <div className="column">
-                  <h1>NPM</h1>
-                  <p>
-                    The biggest package manager in the world{' '}
-                  </p>
+                  <h1>ES6+</h1>
+                  <p>We made sure we used the latest Javascript. </p>
                 </div>
                 <div className="column">
                   <img src={codeExampleIMG} alt="Code Example" ref="code" />
@@ -180,13 +175,12 @@ class Page extends Component {
           <div className="section-content">
             <div className="container">
               <h3>Tools</h3>
-              
               <div className="grid-container">
                 <div className="column">
-                  <img src={toolAtomIMG} alt="atom program" ref="tool1" />
+                  <img src={toolTerminalIMG} alt="atom program" ref="tool1" />
                 </div>
                 <div className="column">
-                  <h1>Atom</h1>
+                  <h1>Terminal</h1>
                   <p>
                     use a text editor to write your code
                   </p>
@@ -200,6 +194,18 @@ class Page extends Component {
                   <h1>Google Chrome</h1>
                   <p>
                     The best browser for development and debugging
+                  </p>
+                </div>
+              </div>
+              <div className="grid-container">
+                <div className="column">
+                  <img src={toolAtomIMG} alt="tiled program" ref="tool1" />
+                </div>
+                <div className="column">
+                  <h1>Atom</h1>
+                  <p>
+                    Text editor with syntax highlighting to help write better
+                    code
                   </p>
                 </div>
               </div>
@@ -218,13 +224,13 @@ class Page extends Component {
               </h3>
               <div className="info-area">
                 <div className="info-column">
-                  <h2>Fullstack Facebook Clone</h2>
+                  <h2>Real Estate Listing App</h2>
                 </div>
                 <div className="img-column">
                   <div className="chartbg">
                     <img
                       src={previewLaptopProject1IMG}
-                      alt="tictactoe game on iphone"
+                      alt={`${this.props.data.title} on macbook pro`}
                       ref="project1"
                     />
                   </div>
@@ -293,21 +299,21 @@ class Page extends Component {
 
 const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
-    course => course.slug === 'jquery-a-beginners-best-friend'
+    course => course.slug === 'pug-js-template-engine'
   )[0]
   console.log(pageData)
   return (
     <Layout>
       <SEO
         title={pageData.title}
-        keywords={[`javascript`, `jquery`, `ajax`]}
+        keywords={[`gatsby`, `application`, `react`]}
       />
       <Page data={pageData} />
     </Layout>
   )
 }
 export const query = graphql`
-  query JQUERYPageQuery {
+  query PUGJSPageQuery {
     coursesDataJson {
       data {
         title

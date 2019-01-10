@@ -9,8 +9,8 @@ import Watchers from '../../components/watchers.js'
 import courseLogoIMG from '../../../assets/courses/oop_js/course-logo.png'
 import codeExampleIMG from '../../../assets/courses/oop_js/code-example.png'
 import toolAtomIMG from '../../../assets/courses/oop_js/tool-atom.png'
-import previewLaptopProject1IMG from '../../../assets/courses/oop_js/preview-laptop-project1.png'
-import previewLaptopProject2IMG from '../../../assets/courses/oop_js/preview-laptop-project2.png'
+// import previewLaptopProject1IMG from '../../../assets/courses/oop_js/preview-laptop-project1.png'
+// import previewLaptopProject2IMG from '../../../assets/courses/oop_js/preview-laptop-project2.png'
 import jumboBGIMG from '../../../assets/courses/oop_js/jumbobg.png'
 
 class Page extends Component {
@@ -22,26 +22,29 @@ class Page extends Component {
     }
   }
   componentDidMount = () => {
-    this.setState({
-      coursePrice: this.props.data.price
-    }, () => {
-      if (
-        getUrlParam('coupon', '0') !== '0' &&
-        getUrlParam('percent', '0') !== '0'
-      ) {
-        function priceAfterDiscount(price, discountPercent) {
-          return price - (discountPercent * price) / 100
+    this.setState(
+      {
+        coursePrice: this.props.data.price,
+      },
+      () => {
+        if (
+          getUrlParam('coupon', '0') !== '0' &&
+          getUrlParam('percent', '0') !== '0'
+        ) {
+          function priceAfterDiscount(price, discountPercent) {
+            return price - (discountPercent * price) / 100
+          }
+          var finalPrice = priceAfterDiscount(
+            this.state.coursePrice,
+            getUrlParam('percent', '0')
+          )
+          this.setState({
+            coursePrice: finalPrice,
+            couponActive: true,
+          })
         }
-        var finalPrice = priceAfterDiscount(
-          this.state.coursePrice,
-          getUrlParam('percent', '0')
-        )
-        this.setState({
-          coursePrice: finalPrice,
-          couponActive: true,
-        })
       }
-    })
+    )
     import('scrollreveal').then(({ default: ScrollReveal }) => {
       window.sr = ScrollReveal()
       const sr = window.sr
@@ -157,9 +160,7 @@ class Page extends Component {
               <div className="grid-container">
                 <div className="column">
                   <h1>ES5</h1>
-                  <p>
-                    Learn all the fundamentals of Javascript{' '}
-                  </p>
+                  <p>Learn all the fundamentals of Javascript </p>
                 </div>
                 <div className="column">
                   <img src={codeExampleIMG} alt="Code Example" ref="code" />
@@ -241,7 +242,8 @@ class Page extends Component {
                 >
                   Applied {getUrlParam('coupon', '0').toUpperCase()}
                   <br />
-                  Original ${this.props.data.price} saving {getUrlParam('percent', '0')}% OFF
+                  Original ${this.props.data.price} saving{' '}
+                  {getUrlParam('percent', '0')}% OFF
                 </div>
               </div>
               <div className="payment-grid">
@@ -289,7 +291,8 @@ class Page extends Component {
 
 const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
-    course => course.slug === 'object-oriented-programming-with-javascript-course'
+    course =>
+      course.slug === 'object-oriented-programming-with-javascript-course'
   )[0]
   console.log(pageData)
   return (

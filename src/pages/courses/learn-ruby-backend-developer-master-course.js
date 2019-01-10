@@ -11,7 +11,7 @@ import courseLogoIMG from '../../../assets/courses/ruby/course-logo.png'
 import codeExampleIMG from '../../../assets/courses/ruby/code-example.png'
 import toolAtomIMG from '../../../assets/courses/ruby/tool-atom.png'
 import toolWorkbenchIMG from '../../../assets/courses/ruby/tool-workbench.png'
-import previewLaptopProject1IMG from '../../../assets/courses/ruby/preview-laptop-project1.png'
+// import previewLaptopProject1IMG from '../../../assets/courses/ruby/preview-laptop-project1.png'
 import jumboBGIMG from '../../../assets/courses/ruby/jumbobg.png'
 class Page extends Component {
   constructor() {
@@ -22,9 +22,11 @@ class Page extends Component {
     }
   }
   componentDidMount = () => {
-    this.setState({
-      coursePrice: this.props.data.price
-    },() => {
+    this.setState(
+      {
+        coursePrice: this.props.data.price,
+      },
+      () => {
         if (
           getUrlParam('coupon', '0') !== '0' &&
           getUrlParam('percent', '0') !== '0'
@@ -41,8 +43,9 @@ class Page extends Component {
             couponActive: true,
           })
         }
-    })
-    
+      }
+    )
+
     import('scrollreveal').then(({ default: ScrollReveal }) => {
       window.sr = ScrollReveal()
       const sr = window.sr
@@ -162,7 +165,8 @@ class Page extends Component {
                 <div className="column">
                   <h1>FAST</h1>
                   <p>
-                    One thing I love about crystal is how fast it is and how quickly I can pick up the language{' '}
+                    One thing I love about crystal is how fast it is and how
+                    quickly I can pick up the language{' '}
                   </p>
                 </div>
                 <div className="column">
@@ -244,7 +248,8 @@ class Page extends Component {
                 >
                   Applied {getUrlParam('coupon', '0').toUpperCase()}
                   <br />
-                  Original ${this.props.data.price} saving {getUrlParam('percent', '0')}% OFF
+                  Original ${this.props.data.price} saving{' '}
+                  {getUrlParam('percent', '0')}% OFF
                 </div>
               </div>
               <div className="payment-grid">

@@ -9,7 +9,6 @@ import Watchers from '../../components/watchers.js'
 import courseLogoIMG from '../../../assets/courses/js_futureproof/course-logo.png'
 import codeExampleIMG from '../../../assets/courses/js_futureproof/code-example.png'
 import toolAtomIMG from '../../../assets/courses/js_futureproof/tool-atom.png'
-import toolTablePlusIMG from '../../../assets/courses/js_futureproof/tool-tableplus.png'
 import previewLaptopProject1IMG from '../../../assets/courses/js_futureproof/preview-laptop-project1.png'
 import previewLaptopProject2IMG from '../../../assets/courses/js_futureproof/preview-laptop-project2.png'
 import jumboBGIMG from '../../../assets/courses/js_futureproof/jumbobg.png'
@@ -23,26 +22,29 @@ class Page extends Component {
     }
   }
   componentDidMount = () => {
-    this.setState({
-      coursePrice: this.props.data.price
-    }, () => {
-      if (
-        getUrlParam('coupon', '0') !== '0' &&
-        getUrlParam('percent', '0') !== '0'
-      ) {
-        function priceAfterDiscount(price, discountPercent) {
-          return price - (discountPercent * price) / 100
+    this.setState(
+      {
+        coursePrice: this.props.data.price,
+      },
+      () => {
+        if (
+          getUrlParam('coupon', '0') !== '0' &&
+          getUrlParam('percent', '0') !== '0'
+        ) {
+          function priceAfterDiscount(price, discountPercent) {
+            return price - (discountPercent * price) / 100
+          }
+          var finalPrice = priceAfterDiscount(
+            this.state.coursePrice,
+            getUrlParam('percent', '0')
+          )
+          this.setState({
+            coursePrice: finalPrice,
+            couponActive: true,
+          })
         }
-        var finalPrice = priceAfterDiscount(
-          this.state.coursePrice,
-          getUrlParam('percent', '0')
-        )
-        this.setState({
-          coursePrice: finalPrice,
-          couponActive: true,
-        })
       }
-    })
+    )
     import('scrollreveal').then(({ default: ScrollReveal }) => {
       window.sr = ScrollReveal()
       const sr = window.sr
@@ -145,9 +147,7 @@ class Page extends Component {
                   <li>Strings, Arrays, Integers, Objects, Functions</li>
                   <li>Learn Control Flow</li>
                   <li>Learn all the loops</li>
-                  <li>
-                    DOM Manipulation
-                  </li>
+                  <li>DOM Manipulation</li>
                   <li>Build a notification system</li>
                   <li>Create a pokemon game</li>
                   <li>and much more</li>
@@ -164,9 +164,7 @@ class Page extends Component {
               <div className="grid-container">
                 <div className="column">
                   <h1>ES5</h1>
-                  <p>
-                    Learn all the fundamentals of Javascript{' '}
-                  </p>
+                  <p>Learn all the fundamentals of Javascript </p>
                 </div>
                 <div className="column">
                   <img src={codeExampleIMG} alt="Code Example" ref="code" />
@@ -248,7 +246,8 @@ class Page extends Component {
                 >
                   Applied {getUrlParam('coupon', '0').toUpperCase()}
                   <br />
-                  Original ${this.props.data.price} saving {getUrlParam('percent', '0')}% OFF
+                  Original ${this.props.data.price} saving{' '}
+                  {getUrlParam('percent', '0')}% OFF
                 </div>
               </div>
               <div className="payment-grid">

@@ -10,7 +10,7 @@ import Watchers from '../../components/watchers.js'
 import courseLogoIMG from '../../../assets/courses/sass_pro/course-logo.png'
 import codeExampleIMG from '../../../assets/courses/sass_pro/code-example.png'
 import toolAtomIMG from '../../../assets/courses/sass_pro/tool-atom.png'
-import previewLaptopProject1IMG from '../../../assets/courses/sass_pro/preview-laptop-project1.png'
+// import previewLaptopProject1IMG from '../../../assets/courses/sass_pro/preview-laptop-project1.png'
 import jumboBGIMG from '../../../assets/courses/sass_pro/jumbobg.png'
 class Page extends Component {
   constructor() {
@@ -21,26 +21,29 @@ class Page extends Component {
     }
   }
   componentDidMount = () => {
-    this.setState({
-      coursePrice: this.props.data.price
-    }, () => {
-      if (
-        getUrlParam('coupon', '0') !== '0' &&
-        getUrlParam('percent', '0') !== '0'
-      ) {
-        function priceAfterDiscount(price, discountPercent) {
-          return price - (discountPercent * price) / 100
+    this.setState(
+      {
+        coursePrice: this.props.data.price,
+      },
+      () => {
+        if (
+          getUrlParam('coupon', '0') !== '0' &&
+          getUrlParam('percent', '0') !== '0'
+        ) {
+          function priceAfterDiscount(price, discountPercent) {
+            return price - (discountPercent * price) / 100
+          }
+          var finalPrice = priceAfterDiscount(
+            this.state.coursePrice,
+            getUrlParam('percent', '0')
+          )
+          this.setState({
+            coursePrice: finalPrice,
+            couponActive: true,
+          })
         }
-        var finalPrice = priceAfterDiscount(
-          this.state.coursePrice,
-          getUrlParam('percent', '0')
-        )
-        this.setState({
-          coursePrice: finalPrice,
-          couponActive: true,
-        })
       }
-    })
+    )
     import('scrollreveal').then(({ default: ScrollReveal }) => {
       window.sr = ScrollReveal()
       const sr = window.sr
@@ -226,7 +229,8 @@ class Page extends Component {
                 >
                   Applied {getUrlParam('coupon', '0').toUpperCase()}
                   <br />
-                  Original ${this.props.data.price} saving {getUrlParam('percent', '0')}% OFF
+                  Original ${this.props.data.price} saving{' '}
+                  {getUrlParam('percent', '0')}% OFF
                 </div>
               </div>
               <div className="payment-grid">

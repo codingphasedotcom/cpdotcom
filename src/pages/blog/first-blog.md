@@ -1,10 +1,11 @@
 ---
-title: 'Sweet Pandas Eating Sweets'
+title: 'My First Blog In 2019'
 date: '2017-08-10'
+category: 'Blog'
 ---
 
-Pandas are really sweet.
+So what do I want for my self in 2019? To be honest I don't even know, but what I do know is that I need to work 2 times as hard then last year. I want to make sure I create great content for the codingphase community which continues to grow every single day.
 
-Here's a video of a panda eating sweets.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4n0xNbfJLR8" frameborder="0" allowfullscreen></iframe>
+```javascript
+var swag = 'JOE'
+```

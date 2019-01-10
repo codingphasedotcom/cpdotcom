@@ -9,7 +9,7 @@ import Watchers from '../../components/watchers.js'
 import courseLogoIMG from '../../../assets/courses/node_npm/course-logo.png'
 import codeExampleIMG from '../../../assets/courses/node_npm/code-example.png'
 import toolTerminalIMG from '../../../assets/courses/node_npm/tool-terminal.png'
-import previewLaptopProject1IMG from '../../../assets/courses/node_npm/preview-laptop-project1.png'
+// import previewLaptopProject1IMG from '../../../assets/courses/node_npm/preview-laptop-project1.png'
 import jumboBGIMG from '../../../assets/courses/node_npm/jumbobg.png'
 class Page extends Component {
   constructor() {
@@ -20,26 +20,29 @@ class Page extends Component {
     }
   }
   componentDidMount = () => {
-    this.setState({
-      coursePrice: this.props.data.price
-    }, () => {
-      if (
-        getUrlParam('coupon', '0') !== '0' &&
-        getUrlParam('percent', '0') !== '0'
-      ) {
-        function priceAfterDiscount(price, discountPercent) {
-          return price - (discountPercent * price) / 100
+    this.setState(
+      {
+        coursePrice: this.props.data.price,
+      },
+      () => {
+        if (
+          getUrlParam('coupon', '0') !== '0' &&
+          getUrlParam('percent', '0') !== '0'
+        ) {
+          function priceAfterDiscount(price, discountPercent) {
+            return price - (discountPercent * price) / 100
+          }
+          var finalPrice = priceAfterDiscount(
+            this.state.coursePrice,
+            getUrlParam('percent', '0')
+          )
+          this.setState({
+            coursePrice: finalPrice,
+            couponActive: true,
+          })
         }
-        var finalPrice = priceAfterDiscount(
-          this.state.coursePrice,
-          getUrlParam('percent', '0')
-        )
-        this.setState({
-          coursePrice: finalPrice,
-          couponActive: true,
-        })
       }
-    })
+    )
     import('scrollreveal').then(({ default: ScrollReveal }) => {
       window.sr = ScrollReveal()
       const sr = window.sr
@@ -142,7 +145,6 @@ class Page extends Component {
                   <li>Work with modules</li>
                   <li>Build Your own server</li>
                   <li>Get a quick introduction to node and npm</li>
-                  
                 </ul>
               </div>
             </div>
@@ -156,9 +158,7 @@ class Page extends Component {
               <div className="grid-container">
                 <div className="column">
                   <h1>NPM</h1>
-                  <p>
-                    The biggest package manager in the world{' '}
-                  </p>
+                  <p>The biggest package manager in the world </p>
                 </div>
                 <div className="column">
                   <img src={codeExampleIMG} alt="Code Example" ref="code" />
@@ -174,16 +174,17 @@ class Page extends Component {
               <h3>Tools</h3>
               <div className="grid-container">
                 <div className="column">
-                  <img src={toolTerminalIMG} alt="terminal program" ref="tool1" />
+                  <img
+                    src={toolTerminalIMG}
+                    alt="terminal program"
+                    ref="tool1"
+                  />
                 </div>
                 <div className="column">
                   <h1>terminal</h1>
-                  <p>
-                    use your favorite terminal for commands
-                  </p>
+                  <p>use your favorite terminal for commands</p>
                 </div>
               </div>
-              
             </div>
           </div>
         </section>
@@ -226,7 +227,8 @@ class Page extends Component {
                 >
                   Applied {getUrlParam('coupon', '0').toUpperCase()}
                   <br />
-                  Original ${this.props.data.price} saving {getUrlParam('percent', '0')}% OFF
+                  Original ${this.props.data.price} saving{' '}
+                  {getUrlParam('percent', '0')}% OFF
                 </div>
               </div>
               <div className="payment-grid">
@@ -279,10 +281,7 @@ const IndexPage = ({ data, location }) => {
   console.log(pageData)
   return (
     <Layout>
-      <SEO
-        title={pageData.title}
-        keywords={[`node`, `npm`, `react`]}
-      />
+      <SEO title={pageData.title} keywords={[`node`, `npm`, `react`]} />
       <Page data={pageData} />
     </Layout>
   )

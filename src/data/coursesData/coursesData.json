@@ -22,7 +22,7 @@
       "category": ["Javascript", "Polymer"],
       "slug": "learn-polymer-3-googles-favorite-framework",
       "url": "/courses/learn-polymer-3-googles-favorite-framework",
-      "url": "https://sso.teachable.com/secure/117955/checkout/702553/learn-polymer-3-googles-favorite-framework",
+      "urlOld": "https://sso.teachable.com/secure/117955/checkout/702553/learn-polymer-3-googles-favorite-framework",
       "favorite": true,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/lg3H1AxHQKyvnxEtPozs"
@@ -94,8 +94,8 @@
       "type": "Free",
       "category": ["Javascript"],
       "slug": "crystal-lang-programming-language-master-course",
-      "url": "/courses/crystal-lang-learn-programming-with-crystal",
-      "urlOld": "https://codingphase.teachable.com/p/crystal-lang-learn-programming-with-crystal",
+      "url": "/courses/crystal-lang-programming-language-master-course",
+      "urlOld": "https://codingphase.teachable.com/p/crystal-lang-programming-language-master-course",
       "favorite": false,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/E8DBFmHdTLWdXWy5AvCq"

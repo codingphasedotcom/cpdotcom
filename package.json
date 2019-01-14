@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "gatsby": "^2.0.53",
+    "gatsby-cli": "^2.4.8",
     "gatsby-image": "^2.0.20",
     "gatsby-plugin-google-analytics": "^2.0.8",
     "gatsby-plugin-manifest": "^2.0.9",
@@ -13,6 +14,7 @@
     "gatsby-plugin-react-helmet": "^3.0.2",
     "gatsby-plugin-sass": "^2.0.7",
     "gatsby-plugin-sharp": "^2.0.14",
+    "gatsby-plugin-sitemap": "^2.0.4",
     "gatsby-remark-prismjs": "^3.2.0",
     "gatsby-source-filesystem": "^2.0.12",
     "gatsby-transformer-json": "^2.1.6",

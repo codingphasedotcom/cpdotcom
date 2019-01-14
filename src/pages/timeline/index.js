@@ -52,7 +52,10 @@ const CoursesPage = ({ data }) => (
             <li>
               <div className="direction-r">
                 <div className="flag-wrapper">
-                  <a href="/timeline" className="flag">
+                  <a
+                    href="https://codingphase.teachable.com/courses/enrolled/204451"
+                    className="flag"
+                  >
                     <span role="img" aria-label="required">
                       🖥️
                     </span>{' '}
@@ -66,7 +69,10 @@ const CoursesPage = ({ data }) => (
             <li>
               <div className="direction-r">
                 <div className="flag-wrapper">
-                  <a href="/timeline" className="flag">
+                  <a
+                    href="https://codingphase.teachable.com/courses/enrolled/328397"
+                    className="flag"
+                  >
                     <span role="img" aria-label="required">
                       🖥️
                     </span>{' '}
@@ -80,7 +86,10 @@ const CoursesPage = ({ data }) => (
             <li>
               <div className="direction-r">
                 <div className="flag-wrapper">
-                  <a href="/timeline" className="flag">
+                  <a
+                    href="https://codingphase.teachable.com/courses/enrolled/191709"
+                    className="flag"
+                  >
                     <span role="img" aria-label="required">
                       🖥️
                     </span>{' '}
@@ -105,7 +114,10 @@ const CoursesPage = ({ data }) => (
             <li>
               <div className="direction-r">
                 <div className="flag-wrapper">
-                  <a href="/timeline" className="flag">
+                  <a
+                    href="https://codingphase.teachable.com/courses/enrolled/190248"
+                    className="flag"
+                  >
                     <span role="img" aria-label="required">
                       🖥️
                     </span>{' '}
@@ -120,7 +132,7 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="/timeline">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/204463">
                       <span role="img" aria-label="required">
                         📗
                       </span>{' '}
@@ -136,7 +148,7 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="/timeline">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/349237">
                       <span role="img" aria-label="required">
                         📗
                       </span>{' '}
@@ -152,7 +164,7 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="/timeline">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/269287">
                       <span role="img" aria-label="required">
                         🖥️
                       </span>{' '}
@@ -168,7 +180,7 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="/timeline">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/253829">
                       <span role="img" aria-label="required">
                         🖥️
                       </span>{' '}
@@ -184,7 +196,7 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="/timeline">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/212881">
                       <span role="img" aria-label="required">
                         🖥️
                       </span>{' '}
@@ -200,7 +212,7 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="/timeline">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/336889">
                       <span role="img" aria-label="required">
                         🖥️
                       </span>{' '}
@@ -216,7 +228,7 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="/timeline">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/360152">
                       <span role="img" aria-label="required">
                         🖥️
                       </span>{' '}
@@ -232,7 +244,7 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="/timeline">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/326322">
                       <span role="img" aria-label="required">
                         📗
                       </span>{' '}
@@ -248,7 +260,7 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="/timeline">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/444849">
                       <span role="img" aria-label="required">
                         📗
                       </span>{' '}
@@ -264,7 +276,7 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="/timeline">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/219318">
                       <span role="img" aria-label="required">
                         📗
                       </span>{' '}
@@ -280,7 +292,7 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="/timeline">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/265655">
                       <span role="img" aria-label="required">
                         📗
                       </span>{' '}
@@ -305,7 +317,7 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="/timeline">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/191705">
                       <span role="img" aria-label="required">
                         🖥️
                       </span>{' '}
@@ -321,7 +333,7 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="/timeline">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/235002">
                       <span role="img" aria-label="required">
                         🖥️
                       </span>{' '}
@@ -337,7 +349,7 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="/timeline">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/191707">
                       <span role="img" aria-label="required">
                         🖥️
                       </span>{' '}
@@ -352,7 +364,10 @@ const CoursesPage = ({ data }) => (
             <li>
               <div className="direction-r">
                 <div className="flag-wrapper">
-                  <a href="/timeline" className="flag">
+                  <a
+                    href="https://codingphase.teachable.com/courses/enrolled/476145"
+                    className="flag"
+                  >
                     <span role="img" aria-label="required">
                       🖥️
                     </span>{' '}
@@ -367,7 +382,7 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="/timeline">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/286837">
                       <span role="img" aria-label="required">
                         🖥️
                       </span>{' '}
@@ -383,7 +398,7 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="/timeline">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/220444">
                       <span role="img" aria-label="required">
                         📗
                       </span>{' '}
@@ -399,7 +414,7 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="/timeline">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/213303">
                       <span role="img" aria-label="required">
                         🖥️
                       </span>{' '}
@@ -415,7 +430,7 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="/timeline">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/209089">
                       <span role="img" aria-label="required">
                         🖥️
                       </span>{' '}
@@ -431,7 +446,7 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="/timeline">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/229814">
                       <span role="img" aria-label="required">
                         📗
                       </span>{' '}
@@ -447,7 +462,7 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="/timeline">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/215976">
                       <span role="img" aria-label="required">
                         🖥️
                       </span>{' '}
@@ -463,7 +478,7 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="/timeline">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/287476">
                       <span role="img" aria-label="required">
                         🖥️
                       </span>{' '}
@@ -479,7 +494,7 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="/timeline">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/335280">
                       <span role="img" aria-label="required">
                         📗
                       </span>{' '}
@@ -495,7 +510,7 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="/timeline">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/255444">
                       <span role="img" aria-label="required">
                         📗
                       </span>{' '}
@@ -511,7 +526,7 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="/timeline">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/459871">
                       <span role="img" aria-label="required">
                         📗
                       </span>{' '}
@@ -533,7 +548,7 @@ const CoursesPage = ({ data }) => (
             <li>
               <div className="direction-l">
                 <div className="flag-wrapper">
-                  <a href="/timeline" className="flag title">
+                  <a href="/" className="flag title">
                     Databases
                   </a>
                 </div>
@@ -544,7 +559,10 @@ const CoursesPage = ({ data }) => (
             <li>
               <div className="direction-r">
                 <div className="flag-wrapper">
-                  <a href="/timeline" className="flag">
+                  <a
+                    href="https://codingphase.teachable.com/courses/enrolled/412709"
+                    className="flag"
+                  >
                     <span role="img" aria-label="required">
                       🖥️
                     </span>{' '}
@@ -569,11 +587,14 @@ const CoursesPage = ({ data }) => (
             <li>
               <div className="direction-r">
                 <div className="flag-wrapper">
-                  <a href="/timeline" className="flag">
+                  <a
+                    href="https://codingphase.teachable.com/courses/enrolled/302905"
+                    className="flag"
+                  >
                     <span role="img" aria-label="required">
                       🖥️
                     </span>{' '}
-                    Adonis JS Framework
+                    Node - Adonis JS Framework
                   </a>
                 </div>
                 <div className="desc" />
@@ -594,7 +615,10 @@ const CoursesPage = ({ data }) => (
             <li>
               <div className="direction-r">
                 <div className="flag-wrapper">
-                  <a href="/timeline" className="flag">
+                  <a
+                    href="https://codingphase.teachable.com/courses/enrolled/235851"
+                    className="flag"
+                  >
                     <span role="img" aria-label="required">
                       🖥️
                     </span>{' '}
@@ -608,7 +632,10 @@ const CoursesPage = ({ data }) => (
             <li>
               <div className="direction-r">
                 <div className="flag-wrapper">
-                  <a href="/timeline" className="flag">
+                  <a
+                    href="https://codingphase.teachable.com/courses/enrolled/387832"
+                    className="flag"
+                  >
                     <span role="img" aria-label="required">
                       🖥️
                     </span>{' '}
@@ -633,7 +660,10 @@ const CoursesPage = ({ data }) => (
             <li>
               <div className="direction-r">
                 <div className="flag-wrapper">
-                  <a href="/timeline" className="flag">
+                  <a
+                    href="https://codingphase.teachable.com/courses/enrolled/394035"
+                    className="flag"
+                  >
                     <span role="img" aria-label="required">
                       🖥️
                     </span>{' '}
@@ -658,7 +688,10 @@ const CoursesPage = ({ data }) => (
             <li>
               <div className="direction-r">
                 <div className="flag-wrapper">
-                  <a href="/timeline" className="flag">
+                  <a
+                    href="https://codingphase.teachable.com/courses/enrolled/261619"
+                    className="flag"
+                  >
                     <span role="img" aria-label="required">
                       🖥️
                     </span>{' '}
@@ -672,7 +705,10 @@ const CoursesPage = ({ data }) => (
             <li>
               <div className="direction-r">
                 <div className="flag-wrapper">
-                  <a href="/timeline" className="flag">
+                  <a
+                    href="https://codingphase.teachable.com/courses/enrolled/272602"
+                    className="flag"
+                  >
                     <span role="img" aria-label="required">
                       🖥️
                     </span>{' '}

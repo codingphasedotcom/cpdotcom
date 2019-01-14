@@ -3,8 +3,10 @@ module.exports = {
     title: `CodingPhase.com`,
     description: `Start your journey to become a developer with codingphase and complete your goal faster than any other platform.`,
     author: `Joe Santos Garcia`,
+    siteUrl: `https://www.codingphase.com`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,

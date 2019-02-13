@@ -1,6 +1,20 @@
 {
   "data": [
     {
+      "title": "E-commerce Site with Node Course",
+      "price": 50,
+      "hours": 10,
+      "type": "premium",
+      "category": ["HTML", "CSS", "Email"],
+      "slug": "e-commerce-site-with-node-course",
+      "url": "/courses/responsive-html-emails-course",
+      "urlOld": "https://codingphase.teachable.com/p/e-commerce-site-with-node-course",
+      "favorite": true,
+      "imgs": {
+        "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/xYeziH3PScbjnfrKJZbH"
+      }
+    },
+    {
       "title": "Responsive HTML Emails Course",
       "price": 50,
       "hours": 10,
@@ -315,7 +329,7 @@
       "slug": "learn-advance-css-with-flexbox-and-css-grid-course",
       "url": "/courses/learn-advance-css-with-flexbox-and-css-grid-course",
       "urlOld": "https://sso.teachable.com/secure/117955/checkout/486269/learn-advance-css-with-flexbox-and-css-grid-course",
-      "favorite": true,
+      "favorite": false,
       "imgs": {
         "thumbnail": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/Lo0qcAkTcKYlkdSS3YRu"
       }

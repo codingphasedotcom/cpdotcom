@@ -22,9 +22,7 @@ class FavoriteCoursesComp extends Component {
         data: this.props.data.coursesDataJson.data,
         filteredData: favoriteCourses,
       },
-      () => {
-        console.log(this.state)
-      }
+      () => {}
     )
   }
 

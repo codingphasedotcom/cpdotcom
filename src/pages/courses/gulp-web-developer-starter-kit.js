@@ -279,7 +279,7 @@ const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
     course => course.slug === 'gulp-web-developer-starter-kit'
   )[0]
-  console.log(pageData)
+
   return (
     <Layout>
       <SEO title={pageData.title} keywords={[`node`, `npm`, `Gulp`]} />

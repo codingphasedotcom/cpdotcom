@@ -274,7 +274,7 @@ const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
     course => course.slug === 'learn-polymer-3-googles-favorite-framework'
   )[0]
-  console.log(pageData)
+   
   return (
     <Layout>
       <SEO

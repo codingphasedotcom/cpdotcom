@@ -300,7 +300,7 @@ const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
     course => course.slug === 'e-commerce-site-with-node-course'
   )[0]
-  console.log(pageData)
+
   return (
     <Layout>
       <SEO

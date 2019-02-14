@@ -22,26 +22,29 @@ class Page extends Component {
     }
   }
   componentDidMount = () => {
-    this.setState({
-      coursePrice: this.props.data.price
-    }, () => {
-      if (
-        getUrlParam('coupon', '0') !== '0' &&
-        getUrlParam('percent', '0') !== '0'
-      ) {
-        function priceAfterDiscount(price, discountPercent) {
-          return price - (discountPercent * price) / 100
+    this.setState(
+      {
+        coursePrice: this.props.data.price,
+      },
+      () => {
+        if (
+          getUrlParam('coupon', '0') !== '0' &&
+          getUrlParam('percent', '0') !== '0'
+        ) {
+          function priceAfterDiscount(price, discountPercent) {
+            return price - (discountPercent * price) / 100
+          }
+          var finalPrice = priceAfterDiscount(
+            this.state.coursePrice,
+            getUrlParam('percent', '0')
+          )
+          this.setState({
+            coursePrice: finalPrice,
+            couponActive: true,
+          })
         }
-        var finalPrice = priceAfterDiscount(
-          this.state.coursePrice,
-          getUrlParam('percent', '0')
-        )
-        this.setState({
-          coursePrice: finalPrice,
-          couponActive: true,
-        })
       }
-    })
+    )
     import('scrollreveal').then(({ default: ScrollReveal }) => {
       window.sr = ScrollReveal()
       const sr = window.sr
@@ -148,7 +151,9 @@ class Page extends Component {
                   <li>REST API for content</li>
                   <li>Using PODS to use data</li>
                   <li>Build your portfolio into wordpress theme</li>
-                  <li>Deploy website to shared hosting like godaddy or namecheap</li>
+                  <li>
+                    Deploy website to shared hosting like godaddy or namecheap
+                  </li>
                 </ul>
               </div>
             </div>
@@ -162,9 +167,7 @@ class Page extends Component {
               <div className="grid-container">
                 <div className="column">
                   <h1>PHP7</h1>
-                  <p>
-                    Learn to create themes with the latest php 7 version
-                  </p>
+                  <p>Learn to create themes with the latest php 7 version</p>
                 </div>
                 <div className="column">
                   <img src={codeExampleIMG} alt="Code Example" ref="code" />
@@ -245,7 +248,8 @@ class Page extends Component {
                 >
                   Applied {getUrlParam('coupon', '0').toUpperCase()}
                   <br />
-                  Original ${this.props.data.price} saving {getUrlParam('percent', '0')}% OFF
+                  Original ${this.props.data.price} saving{' '}
+                  {getUrlParam('percent', '0')}% OFF
                 </div>
               </div>
               <div className="payment-grid">
@@ -295,7 +299,7 @@ const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
     course => course.slug === 'build-any-site-into-a-wordpress-theme'
   )[0]
-  console.log(pageData)
+
   return (
     <Layout>
       <SEO

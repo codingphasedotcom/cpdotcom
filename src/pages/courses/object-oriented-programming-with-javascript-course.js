@@ -294,7 +294,7 @@ const IndexPage = ({ data, location }) => {
     course =>
       course.slug === 'object-oriented-programming-with-javascript-course'
   )[0]
-  console.log(pageData)
+   
   return (
     <Layout>
       <SEO

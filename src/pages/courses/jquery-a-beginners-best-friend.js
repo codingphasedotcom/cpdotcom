@@ -291,7 +291,7 @@ const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
     course => course.slug === 'jquery-a-beginners-best-friend'
   )[0]
-  console.log(pageData)
+
   return (
     <Layout>
       <SEO title={pageData.title} keywords={[`javascript`, `jquery`, `ajax`]} />

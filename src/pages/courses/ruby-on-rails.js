@@ -304,7 +304,7 @@ const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
     course => course.slug === 'ruby-on-rails'
   )[0]
-  console.log(pageData)
+   
   return (
     <Layout>
       <SEO

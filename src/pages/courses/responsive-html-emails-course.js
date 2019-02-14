@@ -289,7 +289,7 @@ const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
     course => course.slug === 'responsive-html-emails-course'
   )[0]
-  console.log(pageData)
+   
   return (
     <Layout>
       <SEO

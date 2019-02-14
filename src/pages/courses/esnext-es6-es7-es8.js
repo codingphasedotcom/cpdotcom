@@ -303,7 +303,7 @@ const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
     course => course.slug === 'esnext-es6-es7-es8'
   )[0]
-  console.log(pageData)
+
   return (
     <Layout>
       <SEO

@@ -5,7 +5,6 @@ import Adsense from '../../components/Adsense'
 import Img from 'gatsby-image'
 
 export default ({ data }) => {
-  console.log(data)
   return (
     <Layout>
       <section id="blog-page" class="all-posts">

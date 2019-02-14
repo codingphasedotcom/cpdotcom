@@ -276,7 +276,7 @@ const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
     course => course.slug === 'learn-react-by-building-a-craigslist-clone'
   )[0]
-  console.log(pageData)
+   
   return (
     <Layout>
       <SEO

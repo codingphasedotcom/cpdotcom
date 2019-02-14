@@ -295,7 +295,7 @@ const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
     course => course.slug === 'node-adonis-js-javascript-fullstack-course'
   )[0]
-  console.log(pageData)
+   
   return (
     <Layout>
       <SEO

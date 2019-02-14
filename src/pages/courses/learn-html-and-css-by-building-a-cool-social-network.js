@@ -302,7 +302,7 @@ const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
     course => course.slug === 'learn-html-and-css-by-building-a-cool-social-network'
   )[0]
-  console.log(pageData)
+   
   return (
     <Layout>
       <SEO

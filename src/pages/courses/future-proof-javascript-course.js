@@ -297,7 +297,7 @@ const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
     course => course.slug === 'future-proof-javascript-course'
   )[0]
-  console.log(pageData)
+   
   return (
     <Layout>
       <SEO

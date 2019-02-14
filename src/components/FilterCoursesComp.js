@@ -32,9 +32,7 @@ class FilterCoursesComp extends Component {
         filteredData: this.props.data.coursesDataJson.data,
         categories,
       },
-      () => {
-        console.log(this.state)
-      }
+      () => {}
     )
   }
   filterTheData = category => {
@@ -123,7 +121,6 @@ class FilterCoursesComp extends Component {
     if (name === 'sortby') {
       this.sortTheData(value, 'normal')
     }
-    console.log('change')
   }
   showCategories = () => {
     return this.state.categories.map(item => (

@@ -279,7 +279,7 @@ const IndexPage = ({ data, location }) => {
     course =>
       course.slug === 'learn-advance-css-with-flexbox-and-css-grid-course'
   )[0]
-  console.log(pageData)
+   
   return (
     <Layout>
       <SEO

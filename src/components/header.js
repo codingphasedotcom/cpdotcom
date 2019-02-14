@@ -12,7 +12,6 @@ class Header extends Component {
   clickedHamburger = () => {
     // var element = document.getElementById("myDIV");
     this.setState({ mobileMenuActive: !this.state.mobileMenuActive })
-    console.log('clicked')
   }
 
   render() {

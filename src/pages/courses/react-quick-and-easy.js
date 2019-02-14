@@ -276,7 +276,7 @@ const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
     course => course.slug === 'react-quick-and-easy'
   )[0]
-  console.log(pageData)
+   
   return (
     <Layout>
       <SEO

@@ -294,7 +294,7 @@ const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
     course => course.slug === 'phaser-3-make-games-with-javascript-course'
   )[0]
-  console.log(pageData)
+   
   return (
     <Layout>
       <SEO

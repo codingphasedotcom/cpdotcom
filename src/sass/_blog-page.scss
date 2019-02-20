@@ -37,6 +37,22 @@
       grid-gap: 20px;
       .post {
         padding: 20px;
+        a {
+          &:hover {
+            color: red;
+          }
+        }
+        img {
+          // max-width: 300px;
+          width: 100%;
+          display: block;
+          margin-bottom: 1rem;
+        }
+        h3 {
+          font-size: 2rem;
+          font-weight: 700;
+          margin-bottom: 1rem;
+        }
       }
     }
   }

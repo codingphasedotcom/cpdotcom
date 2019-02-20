@@ -5,7 +5,9 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@emotion/core": "^10.0.7",
     "gatsby": "^2.0.53",
+    "gatsby-awesome-pagination": "^0.3.3",
     "gatsby-cli": "^2.4.8",
     "gatsby-image": "^2.0.29",
     "gatsby-plugin-facebook-pixel": "^1.0.3",

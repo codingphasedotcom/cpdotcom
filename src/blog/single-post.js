@@ -7,7 +7,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <section id="blog-page" className="single-post">
-        <div className="container">
+        <div className="">
           <div className="grid">
             <div className="content-area">
               <h1>{post.frontmatter.title}</h1>

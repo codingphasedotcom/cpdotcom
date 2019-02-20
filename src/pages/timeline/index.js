@@ -478,11 +478,27 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <span className="flag">
-                    <a href="https://codingphase.teachable.com/courses/enrolled/287476">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/495115">
                       <span role="img" aria-label="required">
                         🖥️
                       </span>{' '}
-                      React Router by building a craigslist clone{' '}
+                      Redux - The Easy Way Course
+                    </a>
+                  </span>
+                </div>
+                <div className="desc" />
+              </div>
+            </li>
+            {/* Item 3 */}
+            <li>
+              <div className="direction-r">
+                <div className="flag-wrapper">
+                  <span className="flag">
+                    <a href="https://codingphase.teachable.com/courses/enrolled/287476">
+                      <span role="img" aria-label="required">
+                        📗
+                      </span>{' '}
+                      Learn React by building a craigslist clone{' '}
                     </a>
                   </span>
                 </div>
@@ -595,6 +611,23 @@ const CoursesPage = ({ data }) => (
                       🖥️
                     </span>{' '}
                     Node - Adonis JS Framework
+                  </a>
+                </div>
+                <div className="desc" />
+              </div>
+            </li>
+            {/* Item 1 */}
+            <li>
+              <div className="direction-r">
+                <div className="flag-wrapper">
+                  <a
+                    href="https://codingphase.teachable.com/courses/enrolled/479516"
+                    className="flag"
+                  >
+                    <span role="img" aria-label="required">
+                      📗
+                    </span>{' '}
+                    E-commerce Site with Node (Ongoing Course)
                   </a>
                 </div>
                 <div className="desc" />

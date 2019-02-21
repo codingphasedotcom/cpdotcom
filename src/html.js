@@ -102,6 +102,22 @@ export default class HTML extends React.Component {
 `,
             }}
           />
+
+          <div
+            className="fbpixel"
+            dangerouslySetInnerHTML={{
+              __html: `<!-- Global site tag (gtag.js) - Google Ads: 992381307 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-992381307"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-992381307');
+</script>
+`,
+            }}
+          />
         </body>
       </html>
     )

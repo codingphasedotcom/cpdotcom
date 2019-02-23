@@ -2,8 +2,10 @@
 title: 'How to install laravel in windows 10 bash ubuntu'
 date: '2018-05-09'
 category: 'Tutorials'
-cover_image: '/img/blog/install_laravel_in_windows_10.jpg'
 tags: design, development
+cover_image: '/img/blog/install_laravel_in_windows_10.jpg'
+author: 'Joe Santos Garcia'
+author_image: '/img/blog/authors/joe-santos-garcia.png'
 ---
 
 ![](/content/images/image-5.jpg)

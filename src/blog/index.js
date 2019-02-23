@@ -26,10 +26,10 @@ export default class BlogList extends React.Component {
                       <h3>
                         <a href={node.fields.slug}>
                           <img src={node.frontmatter.cover_image} alt="Logo" />
-                          {node.frontmatter.title}{' '}
-                          <span>— {node.frontmatter.date}</span>
+                          {node.frontmatter.title} <span />
                         </a>
                       </h3>
+
                       <p>{node.excerpt}</p>
                     </div>
                   ))}
@@ -56,7 +56,6 @@ export default class BlogList extends React.Component {
                 </div>
               </div>
               <div className="side-bar">
-                swag
                 <Adsense />
               </div>
             </div>
@@ -79,7 +78,7 @@ export const query = graphql`
           id
           frontmatter {
             title
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "MMMM DD, YYYY")
             cover_image
           }
 

@@ -48,7 +48,8 @@ class Header extends Component {
           className={this.state.mobileMenuActive ? 'active' : ''}
         >
           <a href="/courses">All Courses</a>
-          {/* <Link to="/blog">Blog</Link> */}
+          <a href="/timeline">Timeline</a>
+          <a href="/blog">Blog</a>
           <a href="https://discordapp.com/invite/weTKutq">Chat</a>
           <a href="https://codingphase.teachable.com/courses/enrolled">
             My Courses

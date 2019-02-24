@@ -22,8 +22,6 @@ Now we will create the accordion inside the container
 ```html
 <div class="container">
   <div class="accordion">
-
-
   </div>
 </div>
 ```
@@ -41,7 +39,7 @@ Inside the accordion div we will add a check box and a with a unique id. You may
 </div>
 ```
 
-Now we add a div with the class of content thats where we will put any content. Then we are going to create a div with a few links inside of it. Even though we are doing a menu you can use a paragraph or any type of element. 
+Now we add a div with the class of content thats where we will put any content. Then we are going to create a div with a few links inside of it. Even though we are doing a menu you can use a paragraph or any type of element.
 ```html
 <div class="container">
   <div class="accordion">

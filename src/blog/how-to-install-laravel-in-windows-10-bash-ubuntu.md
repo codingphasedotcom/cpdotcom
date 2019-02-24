@@ -8,8 +8,6 @@ author: 'Joe Santos Garcia'
 author_image: '/img/blog/authors/joe-santos-garcia.png'
 ---
 
-![](/content/images/image-5.jpg)
-
 <iframe src="https://www.youtube.com/embed/xt0iUBjL2JI" width="100%" height="400" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 Alright so you have been looking everywhere on how to install laravel in windows 10 bash ubuntu.

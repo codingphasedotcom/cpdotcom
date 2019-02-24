@@ -27,7 +27,7 @@ export default ({ data }) => {
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </div>
           <div className="side-bar">
-            ads
+            <Adsense />
             <div
               className="autoads"
               dangerouslySetInnerHTML={{

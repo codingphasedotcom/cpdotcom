@@ -240,6 +240,24 @@ pre:not([class*='CodeMirror']).language-javascript:before {
   content: "js";
 }
 
+pre:not([class*='CodeMirror']).language-ruby:before,
+pre:not([class*='CodeMirror']).language-ruby:before {
+  background: #ffe725;
+  content: "ruby";
+}
+
+pre:not([class*='CodeMirror']).language-php:before,
+pre:not([class*='CodeMirror']).language-php:before {
+  background: #ffe725;
+  content: "php";
+}
+
+pre:not([class*='CodeMirror']).language-bash:before,
+pre:not([class*='CodeMirror']).language-bash:before {
+  background: #ffe725;
+  content: "bash";
+}
+
 pre:not([class*='CodeMirror']):before {
   content: attr(data-title);
   position: absolute;

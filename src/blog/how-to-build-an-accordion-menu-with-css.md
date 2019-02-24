@@ -1,6 +1,6 @@
 ---
 title: 'How to build an accordion menu with css'
-date: '2018-02-24'
+date: '2019-02-24'
 category: 'Tutorials'
 tags: design, development
 cover_image: '/img/blog/how-to-build-an-accordion-menu-with-css.png'

@@ -18,7 +18,7 @@
 
   .grid {
     display: grid;
-    grid-template-columns: 1fr 400px;
+    grid-template-columns: calc(100% - 400px) 400px;
   }
 
   .content-area {

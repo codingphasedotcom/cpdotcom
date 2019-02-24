@@ -16,6 +16,7 @@ Well here's the tutorial that you have been looking for... but before we start.
 
 I'm assuming that you have MAMP, mysql workbench and Ubuntu installed. If you don't check this videos before you start this.
 
+[https://codingphase.teachable.com/p/all-installations-you-will-need-for-web-development](https://codingphase.teachable.com/p/all-installations-you-will-need-for-web-development)
 <a href="https://codingphase.teachable.com/p/all-installations-you-will-need-for-web-development">https://codingphase.teachable.com/p/all-installations-you-will-need-for-web-development</a>
 
 Alright lets get started.
@@ -41,14 +42,6 @@ composer global require "laravel/installer"
 ```
 
 3 - Change directory into your C drive
-
-```javascript
-var apples = 24
-
-function print(number) {
-  return name + 24
-}
-```
 
 ```bash
 cd /mnt/c

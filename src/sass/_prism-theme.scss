@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
+
 code,
 pre {
   font-family: 'Operator Mono', Monaco, Consolas, Menlo, Monaco, 'Courier New';
@@ -7,6 +8,7 @@ pre {
   line-height: 2;
   color: white;
 }
+
 code[class*='language-'],
 pre[class*='language-'] {
   -moz-tab-size: 2;
@@ -19,14 +21,15 @@ pre[class*='language-'] {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: normal;
-
   text-shadow: none;
 }
+
 pre[class*='language-'],
 :not(pre) > code[class*='language-'] {
   background: #252836;
   line-height: 2.5;
 }
+
 pre[class*='language-'] {
   padding: 15px;
   border-radius: 4px;
@@ -37,6 +40,7 @@ pre[class*='language-'] {
 pre[class*='language-'] {
   position: relative;
 }
+
 pre[class*='language-'] code {
   white-space: pre;
   display: block;
@@ -48,84 +52,105 @@ pre[class*='language-'] code {
   border: 0.13em solid #7a6652;
   box-shadow: 1px 1px 0.3em -0.1em #000 inset;
 }
+
 .token.namespace {
   opacity: 0.7;
 }
+
+.token.cdata,
 .token.comment,
-.token.prolog,
 .token.doctype,
-.token.cdata {
+.token.prolog {
   color: #5e658d;
 }
-.token.operator,
+
+.token.function,
 .token.number,
-.token.function {
+.token.operator {
   color: #76a0ff;
 }
+
 .token.boolean {
   color: #ff4965;
 }
+
 .token.attr-name,
 .token.string {
   color: #95de82;
 }
-.token.entity,
-.token.url,
+
 .language-css .token.string,
-.style .token.string {
+.style .token.string,
+.token.entity,
+.token.url {
   color: #95de82;
 }
+
 .token.inserted {
   color: #a6e22d;
 }
+
 .token.selector {
   color: #ff4965;
 }
+
 .token.tag {
   color: #ff4965;
 }
+
 .token.property {
   color: #75c4bc;
 }
+
 .token.attr-value {
   color: #75c4bc;
 }
+
 .token.atrule,
-.token.important,
-.token.deleted {
+.token.deleted,
+.token.important {
   color: #c087e7;
 }
+
 .token.attr-name {
   color: #c087e7;
   font-family: 'Pacifico';
 }
+
 .token.keyword {
   color: #c087e7;
   font-family: 'Pacifico';
 }
+
 .token.class-name {
   font-weight: 700;
   color: #ff4965;
 }
+
 .token.regex,
 .token.statement {
   color: #76d9e6;
 }
+
 .token.placeholder,
 .token.variable {
   color: #fff;
 }
+
+.token.bold,
 .token.important,
-.token.statement,
-.token.bold {
+.token.statement {
   font-weight: bold;
 }
+
 .token.punctuation {
   color: #76a0ff;
 }
+
 .token.entity {
   cursor: help;
 }
+
 .token.italic {
   font-style: italic;
 }
@@ -133,28 +158,33 @@ pre[class*='language-'] code {
 code.language-markup {
   color: #f9f9f9;
 }
+
 code.language-markup .token.tag {
   color: #ef3b7d;
 }
+
 code.language-markup .token.attr-name {
   color: #a6e22d;
 }
+
 code.language-markup .token.attr-value {
   color: #e6d06c;
 }
-code.language-markup .token.style,
-code.language-markup .token.script {
-  color: #76d9e6;
-}
-code.language-markup .token.script .token.keyword {
+
+code.language-markup .token.script,
+code.language-markup .token.style {
   color: #76d9e6;
 }
 
+code.language-markup .token.script .token.keyword {
+  color: #76d9e6;
+}
 /* Line highlight plugin */
 pre[class*='language-'][data-line] {
   position: relative;
   padding: 1em 0 1em 3em;
 }
+
 pre[data-line] .line-highlight {
   position: absolute;
   left: 0;
@@ -166,6 +196,7 @@ pre[data-line] .line-highlight {
   line-height: inherit;
   white-space: pre;
 }
+
 pre[data-line] .line-highlight:before,
 pre[data-line] .line-highlight[data-end]:after {
   content: attr(data-start);
@@ -184,8 +215,61 @@ pre[data-line] .line-highlight[data-end]:after {
   text-shadow: none;
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
 }
+
 pre[data-line] .line-highlight[data-end]:after {
   content: attr(data-end);
   top: auto;
   bottom: 0.4em;
+}
+
+pre:not([class*='CodeMirror']).language-html:before,
+pre:not([class*='CodeMirror']).language-html:before {
+  background: #ffe725;
+  content: "html";
+}
+
+pre:not([class*='CodeMirror']).language-css:before,
+pre:not([class*='CodeMirror']).language-css:before {
+  background: #ffe725;
+  content: "css";
+}
+
+pre:not([class*='CodeMirror']).language-javascript:before,
+pre:not([class*='CodeMirror']).language-javascript:before {
+  background: #ffe725;
+  content: "js";
+}
+
+pre:not([class*='CodeMirror']).language-ruby:before,
+pre:not([class*='CodeMirror']).language-ruby:before {
+  background: #ffe725;
+  content: "ruby";
+}
+
+pre:not([class*='CodeMirror']).language-php:before,
+pre:not([class*='CodeMirror']).language-php:before {
+  background: #ffe725;
+  content: "php";
+}
+
+pre:not([class*='CodeMirror']).language-bash:before,
+pre:not([class*='CodeMirror']).language-bash:before {
+  background: #ffe725;
+  content: "bash";
+}
+
+pre:not([class*='CodeMirror']):before {
+  content: attr(data-title);
+  position: absolute;
+  top: 0;
+  padding: 0 10px 3px;
+  font-size: 10px;
+  right: 20px;
+  text-align: right;
+  color: #444;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  border-radius: 0 0 5px 5px;
+  background: #ddd;
 }

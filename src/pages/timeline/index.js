@@ -627,7 +627,7 @@ const CoursesPage = ({ data }) => (
                     <span role="img" aria-label="required">
                       📗
                     </span>{' '}
-                    E-commerce Site with Node (Ongoing Course)
+                    E-commerce Site with Node
                   </a>
                 </div>
                 <div className="desc" />

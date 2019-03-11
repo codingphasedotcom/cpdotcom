@@ -10,7 +10,7 @@ export default ({ data }) => {
         <div className="grid">
           <div className="content-area">
             <h1>{post.frontmatter.title}</h1>
-            <div className="profile">
+            <a href={`${post.frontmatter.author_link}`} className="profile">
               <div
                 className="img"
                 style={{
@@ -24,7 +24,7 @@ export default ({ data }) => {
               />
               <div className="author">{post.frontmatter.author}</div>
               <div className="date">{post.frontmatter.date}</div>
-            </div>
+            </a>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </div>
           <div className="side-bar">
@@ -57,6 +57,7 @@ export const query = graphql`
         date(formatString: "MMMM DD, YYYY")
         author
         author_image
+        author_link
       }
     }
   }

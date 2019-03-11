@@ -1,6 +1,7 @@
 #blog-page {
   padding: 56px 0 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 400;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -66,6 +67,16 @@
   }
 
   &.single-post {
+    ul {
+      list-style: circle;
+      padding-left: 40px;
+      margin-bottom: 41px;
+      li {
+        margin: 10px;
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+    }
     .profile {
       display: flex;
       margin-bottom: 1.5rem;
@@ -152,6 +163,8 @@
   }
 }
 //laptops
-@media only screen and (max-width: 1199px) {}
+@media only screen and (max-width: 1199px) {
+}
 //desktops
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}

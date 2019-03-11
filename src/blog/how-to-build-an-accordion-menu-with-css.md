@@ -6,6 +6,7 @@ tags: design, development
 cover_image: '/img/blog/how-to-build-an-accordion-menu-with-css.png'
 author: 'Joe Santos Garcia'
 author_image: '/img/blog/authors/joe-santos-garcia.png'
+author_link: 'https://www.codingphase.com'
 ---
 
 Ok guys so ever wonder how to create an accordion menu with just css? No Javascript required!
@@ -13,28 +14,22 @@ Ok guys so ever wonder how to create an accordion menu with just css? No Javascr
 For this example we will create a container just to center our accordion
 
 ```html
-<div class="container">
-  <!-- here we are adding the accordion -->
-</div>
+<div class="container"><!-- here we are adding the accordion --></div>
 ```
 
 Now we will create the accordion inside the container
+
 ```html
-<div class="container">
-  <div class="accordion">
-  </div>
-</div>
+<div class="container"><div class="accordion"></div></div>
 ```
 
 Inside the accordion div we will add a check box and a with a unique id. You may be asking yourself why a checkbox? Well this is how we will keep track of when the accordion is open or closed. Also because the checkbox has a unique id we can use a label to change the status of the checkbox.
+
 ```html
 <div class="container">
   <div class="accordion">
-    <input type="checkbox" id="gender-options" class="toggle" checked />    
-    <label class="title" for="gender-options">
-      Gender
-    </label>
-
+    <input type="checkbox" id="gender-options" class="toggle" checked />
+    <label class="title" for="gender-options"> Gender </label>
   </div>
 </div>
 ```
@@ -44,14 +39,11 @@ Now we add a div with the class of content thats where we will put any content. 
 ```html
 <div class="container">
   <div class="accordion">
-    <input type="checkbox" id="gender-options" class="toggle" checked />    
-    <label class="title" for="gender-options">
-      Gender
-    </label>
+    <input type="checkbox" id="gender-options" class="toggle" checked />
+    <label class="title" for="gender-options"> Gender </label>
     <div class="content ">
       <div class="menu">
-        <a href="#" class="link">Male</a>
-        <a  href="#" class="link">Female</a>
+        <a href="#" class="link">Male</a> <a href="#" class="link">Female</a>
       </div>
     </div>
   </div>
@@ -67,7 +59,7 @@ Now lets focus on the CSS because this is where the magic happens. First thing w
 
 html,
 body {
-  font: 16px "Roboto";
+  font: 16px 'Roboto';
   background-color: #eee;
   color: #7a7572;
 }
@@ -83,7 +75,6 @@ body {
 So we are going to hide to hide the checkbox but even though we are hiding we can still use it to keep track of the accordion if its open or not. We will give some styles to the label using the title class. Also we will create a plus sign with the :before and :after on the right side of the label.
 
 ```css
-
 .toggle {
   display: none;
 }
@@ -108,7 +99,7 @@ So we are going to hide to hide the checkbox but even though we are hiding we ca
 
 .title:after,
 .title:before {
-  content: "";
+  content: '';
   position: absolute;
   right: 1.25em;
   top: 1.25em;
@@ -126,9 +117,7 @@ So we are going to hide to hide the checkbox but even though we are hiding we ca
 
 Now we will add the styles for the content area here you can target whatever content you put inside. Also we add transition on the content div to put how fast we want the accordion to open.
 
-
 ```css
-
 .content {
   max-height: 0;
   overflow: hidden;
@@ -144,7 +133,8 @@ Now we will add the styles for the content area here you can target whatever con
   align-items: center;
   justify-content: center;
 }
-.content .link:hover, .content .link.selected {
+.content .link:hover,
+.content .link.selected {
   background: red;
   color: white;
   font-weight: 700;
@@ -152,7 +142,7 @@ Now we will add the styles for the content area here you can target whatever con
 }
 ```
 
-This is the fun part so when you click on the title we check the toggle which is the checkbox and if the checkbox is checked then we expand the content area  to a maximum height of 500 px. Thats possible because we are using the "+" sign to be able to target the title and content area because they are on the same level as the toggle. Also when the toggle is checked we target title:before and move one of the lines in a 90 degree this makes a minus sign.
+This is the fun part so when you click on the title we check the toggle which is the checkbox and if the checkbox is checked then we expand the content area to a maximum height of 500 px. Thats possible because we are using the "+" sign to be able to target the title and content area because they are on the same level as the toggle. Also when the toggle is checked we target title:before and move one of the lines in a 90 degree this makes a minus sign.
 
 ```css
 .toggle:checked + .title + .content {
@@ -160,7 +150,7 @@ This is the fun part so when you click on the title we check the toggle which is
 }
 .toggle:checked + .title:before {
   -webkit-transform: rotate(90deg) !important;
-          transform: rotate(90deg) !important;
+  transform: rotate(90deg) !important;
 }
 ```
 

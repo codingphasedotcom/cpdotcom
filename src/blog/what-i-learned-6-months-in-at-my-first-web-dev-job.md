@@ -9,8 +9,6 @@ author_image: '/img/blog/authors/christian-aracena.png'
 author_link: 'https://cdaracena.com'
 ---
 
-# What I learned 6 months in at my first Web Dev job
-
 Hey everyone, hope all is well!
 
 Long story short I was able to land my first web developer job back in October of 2018 after graduating from a 3 month bootcamp in July of 2018. I was given a coding test which required me to build a small app that utilized the Yelp API and rendered the 20 closest restaurants in the location the user typed in the search bar. I built it with React (which I was just somewhat starting to get familiar with) and pure CSS. You can see the app here: [Local Bites](http://local-bites.surge.sh/)

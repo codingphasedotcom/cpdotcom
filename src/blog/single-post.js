@@ -14,11 +14,12 @@ export default ({ data }) => {
               <div
                 className="img"
                 style={{
-                  background: 'url("/img/blog/authors/joe-santos-garcia.png")',
+                  background: `url("${post.frontmatter.author_image}")`,
                   width: '40px',
                   height: '40px',
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
+                  borderRadius: '50%',
                 }}
               />
               <div className="author">{post.frontmatter.author}</div>
@@ -55,6 +56,7 @@ export const query = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         author
+        author_image
       }
     }
   }

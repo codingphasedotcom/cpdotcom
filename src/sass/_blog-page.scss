@@ -106,3 +106,52 @@
     }
   }
 }
+//extra small
+@media only screen and (max-width: 575px) {
+  #blog-page {
+    .grid {
+      display: grid;
+      grid-template-columns: 100%;
+    }
+
+    .side-bar {
+      width: 100%;
+      min-height: auto;
+      max-width: none;
+    }
+  }
+}
+//small
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  #blog-page {
+    .grid {
+      display: grid;
+      grid-template-columns: 100%;
+    }
+
+    .side-bar {
+      width: 100%;
+      min-height: auto;
+      max-width: none;
+    }
+  }
+}
+//tablet
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #blog-page {
+    .grid {
+      display: grid;
+      grid-template-columns: 100%;
+    }
+
+    .side-bar {
+      width: 100%;
+      min-height: auto;
+      max-width: none;
+    }
+  }
+}
+//laptops
+@media only screen and (max-width: 1199px) {}
+//desktops
+@media only screen and (min-width: 1200px) {}

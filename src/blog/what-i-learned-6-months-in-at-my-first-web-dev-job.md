@@ -15,25 +15,25 @@ Long story short I was able to land my first web developer job back in October o
 
 I’m getting laid off at the end of this month, not necessarily because I did bad work but because like a lot of start-ups, they started having financial difficulties and won’t be able to keep me onboard. At the very least I now have 6 good months of professional experience that I can add to my resume and overall career as a web developer (I wrote my first line of code in late January 2018). I just wanted to make this post to hopefully provide some advice and hope for other juniors or beginners like me as to what they might prepare for at their first job or what they can start looking into now.
 
-**Git / GitHub / Bitbucket / GitLab / Version Control**
+> Git / GitHub / Bitbucket / GitLab / Version Control
 
 Learn to get comfortable with your terminal and how it relates to Git.
 Name your branches after the features that you’re currently working on
 Make sure your messages are descriptive and explain the changes you’ve made
 
-**Get a good fundamental grasp of vanilla JavaScript**
+> Get a good fundamental grasp of vanilla JavaScript
 
 Yes, at this point in web development the industry pretty much demands that you know at least one JavaScript framework like React, Vue or Angular but you should take your time and really dig deep into vanilla JavaScript in order to understand more clearly why libraries and frameworks like the ones named above are actually important and how they improve the overall quality of the product / app / service/ website you’re building.
 
-**Be ready to ask a ton of questions**
+> Be ready to ask a ton of questions
 
 For the first 2 months or so I was very shy and anxious about asking questions, to the point that I would be staring at the screen for hours on end, literally wasting productive time when I could have just asked the lead developer for help. Now I understand that if an employer knows you’re a junior they hope and expect that you’ll ask questions when you’re stuck. Yes you should attempt to Google and figure things out on your own but when you work as a developer, time is of the essence and can actually get you fired. After a few months I learned that if you’ve been stuck for about 30 - 45 minutes on a problem, then that’s probably a good sign that you should ask for help. Maybe you don’t understand what the lead developer or another developer did, but you can actually go back to the code they helped you with later on, outside of work or maybe during some down time and break it down and hopefully understand where you went wrong and what you missed.
 
-**Imposter Syndrome is normal**
+> Imposter Syndrome is normal
 
 Everyday at work felt and still feels like I’m not a “real” developer. Even when I have a really productive day where I don’t get stuck at all, that lingering, doubtful, anxious thought still creeps around telling me that I’m a phony. Expect that for a good while you will most likely feel like an imposter, ESPECIALLY when you get stuck or feel overwhelmed with a particular task. Sometimes imposter syndrome can be extremely crippling and affect your motivation, in times like these it’s critical that you remind yourself of everything that you have worked to get to this point. All the courses, tutorials, issues, fun and sad moments that have come to embody your coding journey. If they hired you, it’s because they have faith in your abilities or at the very least saw something that they didn’t see in someone else. You earned that and deserve to be where you are at.
 
-**Don’t stop learning but avoid rabbit holes**
+> Don’t stop learning but avoid rabbit holes
 
 As developers we need to stay-up-to-date and when you get your first dev job you might find it hard to find time to work on side projects. What works for me is finding a balance, I stopped reading and looking at every single article with hyperbole such as “Try this framework now!”, “this is the next big thing!”, “Yeah React is great but have you tried [insert random .js framework / library here]”. I think the best advice as a junior is to learn the stack that you use at work well, if you have the energy to learn something fun on the side, then by all means go ahead but try to stick to whatever it is you chose to learn for a particular project or set of time. I don’t recommend jumping from framework to framework, especially while you’re hired as a dev and already code everyday. What also helped me get better at the technologies we use at work, was using those technologies on my own side projects. This is great because it reinforces technologies that you’re using and learning at work while giving you the freedom to build what you want with those particular tools.
 

@@ -9,23 +9,25 @@ export default ({ data }) => {
       <section id="blog-page" className="single-post">
         <div className="grid">
           <div className="content-area">
-            <h1>{post.frontmatter.title}</h1>
-            <a href={`${post.frontmatter.author_link}`} className="profile">
-              <div
-                className="img"
-                style={{
-                  background: `url("${post.frontmatter.author_image}")`,
-                  width: '40px',
-                  height: '40px',
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  borderRadius: '50%',
-                }}
-              />
-              <div className="author">{post.frontmatter.author}</div>
-              <div className="date">{post.frontmatter.date}</div>
-            </a>
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            <div className="blog-container">
+              <h1>{post.frontmatter.title}</h1>
+              <a href={`${post.frontmatter.author_link}`} className="profile">
+                <div
+                  className="img"
+                  style={{
+                    background: `url("${post.frontmatter.author_image}")`,
+                    width: '40px',
+                    height: '40px',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    borderRadius: '50%',
+                  }}
+                />
+                <div className="author">{post.frontmatter.author}</div>
+                <div className="date">{post.frontmatter.date}</div>
+              </a>
+              <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            </div>
           </div>
           <div className="side-bar">
             <Adsense />

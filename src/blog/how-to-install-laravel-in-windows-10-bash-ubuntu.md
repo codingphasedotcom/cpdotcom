@@ -6,6 +6,7 @@ tags: design, development
 cover_image: '/img/blog/install_laravel_in_windows_10.jpg'
 author: 'Joe Santos Garcia'
 author_image: '/img/blog/authors/joe-santos-garcia.png'
+author_link: 'https://www.codingphase.com'
 ---
 
 <iframe src="https://www.youtube.com/embed/xt0iUBjL2JI" width="100%" height="400" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

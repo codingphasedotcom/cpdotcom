@@ -11,12 +11,13 @@ class Watchers extends Component {
   }
   render() {
     return (
-      <div id="watchers-comp">
-        <div className="user" />
-        <div className="info">
-          {this.userNumber(20, 80)} People watching this now!
-        </div>
-      </div>
+      <div />
+      // <div id="watchers-comp">
+      //   <div className="user" />
+      //   <div className="info">
+      //     {this.userNumber(20, 80)} People watching this now!
+      //   </div>
+      // </div>
     )
   }
 }

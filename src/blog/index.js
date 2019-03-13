@@ -19,7 +19,7 @@ export default class BlogList extends React.Component {
             <div className="grid">
               <div className="content-area">
                 <h1>Blog</h1>
-                <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+                {/* <h4>{data.allMarkdownRemark.totalCount} Posts</h4> */}
                 <div className="post-grid">
                   {data.allMarkdownRemark.edges.map(({ node }) => (
                     <div key={node.id} className="post">

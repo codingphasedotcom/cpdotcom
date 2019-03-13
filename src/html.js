@@ -104,7 +104,15 @@ export default class HTML extends React.Component {
           />
 
           <div
-            className="fbpixel"
+            className="sumo"
+            dangerouslySetInnerHTML={{
+              __html: `
+              <script async>(function(s,u,m,o,j,v){j = u.createElement(m); v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='f36e0e69b55a0551c4ae7c058cd3790f84dc5c75aabd40a0587a8d5c0e8c2ac4';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumo.com/');</script>
+`,
+            }}
+          />
+          <div
+            className="googletagmanager"
             dangerouslySetInnerHTML={{
               __html: `<!-- Global site tag (gtag.js) - Google Ads: 992381307 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-992381307"></script>

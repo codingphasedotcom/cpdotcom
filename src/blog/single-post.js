@@ -2,10 +2,16 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Adsense from '../components/Adsense'
+import SEO from '../components/seo'
+
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
+      <SEO
+        title={post.frontmatter.title}
+        keywords={[`gatsby`, `application`, `react`]}
+      />
       <section id="blog-page" className="single-post">
         <div className="grid">
           <div className="content-area">

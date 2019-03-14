@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
 import Adsense from '../components/Adsense'
+import SEO from '../components/seo'
 
 export default class BlogList extends React.Component {
   render() {
@@ -14,6 +15,10 @@ export default class BlogList extends React.Component {
     // const posts = this.props.data.allMarkdownRemark.edges
     return (
       <Layout>
+        <SEO
+          title="CodingPhase Blog"
+          keywords={[`gatsby`, `application`, `react`]}
+        />
         <section id="blog-page" className="all-posts">
           <div className="">
             <div className="grid">

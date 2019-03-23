@@ -8,7 +8,7 @@ import '../sass/layout.scss'
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
-      query SiteTitleQuery {
+      query LeadLayout {
         site {
           siteMetadata {
             title

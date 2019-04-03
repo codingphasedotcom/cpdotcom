@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://www.codingphase.com`,
   },
   plugins: [
+    'gatsby-plugin-robots-txt',
     `gatsby-plugin-sitemap`,
     `gatsby-transformer-json`,
     {

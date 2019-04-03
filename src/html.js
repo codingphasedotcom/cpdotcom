@@ -12,9 +12,10 @@ export default class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
+
           <meta
             name="google-site-verification"
-            content="fqqhVhBGGOZ23ZNu_arfM2BxICTxdWEwFzzsFsnlgAY"
+            content="A6Y9tslLnrPsRV6IzWvvIKO9VWQ9JaZX-ETCoGoDE30"
           />
           {this.props.headComponents}
         </head>
@@ -47,34 +48,6 @@ export default class HTML extends React.Component {
           <div
             dangerouslySetInnerHTML={{
               __html: `
-      <!-- Start of Async Drift Code -->
-      <script>
-      "use strict";
-
-      !function() {
-      var t = window.driftt = window.drift = window.driftt || [];
-      if (!t.init) {
-      if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-      t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
-      t.factory = function(e) {
-      return function() {
-        var n = Array.prototype.slice.call(arguments);
-        return n.unshift(e), t.push(n), t;
-      };
-      }, t.methods.forEach(function(e) {
-      t[e] = t.factory(e);
-      }), t.load = function(t) {
-      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-      var i = document.getElementsByTagName("script")[0];
-      i.parentNode.insertBefore(o, i);
-      };
-      }
-      }();
-      drift.SNIPPET_VERSION = '0.3.1';
-      drift.load('7xrggzxt4wz5');
-      </script>
-      <!-- End of Async Drift Code -->
       <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
       `,
             }}
@@ -107,7 +80,7 @@ export default class HTML extends React.Component {
             className="sumo"
             dangerouslySetInnerHTML={{
               __html: `
-              <script async>(function(s,u,m,o,j,v){j = u.createElement(m); v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='f36e0e69b55a0551c4ae7c058cd3790f84dc5c75aabd40a0587a8d5c0e8c2ac4';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumo.com/');</script>
+              <script async data-uid="2f89e66125" src="https://f.convertkit.com/2f89e66125/84682d673d.js"></script>
 `,
             }}
           />

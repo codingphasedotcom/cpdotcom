@@ -20,6 +20,11 @@ class Page extends Component {
     }
   }
   componentDidMount = () => {
+    fbq('track', 'ViewContent', {
+      value: this.props.data.price,
+      currency: 'USD',
+      content_ids: 'node-and-npm-basics',
+    })
     this.setState(
       {
         coursePrice: this.props.data.price,
@@ -278,7 +283,7 @@ const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
     course => course.slug === 'node-and-npm-basics'
   )[0]
-   
+
   return (
     <Layout>
       <SEO title={pageData.title} keywords={[`node`, `npm`, `react`]} />

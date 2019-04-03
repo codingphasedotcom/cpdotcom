@@ -18,8 +18,6 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div className="jumbo" />
         <div>{children}</div>
       </>
     )}

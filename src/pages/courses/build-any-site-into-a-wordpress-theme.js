@@ -22,6 +22,11 @@ class Page extends Component {
     }
   }
   componentDidMount = () => {
+    fbq('track', 'ViewContent', {
+      value: this.props.data.price,
+      currency: 'USD',
+      content_ids: 'build-any-site-into-a-wordpress-theme',
+    })
     this.setState(
       {
         coursePrice: this.props.data.price,

@@ -23,6 +23,11 @@ class Page extends Component {
     }
   }
   componentDidMount = () => {
+    fbq('track', 'ViewContent', {
+      value: this.props.data.price,
+      currency: 'USD',
+      content_ids: 'jquery-a-beginners-best-friend',
+    })
     this.setState(
       {
         coursePrice: this.props.data.price,

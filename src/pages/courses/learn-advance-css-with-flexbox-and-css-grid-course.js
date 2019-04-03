@@ -21,6 +21,11 @@ class Page extends Component {
     }
   }
   componentDidMount = () => {
+    fbq('track', 'ViewContent', {
+      value: this.props.data.price,
+      currency: 'USD',
+      content_ids: 'learn-advance-css-with-flexbox-and-css-grid-course',
+    })
     this.setState(
       {
         coursePrice: this.props.data.price,
@@ -279,7 +284,7 @@ const IndexPage = ({ data, location }) => {
     course =>
       course.slug === 'learn-advance-css-with-flexbox-and-css-grid-course'
   )[0]
-   
+
   return (
     <Layout>
       <SEO

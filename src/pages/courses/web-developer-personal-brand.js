@@ -24,26 +24,34 @@ class Page extends Component {
     }
   }
   componentDidMount = () => {
-    this.setState({
-      coursePrice: this.props.data.price
-    }, () => {
-      if (
-        getUrlParam('coupon', '0') !== '0' &&
-        getUrlParam('percent', '0') !== '0'
-      ) {
-        function priceAfterDiscount(price, discountPercent) {
-          return price - (discountPercent * price) / 100
-        }
-        var finalPrice = priceAfterDiscount(
-          this.state.coursePrice,
-          getUrlParam('percent', '0')
-        )
-        this.setState({
-          coursePrice: finalPrice,
-          couponActive: true,
-        })
-      }
+    fbq('track', 'ViewContent', {
+      value: this.props.data.price,
+      currency: 'USD',
+      content_ids: 'web-developer-personal-brand',
     })
+    this.setState(
+      {
+        coursePrice: this.props.data.price,
+      },
+      () => {
+        if (
+          getUrlParam('coupon', '0') !== '0' &&
+          getUrlParam('percent', '0') !== '0'
+        ) {
+          function priceAfterDiscount(price, discountPercent) {
+            return price - (discountPercent * price) / 100
+          }
+          var finalPrice = priceAfterDiscount(
+            this.state.coursePrice,
+            getUrlParam('percent', '0')
+          )
+          this.setState({
+            coursePrice: finalPrice,
+            couponActive: true,
+          })
+        }
+      }
+    )
     import('scrollreveal').then(({ default: ScrollReveal }) => {
       window.sr = ScrollReveal()
       const sr = window.sr
@@ -186,13 +194,15 @@ class Page extends Component {
               <h3>Tools</h3>
               <div className="grid-container">
                 <div className="column">
-                  <img src={toolTerminalIMG} alt="terminal program" ref="tool1" />
+                  <img
+                    src={toolTerminalIMG}
+                    alt="terminal program"
+                    ref="tool1"
+                  />
                 </div>
                 <div className="column">
                   <h1>terminal</h1>
-                  <p>
-                    use your favorite terminal for commands
-                  </p>
+                  <p>use your favorite terminal for commands</p>
                 </div>
               </div>
               <div className="grid-container">
@@ -201,9 +211,7 @@ class Page extends Component {
                 </div>
                 <div className="column">
                   <h1>Google Chrome</h1>
-                  <p>
-                    The best browser for development and debugging
-                  </p>
+                  <p>The best browser for development and debugging</p>
                 </div>
               </div>
               <div className="grid-container">
@@ -260,7 +268,8 @@ class Page extends Component {
                 >
                   Applied {getUrlParam('coupon', '0').toUpperCase()}
                   <br />
-                  Original ${this.props.data.price} saving {getUrlParam('percent', '0')}% OFF
+                  Original ${this.props.data.price} saving{' '}
+                  {getUrlParam('percent', '0')}% OFF
                 </div>
               </div>
               <div className="payment-grid">
@@ -310,7 +319,7 @@ const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
     course => course.slug === 'web-developer-personal-brand'
   )[0]
-   
+
   return (
     <Layout>
       <SEO

@@ -23,9 +23,16 @@ class Page extends Component {
     }
   }
   componentDidMount = () => {
-    this.setState({
-      coursePrice: this.props.data.price
-    },() => {
+    fbq('track', 'ViewContent', {
+      value: this.props.data.price,
+      currency: 'USD',
+      content_ids: 'ruby-on-rails',
+    })
+    this.setState(
+      {
+        coursePrice: this.props.data.price,
+      },
+      () => {
         if (
           getUrlParam('coupon', '0') !== '0' &&
           getUrlParam('percent', '0') !== '0'
@@ -42,8 +49,9 @@ class Page extends Component {
             couponActive: true,
           })
         }
-    })
-    
+      }
+    )
+
     import('scrollreveal').then(({ default: ScrollReveal }) => {
       window.sr = ScrollReveal()
       const sr = window.sr
@@ -163,7 +171,8 @@ class Page extends Component {
                 <div className="column">
                   <h1>FAST</h1>
                   <p>
-                    The beauty of rails is that you can build any startup yourself because all the tools are provided to you{' '}
+                    The beauty of rails is that you can build any startup
+                    yourself because all the tools are provided to you{' '}
                   </p>
                 </div>
                 <div className="column">
@@ -184,9 +193,7 @@ class Page extends Component {
                 </div>
                 <div className="column">
                   <h1>Terminal</h1>
-                  <p>
-                    use a text editor to write your code
-                  </p>
+                  <p>use a text editor to write your code</p>
                 </div>
               </div>
               <div className="grid-container">
@@ -195,9 +202,7 @@ class Page extends Component {
                 </div>
                 <div className="column">
                   <h1>Google Chrome</h1>
-                  <p>
-                    The best browser for development and debugging
-                  </p>
+                  <p>The best browser for development and debugging</p>
                 </div>
               </div>
               <div className="grid-container">
@@ -254,7 +259,8 @@ class Page extends Component {
                 >
                   Applied {getUrlParam('coupon', '0').toUpperCase()}
                   <br />
-                  Original ${this.props.data.price} saving {getUrlParam('percent', '0')}% OFF
+                  Original ${this.props.data.price} saving{' '}
+                  {getUrlParam('percent', '0')}% OFF
                 </div>
               </div>
               <div className="payment-grid">
@@ -304,7 +310,7 @@ const IndexPage = ({ data, location }) => {
   const pageData = data.coursesDataJson.data.filter(
     course => course.slug === 'ruby-on-rails'
   )[0]
-   
+
   return (
     <Layout>
       <SEO

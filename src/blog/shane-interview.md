@@ -75,5 +75,5 @@ If I could go back in time, I would have started learning to code way earlier in
 handle. I would have went super hard and mastered many skills so I could be financially free at an early age and have more time doing the things I enjoy.
 
 If you would like to know more or get in contact with Shane visit his websites
-[levelupdev.co](levelupdev.co)
-[Shaneleemurphy.com](Shaneleemurphy.com)
+[http://levelupdev.co](http://levelupdev.co)
+[http://Shaneleemurphy.com](http://Shaneleemurphy.com)

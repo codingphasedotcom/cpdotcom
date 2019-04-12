@@ -22,11 +22,11 @@ class Page extends Component {
     }
   }
   componentDidMount = () => {
-    fbq('track', 'ViewContent', {
-      value: this.props.data.price,
-      currency: 'USD',
-      content_ids: 'phaser-3-make-games-with-javascript-course',
-    })
+    // fbq('track', 'ViewContent', {
+    //   value: this.props.data.price,
+    //   currency: 'USD',
+    //   content_ids: 'phaser-3-make-games-with-javascript-course',
+    // })
     this.setState(
       {
         coursePrice: this.props.data.price,

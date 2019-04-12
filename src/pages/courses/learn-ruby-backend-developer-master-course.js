@@ -22,11 +22,11 @@ class Page extends Component {
     }
   }
   componentDidMount = () => {
-    fbq('track', 'ViewContent', {
-      value: this.props.data.price,
-      currency: 'USD',
-      content_ids: 'learn-ruby-backend-developer-master-course',
-    })
+    // fbq('track', 'ViewContent', {
+    //   value: this.props.data.price,
+    //   currency: 'USD',
+    //   content_ids: 'learn-ruby-backend-developer-master-course',
+    // })
     this.setState(
       {
         coursePrice: this.props.data.price,

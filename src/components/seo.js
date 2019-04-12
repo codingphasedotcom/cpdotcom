@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-function SEO({ description, lang, meta, keywords, title }) {
+function SEO({ description, lang, meta, keywords, title, thumbnail }) {
   return (
     <StaticQuery
       query={detailsQuery}
@@ -17,10 +17,11 @@ function SEO({ description, lang, meta, keywords, title }) {
             }}
             title={title}
             titleTemplate={`%s | ${data.site.siteMetadata.title}`}
-            meta={[{
-              name: `google-site-verification`,
-              content: 'fqqhVhBGGOZ23ZNu_arfM2BxICTxdWEwFzzsFsnlgAY'
-            },
+            meta={[
+              {
+                name: `google-site-verification`,
+                content: 'fqqhVhBGGOZ23ZNu_arfM2BxICTxdWEwFzzsFsnlgAY',
+              },
               {
                 name: `description`,
                 content: metaDescription,
@@ -36,6 +37,10 @@ function SEO({ description, lang, meta, keywords, title }) {
               {
                 property: `og:type`,
                 content: `website`,
+              },
+              {
+                property: `og:image`,
+                content: thumbnail,
               },
               {
                 name: `twitter:card`,

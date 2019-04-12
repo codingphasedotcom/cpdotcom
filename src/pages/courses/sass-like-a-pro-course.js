@@ -21,11 +21,11 @@ class Page extends Component {
     }
   }
   componentDidMount = () => {
-    fbq('track', 'ViewContent', {
-      value: this.props.data.price,
-      currency: 'USD',
-      content_ids: 'sass-like-a-pro-course',
-    })
+    // fbq('track', 'ViewContent', {
+    //   value: this.props.data.price,
+    //   currency: 'USD',
+    //   content_ids: 'sass-like-a-pro-course',
+    // })
     this.setState(
       {
         coursePrice: this.props.data.price,

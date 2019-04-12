@@ -20,11 +20,11 @@ class Page extends Component {
     }
   }
   componentDidMount = () => {
-    fbq('track', 'ViewContent', {
-      value: this.props.data.price,
-      currency: 'USD',
-      content_ids: 'learn-polymer-3-googles-favorite-framework',
-    })
+    // fbq('track', 'ViewContent', {
+    //   value: this.props.data.price,
+    //   currency: 'USD',
+    //   content_ids: 'learn-polymer-3-googles-favorite-framework',
+    // })
     this.setState(
       {
         coursePrice: this.props.data.price,

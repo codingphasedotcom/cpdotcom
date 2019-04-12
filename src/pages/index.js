@@ -16,7 +16,11 @@ import kperezIMG from '../../assets/testimonials/kperez.jpeg'
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO
+      title="Home"
+      keywords={[`gatsby`, `application`, `react`]}
+      thumbnail="https://www.codingphase.com/img/websitethumb.png"
+    />
     <section id="jumbo-top">
       <div className="container-fluid ">
         <h2>What if you could earn 100k a year?</h2>
@@ -24,7 +28,9 @@ const IndexPage = ({ data }) => (
         <h2>Learn to Code Today</h2>
 
         <div className="button-area">
-          <a href="https://codingphase.teachable.com/p/all-courses-subscription">Register</a>
+          <a href="https://codingphase.teachable.com/p/all-courses-subscription">
+            Register
+          </a>
         </div>
       </div>
     </section>
@@ -281,7 +287,9 @@ const IndexPage = ({ data }) => (
             <div className="box ">$600</div>
           </div>
           <div className="button-area">
-            <a href="https://codingphase.teachable.com/p/all-courses-subscription">Register</a>
+            <a href="https://codingphase.teachable.com/p/all-courses-subscription">
+              Register
+            </a>
           </div>
         </div>
       </div>

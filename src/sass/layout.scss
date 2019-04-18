@@ -192,6 +192,14 @@ header {
   }
 }
 
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: block;
+}
+
 #jumbo-top {
   margin: 0;
   padding: 0;
@@ -199,25 +207,62 @@ header {
   background-size: cover;
 
   .container-fluid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    min-height: 100vh;
+
+    .headline {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .price-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+
+    .sub,
+    .top {
+      font-size: 2rem;
+      font-weight: 400;
+      color: white;
+      position: relative;
+      z-index: 3;
+      text-shadow: 0 10px 40px rgba(53, 167, 255, 0.6);
+    }
+
+    .sub {
+      margin-bottom: 20px;
+    }
+
+    .large-number {
+      font-size: 20rem;
+      font-weight: 900;
+      color: white;
+      position: relative;
+      z-index: 3;
+      // text-shadow: 0 10px 40px rgba(53, 167, 255, 0.6);
+    }
   }
 
   h2 {
     color: white;
     font-size: 44px;
-    font-weight: 300;
+    font-weight: 900;
     line-height: 1.2;
-
-    &:nth-child(3) {
-      margin-bottom: 50px;
-    }
+    margin-bottom: 50px;
   }
 
   .button-area {
+    display: flex;
+    position: relative;
+    z-index: 3;
+
     a {
       display: inline-block;
       position: relative;
@@ -231,6 +276,10 @@ header {
       background: linear-gradient(45deg, rgba(4, 85, 255, 0) 1%, rgba(239, 55, 238, 0) 100%) !important;
       transform: scale(1, 1);
       text-shadow: 0 15px 20px rgba(0, 0, 0, 0);
+
+      &:nth-child(1) {
+        margin-right: 40px;
+      }
 
       &:hover {
         background: linear-gradient(45deg, rgba(4, 85, 255, 1) 1%, rgba(239, 55, 238, 1) 100%) !important;
@@ -734,6 +783,14 @@ header {
 }
 //extra small
 @media only screen and (max-width: 575px) {
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
   header {
     .menu {
       a {
@@ -747,9 +804,29 @@ header {
   }
 
   #jumbo-top {
+    display: grid;
+
+    .button-area a:nth-child(1) {
+      margin-right: 0;
+    }
+
+    .container-fluid {
+      grid-template-columns: 1fr;
+
+      .headline {
+        justify-content: flex-end;
+      }
+    }
+
     h2 {
       font-size: 30px;
       text-align: center;
+    }
+
+    .price-section {
+      .large-number {
+        font-size: 10rem;
+      }
     }
   }
 
@@ -847,6 +924,12 @@ header {
   }
 
   #jumbo-top {
+    .price-section {
+      .large-number {
+        font-size: 8rem;
+      }
+    }
+
     h2 {
       font-size: 30px;
       text-align: center;
@@ -943,6 +1026,12 @@ header {
 //tablet
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   #jumbo-top {
+    .price-section {
+      .large-number {
+        font-size: 12rem;
+      }
+    }
+
     h2 {
       font-size: 35px;
       text-align: center;
@@ -1002,13 +1091,19 @@ header {
   }
 }
 //laptops
-@media only screen and (max-width: 1199px) {
-  // #jumbo-top {
-  //   h2 {
-  //     font-size: 30px;
-  //     text-align: center;
-  //   }
-  // }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #jumbo-top {
+    .price-section {
+      .large-number {
+        font-size: 14rem;
+      }
+    }
+
+    h2 {
+      font-size: 30px;
+      text-align: center;
+    }
+  }
 }
 //desktops
 @media only screen and (min-width: 1200px) {

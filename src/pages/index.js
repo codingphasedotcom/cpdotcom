@@ -23,18 +23,33 @@ const IndexPage = ({ data }) => (
     />
     <section id="jumbo-top">
       <div className="container-fluid ">
-        <h2>What if you could earn 100k a year?</h2>
-        <h2>Would you take that opportunity?</h2>
-        <h2>Learn to Code Today</h2>
+        <div className="headline">
+          <h2>
+            The Most Consistent Way To Generate Wealth Is To Learn To Code
+          </h2>
 
-        <div className="button-area">
-          <a href="https://codingphase.teachable.com/p/all-courses-subscription">
-            Register
-          </a>
+          <div className="button-area desktop-only">
+            <a href="https://codingphase.teachable.com/p/all-courses-subscription">
+              LEARN MORE
+            </a>
+            <a href="https://codingphase.teachable.com/p/all-courses-subscription">
+              Register
+            </a>
+          </div>
+        </div>
+        <div class="price-section">
+          <div class="top">Only</div>
+          <div class="large-number">$20</div>
+          <div class="sub">Per Month</div>
+          <div className="button-area mobile-only">
+            <a href="https://codingphase.teachable.com/p/all-courses-subscription">
+              Register
+            </a>
+          </div>
         </div>
       </div>
     </section>
-    <section id="popular-courses">
+    {/*<section id="popular-courses">
       <div className="bg" />
       <div className="section-content">
         <div className="container">
@@ -42,7 +57,7 @@ const IndexPage = ({ data }) => (
           <FavoriteCoursesComp data={data} />
         </div>
       </div>
-    </section>
+    </section> */}
     <section id="americans">
       <div className="bg" />
       <div className="section-content">
@@ -57,7 +72,7 @@ const IndexPage = ({ data }) => (
             </div>
             <div className="info-column">
               <div className="line1">On average it's less than</div>
-              <div className="line2">50k</div>
+              <div className="line2">35k</div>
               <div className="line3">
                 At the same time <br />
                 Developers make an average of
@@ -156,7 +171,7 @@ const IndexPage = ({ data }) => (
             </div>
           </div>
           <div className="sub-title">
-            A few companies that have hired our students
+            Companies that have hired our students
           </div>
           <div className="logos">
             <div className="logo">

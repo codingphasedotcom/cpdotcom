@@ -29,9 +29,7 @@ const IndexPage = ({ data }) => (
           </h2>
 
           <div className="button-area desktop-only">
-            <a href="https://codingphase.teachable.com/p/all-courses-subscription">
-              LEARN MORE
-            </a>
+            <a href="#americans">LEARN MORE</a>
             <a href="https://codingphase.teachable.com/p/all-courses-subscription">
               Register
             </a>
@@ -49,19 +47,12 @@ const IndexPage = ({ data }) => (
         </div>
       </div>
     </section>
-    {/*<section id="popular-courses">
-      <div className="bg" />
-      <div className="section-content">
-        <div className="container">
-          <div className="sub-title">Our Most Popular Courses</div>
-          <FavoriteCoursesComp data={data} />
-        </div>
-      </div>
-    </section> */}
+
     <section id="americans">
       <div className="bg" />
       <div className="section-content">
         <div className="container">
+          <h1>Why You Should Learn To Code?</h1>
           <div className="sub-title">Lets compare the average american job</div>
 
           <div className="info-area">
@@ -83,12 +74,44 @@ const IndexPage = ({ data }) => (
         </div>
       </div>
     </section>
-    <section id="no-degree">
+    <section id="no-degree" class="top-degree">
       <div className="container">
         <div className="section-content">
           <h4>Oh did I mention...</h4>
           <h2>No degree required</h2>
           <div className="image" />
+        </div>
+      </div>
+    </section>
+    <section id="what-you-get">
+      <div className="container">
+        <h2>What do you get?</h2>
+        <div className="list">
+          <div className="item">OVER 300 HOURS OF VIDEOS</div>
+          <div className="item">UNLIMITED ACCESS</div>
+          <div className="item">ALL FILES PROVIDED FOR DOWNLOAD</div>
+          <div className="item">EVERYTHING YOU NEED TO BECOME A DEVELOPER</div>
+          <div className="item">THE SKILLS THAT ARE IN DEMAND</div>
+          <div className="item">WE ARE UPTODATE WITH THE INDUSTRY</div>
+          <div className="item">
+            30 DAYS
+            <br /> MONEY BACK
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="popular-courses">
+      <div className="bg" />
+      <div className="section-content">
+        <div className="container">
+          <div className="sub-title">Our Most Popular Courses</div>
+          <FavoriteCoursesComp data={data} />
+        </div>
+      </div>
+    </section>
+    <section id="no-degree">
+      <div className="container">
+        <div className="section-content">
           <div className="students-total">50,000</div>
           <div className="sub-title">
             students have taken courses <br />
@@ -193,23 +216,7 @@ const IndexPage = ({ data }) => (
         </div>
       </div>
     </section>
-    <section id="what-you-get">
-      <div className="container">
-        <h2>What do you get?</h2>
-        <div className="list">
-          <div className="item">OVER 300 HOURS OF VIDEOS</div>
-          <div className="item">UNLIMITED ACCESS</div>
-          <div className="item">ALL FILES PROVIDED FOR DOWNLOAD</div>
-          <div className="item">EVERYTHING YOU NEED TO BECOME A DEVELOPER</div>
-          <div className="item">THE SKILLS THAT ARE IN DEMAND</div>
-          <div className="item">WE ARE UPTODATE WITH THE INDUSTRY</div>
-          <div className="item">
-            30 DAYS
-            <br /> MONEY BACK
-          </div>
-        </div>
-      </div>
-    </section>
+
     <section id="pricing-plans">
       <div className="bg" />
       <div className="container">

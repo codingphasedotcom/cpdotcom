@@ -3,6 +3,7 @@
 @import 'courses-page';
 @import 'layout-courses';
 @import 'timeline';
+@import 'testimonials';
 @import 'blog-page';
 @import 'lead-free-download';
 @import 'prism-theme';
@@ -65,9 +66,12 @@ $translateX: 0;
 
   &.active {
     .line-1 {
-      transform: translateY($translateY) translateX($translateX) rotate($rotation);
-      -webkit-transform: translateY($translateY) translateX($translateX) rotate($rotation);
-      -moz-transform: translateY($translateY) translateX($translateX) rotate($rotation);
+      transform: translateY($translateY) translateX($translateX)
+        rotate($rotation);
+      -webkit-transform: translateY($translateY) translateX($translateX)
+        rotate($rotation);
+      -moz-transform: translateY($translateY) translateX($translateX)
+        rotate($rotation);
     }
 
     .line-2 {
@@ -75,9 +79,12 @@ $translateX: 0;
     }
 
     .line-3 {
-      transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
-      -webkit-transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
-      -moz-transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
+      transform: translateY($translateY * -1) translateX($translateX)
+        rotate($rotation * -1);
+      -webkit-transform: translateY($translateY * -1) translateX($translateX)
+        rotate($rotation * -1);
+      -moz-transform: translateY($translateY * -1) translateX($translateX)
+        rotate($rotation * -1);
     }
   }
 }
@@ -193,17 +200,22 @@ header {
 }
 
 .mobile-only {
-  display: none;
+  display: none !important;
 }
 
 .desktop-only {
-  display: block;
+  display: flex !important;
 }
 
 #jumbo-top {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, rgba(76, 5, 113, 0.7) 0%, rgba(76, 5, 113, 0.7) 100%), url("../../assets/adults-chilling.jpg");
+  background: linear-gradient(
+      to right,
+      rgba(76, 5, 113, 0.7) 0%,
+      rgba(76, 5, 113, 0.7) 100%
+    ),
+    url('../../assets/adults-chilling.jpg');
   background-size: cover;
 
   .container-fluid {
@@ -211,12 +223,19 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
     min-height: 100vh;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 
     .headline {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      h2 {
+        text-align: center;
+      }
     }
   }
 
@@ -273,21 +292,31 @@ header {
       border-radius: 4px;
       cursor: pointer;
       transition: all 0.4s ease-in-out;
-      background: linear-gradient(45deg, rgba(4, 85, 255, 0) 1%, rgba(239, 55, 238, 0) 100%) !important;
+      background: linear-gradient(
+        45deg,
+        rgba(4, 85, 255, 0) 1%,
+        rgba(239, 55, 238, 0) 100%
+      ) !important;
       transform: scale(1, 1);
       text-shadow: 0 15px 20px rgba(0, 0, 0, 0);
-
       &:nth-child(1) {
-        margin-right: 40px;
+        margin-right: 20px;
       }
-
       &:hover {
-        background: linear-gradient(45deg, rgba(4, 85, 255, 1) 1%, rgba(239, 55, 238, 1) 100%) !important;
+        background: linear-gradient(
+          45deg,
+          rgba(4, 85, 255, 1) 1%,
+          rgba(239, 55, 238, 1) 100%
+        ) !important;
         -webkit-box-shadow: 0 10px 38px 0 rgba(53, 167, 255, 0.67);
         -moz-box-shadow: 0 10px 38px 0 rgba(53, 167, 255, 0.67);
         box-shadow: 0 10px 38px 0 rgba(53, 167, 255, 0.67);
         transform: scale(1.1, 1.1) translate3d(0, -10px, 0);
         text-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
+        &:nth-child(1) {
+          position: relative;
+          z-index: 4;
+        }
       }
     }
   }
@@ -295,7 +324,7 @@ header {
 
 #popular-courses {
   padding: 0;
-  margin: 0 0 300px;
+  margin: 0 0;
   position: relative;
   // overflow: hidden;
   .bg {
@@ -307,7 +336,7 @@ header {
     transform: skewY(-12deg);
     -webkit-transform-origin: 0;
     transform-origin: 0;
-    background: #f4f7fc;
+    background: #ffffff;
   }
 
   .section-content {
@@ -378,7 +407,11 @@ header {
   .courses-total {
     font-size: 200px;
     font-weight: 900;
-    background: -webkit-linear-gradient(45deg, rgba(232, 25, 83, 1) 40%, rgba(250, 197, 105, 1) 70%);
+    background: -webkit-linear-gradient(
+      45deg,
+      rgba(232, 25, 83, 1) 40%,
+      rgba(250, 197, 105, 1) 70%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -389,7 +422,11 @@ header {
     font-size: 40px;
     font-weight: 400;
     line-height: 1.3;
-    background: -webkit-linear-gradient(45deg, rgba(232, 25, 83, 1) 40%, rgba(250, 197, 105, 1) 70%);
+    background: -webkit-linear-gradient(
+      45deg,
+      rgba(232, 25, 83, 1) 40%,
+      rgba(250, 197, 105, 1) 70%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 40px;
@@ -401,8 +438,12 @@ header {
   // overflow: hidden;
   .bg {
     position: absolute;
-    height: 700px;
-    background: linear-gradient(45deg, rgba(4, 85, 255, 1) 1%, rgba(239, 55, 238, 1) 100%) !important;
+    height: 1500px;
+    background: linear-gradient(
+      45deg,
+      rgba(4, 85, 255, 1) 1%,
+      rgba(239, 55, 238, 1) 100%
+    ) !important;
     width: 100%;
     overflow: hidden;
     -webkit-transform: skewY(-12deg);
@@ -415,7 +456,13 @@ header {
   .section-content {
     position: relative;
     z-index: 2;
-
+    h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      color: white;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
     .sub-title {
       position: relative;
       top: 0;
@@ -442,7 +489,11 @@ header {
       grid-gap: 40px;
 
       .chart-column {
-        background: linear-gradient(45deg, rgba(18, 121, 252, 1) 1%, rgba(89, 174, 255, 1) 100%);
+        background: linear-gradient(
+          45deg,
+          rgba(18, 121, 252, 1) 1%,
+          rgba(89, 174, 255, 1) 100%
+        );
         border-radius: 4px;
         box-shadow: 0 20px 38px 0 rgba(53, 167, 255, 0.67);
         padding: 40px;
@@ -489,7 +540,10 @@ header {
 }
 
 #no-degree {
-  padding: 300px 0 100px;
+  padding: 0px 0 100px;
+  &.top-degree {
+    background: #323234 !important;
+  }
 
   .section-content {
     display: flex;
@@ -499,11 +553,13 @@ header {
   }
 
   .image {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("../../assets/nodegree.png");
+    background: url('../../assets/nodegree.png');
     max-width: 800px;
     width: 100%;
     height: 300px;
@@ -522,6 +578,7 @@ header {
     text-transform: uppercase;
     text-shadow: 0 10px 40px rgba(53, 167, 255, 0.3);
     position: relative;
+    z-index: 3;
     top: 200px;
   }
 
@@ -534,6 +591,8 @@ header {
   }
 
   .students-total {
+    position: relative;
+    z-index: 3;
     font-size: 193px;
     font-weight: 900;
     background: linear-gradient(45deg, #3329fd 0%, #9c19e8 100%);
@@ -615,6 +674,7 @@ header {
     align-items: center;
     justify-items: center;
     grid-gap: 20px;
+    margin-bottom: 300px;
 
     .logo {
       opacity: 0.5;
@@ -632,13 +692,18 @@ header {
 
 #what-you-get {
   color: white;
-  padding: 100px 0 400px;
-  background: linear-gradient(45deg, rgba(35, 35, 36, 1) 0%, rgba(50, 50, 52, 1) 100%);
+  padding: 4px 0 400px;
+  background: #323234;
+  .container {
+    position: relative;
+    z-index: 3;
+  }
 
   h2 {
     font-size: 46px;
     font-weight: 900;
     text-transform: uppercase;
+    margin-top: 200px;
     margin-bottom: 100px;
     text-align: center;
   }
@@ -674,7 +739,11 @@ header {
     transform: skewY(-12deg);
     -webkit-transform-origin: 0;
     transform-origin: 0;
-    background: linear-gradient(45deg, rgb(232, 25, 83) 40%, rgb(250, 197, 105) 70%);
+    background: linear-gradient(
+      45deg,
+      rgb(232, 25, 83) 40%,
+      rgb(250, 197, 105) 70%
+    );
     z-index: 2;
   }
 
@@ -747,7 +816,11 @@ header {
         }
 
         &.features {
-          background: linear-gradient(to right, rgba(20, 20, 20, 1) 0%, rgba(53, 53, 53, 1) 100%);
+          background: linear-gradient(
+            to right,
+            rgba(20, 20, 20, 1) 0%,
+            rgba(53, 53, 53, 1) 100%
+          );
           color: white;
           font-weight: 600;
         }
@@ -765,12 +838,20 @@ header {
         border-radius: 4px;
         cursor: pointer;
         transition: all 0.4s ease-in-out;
-        background: linear-gradient(45deg, rgba(4, 85, 255, 0) 1%, rgba(239, 55, 238, 0) 100%) !important;
+        background: linear-gradient(
+          45deg,
+          rgba(4, 85, 255, 0) 1%,
+          rgba(239, 55, 238, 0) 100%
+        ) !important;
         transform: scale(1, 1);
         text-shadow: 0 15px 20px rgba(0, 0, 0, 0);
 
         &:hover {
-          background: linear-gradient(45deg, rgba(4, 85, 255, 1) 1%, rgba(239, 55, 238, 1) 100%) !important;
+          background: linear-gradient(
+            45deg,
+            rgba(4, 85, 255, 1) 1%,
+            rgba(239, 55, 238, 1) 100%
+          ) !important;
           -webkit-box-shadow: 0 10px 38px 0 rgba(53, 167, 255, 0.67);
           -moz-box-shadow: 0 10px 38px 0 rgba(53, 167, 255, 0.67);
           box-shadow: 0 10px 38px 0 rgba(53, 167, 255, 0.67);
@@ -807,7 +888,7 @@ header {
     display: grid;
 
     .button-area a:nth-child(1) {
-      margin-right: 0;
+      margin-right: 0px;
     }
 
     .container-fluid {
@@ -849,15 +930,17 @@ header {
   #americans {
     .bg {
       display: grid;
-      height: 1000px;
+      height: 2217px;
     }
-  }
-
-  #americans {
-    .section-content .info-area {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap: 40px;
+    .section-content {
+      h1 {
+        padding-top: 100px;
+      }
+      .info-area {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px;
+      }
     }
   }
 
@@ -897,6 +980,7 @@ header {
     padding: 100px 0;
 
     h2 {
+      margin-top: 200px;
       font-size: 28px;
     }
 
@@ -969,7 +1053,7 @@ header {
   #americans {
     .bg {
       display: grid;
-      height: 1200px;
+      height: 2100px;
     }
 
     .section-content .info-area {
@@ -1019,6 +1103,7 @@ header {
     padding: 100px 0;
 
     h2 {
+      margin-top: 0px;
       font-size: 28px;
     }
   }
@@ -1053,7 +1138,7 @@ header {
   }
 
   #no-degree {
-    padding: 300px 0 100px;
+    // padding: 300px 0 100px;
 
     h4 {
       margin-bottom: 100px;

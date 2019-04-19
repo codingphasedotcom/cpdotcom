@@ -77,14 +77,6 @@ export default class HTML extends React.Component {
           />
 
           <div
-            className="sumo"
-            dangerouslySetInnerHTML={{
-              __html: `
-              <script async data-uid="2f89e66125" src="https://f.convertkit.com/2f89e66125/84682d673d.js"></script>
-`,
-            }}
-          />
-          <div
             className="googletagmanager"
             dangerouslySetInnerHTML={{
               __html: `<!-- Global site tag (gtag.js) - Google Ads: 992381307 -->
@@ -95,6 +87,33 @@ export default class HTML extends React.Component {
   gtag('js', new Date());
 
   gtag('config', 'AW-992381307');
+</script>
+`,
+            }}
+          />
+          <div
+            className="sumo"
+            dangerouslySetInnerHTML={{
+              __html: `
+              <script async data-uid="2f89e66125" src="https://f.convertkit.com/2f89e66125/84682d673d.js"></script>
+`,
+            }}
+          />
+          <div
+            className="twitter-div"
+            dangerouslySetInnerHTML={{
+              __html: `
+              <script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],  t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+  t._e = []; t.ready = function(f) {
+    t._e.push(f);
+  };
+  return t;
+}(document, "script", "twitter-wjs"));
 </script>
 `,
             }}

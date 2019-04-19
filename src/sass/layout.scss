@@ -865,11 +865,11 @@ header {
 //extra small
 @media only screen and (max-width: 575px) {
   .mobile-only {
-    display: block;
+    display: block !important;
   }
 
   .desktop-only {
-    display: none;
+    display: none !important;
   }
 
   header {

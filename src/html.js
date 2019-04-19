@@ -72,6 +72,15 @@ export default class HTML extends React.Component {
   src="https://www.facebook.com/tr?id=174747862937299&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
+<script>
+function initiateCheckout(){
+  fbq('track', 'InitiateCheckout', {
+    value: 20,
+    currency: 'USD',
+  });
+}
+
+</script>
 `,
             }}
           />

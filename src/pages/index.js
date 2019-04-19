@@ -32,7 +32,10 @@ const IndexPage = ({ data }) => (
             <a href="https://codingphase.teachable.com/p/all-courses-subscription">
               LEARN MORE
             </a>
-            <a href="https://codingphase.teachable.com/p/all-courses-subscription">
+            <a
+              href="https://codingphase.teachable.com/p/all-courses-subscription"
+              onclick="initiateCheckout()"
+            >
               Register
             </a>
           </div>

@@ -732,7 +732,7 @@ header {
 
   .bg {
     position: absolute;
-    height: 1500px;
+    height: 400px;
     width: 100%;
     overflow: hidden;
     -webkit-transform: skewY(-12deg);
@@ -760,6 +760,7 @@ header {
       font-weight: 600;
       color: white;
       margin-bottom: 50px;
+      text-align: center;
     }
 
     .plans-table {
@@ -973,6 +974,7 @@ header {
 
     .logos {
       grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 50px;
     }
   }
 

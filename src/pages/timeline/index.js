@@ -53,23 +53,6 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <a
-                    href="https://codingphase.teachable.com/courses/enrolled/204451"
-                    className="flag"
-                  >
-                    <span role="img" aria-label="required">
-                      🖥️
-                    </span>{' '}
-                    Terminal For Developers
-                  </a>
-                </div>
-                <div className="desc" />
-              </div>
-            </li>
-            {/* Item 2 */}
-            <li>
-              <div className="direction-r">
-                <div className="flag-wrapper">
-                  <a
                     href="https://codingphase.teachable.com/courses/enrolled/328397"
                     className="flag"
                   >
@@ -87,18 +70,36 @@ const CoursesPage = ({ data }) => (
               <div className="direction-r">
                 <div className="flag-wrapper">
                   <a
+                    href="https://codingphase.teachable.com/courses/enrolled/204451"
+                    className="flag"
+                  >
+                    <span role="img" aria-label="required">
+                      🖥️
+                    </span>{' '}
+                    Terminal For Developers
+                  </a>
+                </div>
+                <div className="desc" />
+              </div>
+            </li>
+            {/* Item 3 */}
+            <li>
+              <div className="direction-r">
+                <div className="flag-wrapper">
+                  <a
                     href="https://codingphase.teachable.com/courses/enrolled/191709"
                     className="flag"
                   >
                     <span role="img" aria-label="required">
                       🖥️
                     </span>{' '}
-                    Atom Text Editor 101
+                    Text Editors 101
                   </a>
                 </div>
                 <div className="desc" />
               </div>
             </li>
+
             {/* Item 1 */}
             <li>
               <div className="direction-l">
@@ -122,6 +123,23 @@ const CoursesPage = ({ data }) => (
                       🖥️
                     </span>{' '}
                     Learn HTML and CSS
+                  </a>
+                </div>
+                <div className="desc" />
+              </div>
+            </li>
+            {/* Item 3 */}
+            <li>
+              <div className="direction-r">
+                <div className="flag-wrapper">
+                  <a
+                    href="https://student.codingphase.com/courses/enrolled/540733"
+                    className="flag"
+                  >
+                    <span role="img" aria-label="required">
+                      🖥️
+                    </span>{' '}
+                    Git Like A Pro
                   </a>
                 </div>
                 <div className="desc" />
@@ -324,6 +342,23 @@ const CoursesPage = ({ data }) => (
                       Future Proof Javascript
                     </a>
                   </span>
+                </div>
+                <div className="desc" />
+              </div>
+            </li>
+            {/* Item 3 */}
+            <li>
+              <div className="direction-r">
+                <div className="flag-wrapper">
+                  <a
+                    href="https://student.codingphase.com/courses/enrolled/545465"
+                    className="flag"
+                  >
+                    <span role="img" aria-label="required">
+                      🖥️
+                    </span>{' '}
+                    Debuggin Like A Pro
+                  </a>
                 </div>
                 <div className="desc" />
               </div>

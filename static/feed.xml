@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:webfeeds="http://webfeeds.org/rss/1.0"
+	xmlns:media="http://search.yahoo.com/mrss/">
+	<channel>
+		<title>codingphase.com</title>
+		<link>https://codingphase.com/feed.xml</link>
+		<description>
+			<![CDATA[Top shelf web development tutorials and news.]]>
+		</description>
+		<atom:link href="https://codingphase.com/feed.xml" rel="self" type="application/rss+xml" />
+		<webfeeds:logo>https://codingphase.com/img/small-logo-codingphase.png</webfeeds:logo>
+		<image>
+			<url>https://codingphase.com/img/small-logo-codingphase.png</url>
+			<title>CodingPhase.com</title>
+			<link>https://codingphase.com/feed.xml</link>
+		</image>
+		<language>en</language>
+		<lastBuildDate>Tue, 30 Apr 2019 07:00:13 -0700</lastBuildDate>
+		<item>
+			<title>
+				<![CDATA[Quick and Simple Search Filter Using Vanilla JavaScript]]>
+			</title>
+			<link>https://codingphase.com/quick-and-simple-search-filter-using-vanilla-javascript</link>
+			<guid isPermaLink="true">https://codingphase.com/quick-and-simple-search-filter-using-vanilla-javascript</guid>
+			<description>
+				<![CDATA[<p>When building Single Page Applications a feature I frequently find myself adding is a simple search filter. Nothing too in depth, I'll just want a text field to be able to quickly filter over items...]]>
+			</description>
+			<content:encoded>
+				full text
+			</content:encoded>
+			<dc:creator
+				xmlns:dc="http://purl.org/dc/elements/1.1/">Justin Rexroad
+			</dc:creator>
+			<pubDate>2019-04-30 07:00:13</pubDate>
+			<enclosure
+						url="https://codingphase.com/img/ling.png" 
+						length="1500" 
+						type="image/jpeg" 
+						/>
+		</item>
+	</channel>
+</rss>

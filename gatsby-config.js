@@ -9,6 +9,7 @@ module.exports = {
     'gatsby-plugin-robots-txt',
     `gatsby-plugin-sitemap`,
     `gatsby-transformer-json`,
+    'gatsby-plugin-remove-console',
     {
       resolve: 'gatsby-plugin-brotli',
     },

@@ -92,7 +92,7 @@ export default class HTML extends React.Component {
             }}
           />
           <div
-            className="sumo"
+            className="convertkit"
             dangerouslySetInnerHTML={{
               __html: `
               <script async data-uid="2f89e66125" src="https://f.convertkit.com/2f89e66125/84682d673d.js"></script>

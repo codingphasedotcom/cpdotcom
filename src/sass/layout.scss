@@ -566,7 +566,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('../../assets/nodegree.png');
+    background: url('../../assets/nodegree.webp');
     max-width: 800px;
     width: 100%;
     height: 300px;
@@ -576,6 +576,9 @@ header {
     -moz-box-shadow: 0 10px 38px 0 rgba(53, 167, 255, 0.67);
     box-shadow: 0 10px 38px 0 rgba(53, 167, 255, 0.67);
     margin-bottom: 200px;
+    &.no-webp {
+      background: url('../../assets/nodegree.png');
+    }
   }
 
   h2 {

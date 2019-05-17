@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import FavoriteCoursesComp from '../components/FavoriteCoursesComp'
 
-import chartImg from '../../assets/chart.png'
+import chartImg from '../../assets/chart.webp'
 import movableinkIMG from '../../assets/logos/movableink.png'
 import paypalIMG from '../../assets/logos/paypal.png'
 import sonyIMG from '../../assets/logos/sony.png'

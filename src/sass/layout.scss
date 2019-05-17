@@ -206,7 +206,14 @@ header {
 .desktop-only {
   display: flex !important;
 }
-
+#jumbo-top.no-webp {
+  background: linear-gradient(
+      to right,
+      rgba(76, 5, 113, 0.7) 0%,
+      rgba(76, 5, 113, 0.7) 100%
+    ),
+    url('../../assets/adults-chilling.jpg');
+}
 #jumbo-top {
   margin: 0;
   padding: 0;
@@ -215,7 +222,7 @@ header {
       rgba(76, 5, 113, 0.7) 0%,
       rgba(76, 5, 113, 0.7) 100%
     ),
-    url('../../assets/adults-chilling.jpg');
+    url('../../assets/adults-chilling.webp');
   background-size: cover;
 
   .container-fluid {

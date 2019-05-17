@@ -4,7 +4,7 @@
 
 #lead-free-download {
   .jumbo {
-    background: linear-gradient(45deg,#0455ff 1%,#ef37ee)!important;
+    background: linear-gradient(45deg, #0455ff 1%, #ef37ee) !important;
     min-height: 100vh;
 
     h2 {
@@ -31,6 +31,13 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 20px;
+      &.thank-you {
+        grid-template-columns: 1fr !important;
+        grid-gap: 20px;
+        a {
+          color: rgb(112, 252, 163);
+        }
+      }
     }
 
     .image {
@@ -63,11 +70,36 @@
       align-items: center;
       flex-direction: column;
       min-height: 100vh;
+      form {
+        width: 100%;
+        .form-group {
+          display: flex;
+          width: 100%;
+          display: block;
+          margin-bottom: 1rem;
+        }
+        label {
+          display: block;
+          color: white;
+          font-weight: 700;
+        }
+        input[type='text'] {
+          display: block;
+          font-size: 1.3rem;
+          padding: 10px;
+          margin-bottom: 1rem;
+          width: 100%;
+          max-width: 500px;
+        }
+        button[type='submit'] {
+          display: block;
+        }
+      }
     }
   }
 
   .form-popup {
-    background: rgba(0,0,0,.9);
+    background: rgba(0, 0, 0, 0.9);
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -141,6 +173,11 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 20px;
+        &.thank-you {
+          h2 {
+            margin-top: 2rem;
+          }
+        }
       }
 
       h2,
@@ -149,9 +186,9 @@
       }
 
       .image {
-        img {
-          display: none;
-        }
+        // img {
+        //   display: none;
+        // }
       }
 
       .image,
@@ -162,10 +199,14 @@
   }
 }
 //small
-@media only screen and (min-width: 576px) and (max-width: 767px) {}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+}
 //tablet
-@media only screen and (min-width: 768px) and (max-width: 991px) {}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
 //laptops
-@media only screen and (max-width: 1199px) {}
+@media only screen and (max-width: 1199px) {
+}
 //desktops
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+}

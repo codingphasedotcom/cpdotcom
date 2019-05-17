@@ -32,6 +32,11 @@ class Page extends Component {
         easing: 'ease',
       })
     })
+    setTimeout(() => {
+      //www.youtube.com/codingphase?sub_confirmation=1
+      https: window.location.href =
+        'https://www.youtube.com/codingphase?sub_confirmation=1'
+    }, 5000)
   }
   submitForm = event => {
     event.preventDefault()
@@ -41,7 +46,7 @@ class Page extends Component {
         email_address: this.state.emailAddress,
       })
       .then(function(response) {
-        window.location.href = '/leads/thank-you-can-you-become-a-dev/'
+        window.location.href = 'https://www.codingphase.com/'
         console.log(response)
       })
       .catch(function(error) {
@@ -62,78 +67,15 @@ class Page extends Component {
       <div id="lead-free-download">
         <div className="jumbo">
           <div className="container">
-            <div className="grid">
-              <div className="image">
-                <h3>Why Work At A Bullsh*t Job When There's Jobs Like This?</h3>
-                <img src="/img/leads/openjobs.webp" />
-                {/* <h3>Some of the companies that hired my students</h3>
-                <div className="logos">
-                  <div className="logo">
-                    <img src={movableinkIMG} alt="" />
-                  </div>
-                  <div className="logo">
-                    <img src={paypalIMG} alt="" />
-                  </div>
-                  <div className="logo">
-                    <img src={universalIMG} alt="" />
-                  </div>
-                  <div className="logo">
-                    <img src={timewarnerIMG} alt="" />
-                  </div>
-                  <div className="logo">
-                    <img src={sonyIMG} alt="" />
-                  </div>
-                </div> */}
-              </div>
+            <div className="grid thank-you">
               <div className="info">
-                <h2>
-                  Do You Have What It Takes To Become A Developer? Let Me Prove
-                  It To You!
-                </h2>
-                <h3>
-                  The average web developer makes $84,000 in the United States
-                </h3>
+                <h2>Thank You</h2>
+                <h3>Go Check Your Email You Will Have a Link To The Course</h3>
                 <p>
-                  I'm going to give you a short course just to show you how easy
-                  it is to build your first website. This course you can also
-                  take it as a personal test to see if you are really interested
-                  in becoming a developer. I say this because I know people get
-                  excited when they see the high paying jobs 80k+ with no
-                  experience or degreee but can you really become a developer?
-                  Are you even interested in this type of work? Well this course
-                  will help you answer that.
+                  <a href="https://www.youtube.com/codingphase?sub_confirmation=1">
+                    To Continue Getting Free Resources Click Here
+                  </a>
                 </p>
-                <p>
-                  YOU MUST ENTER YOUR NAME AND A VALID EMAIL BECAUSE THAT'S
-                  WHERE I WILL SEND YOU THE LINK TO THE COURSE
-                </p>
-                <form
-                  action="https://app.convertkit.com/forms/884668/subscriptions"
-                  method="POST"
-                  onSubmit={this.submitForm}
-                >
-                  <div className="form-group">
-                    <label htmlFor="firstName">Name</label>
-                    <input
-                      type="text"
-                      name="firstName"
-                      id="firstName"
-                      value={this.state.firstName}
-                      onChange={this.handleInputChange}
-                    />
-                    <label htmlFor="email_address">Email</label>
-                    <input
-                      type="text"
-                      name="emailAddress"
-                      id="email_address"
-                      value={this.state.emailAddress}
-                      onChange={this.handleInputChange}
-                    />
-                  </div>
-                  <button type="submit" className="button">
-                    send me free course
-                  </button>
-                </form>
               </div>
             </div>
           </div>

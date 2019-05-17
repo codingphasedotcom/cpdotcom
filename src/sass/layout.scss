@@ -290,7 +290,9 @@ header {
     z-index: 3;
 
     a {
-      display: inline-block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: relative;
       color: white;
       border: 2px solid white;
@@ -897,9 +899,15 @@ header {
 
   #jumbo-top {
     display: grid;
+    .button-area {
+      text-align: center;
+    }
 
-    .button-area a:nth-child(1) {
-      margin-right: 0px;
+    .button-area a {
+      margin-bottom: 10px;
+      &:nth-child(1) {
+        margin-right: 0px;
+      }
     }
 
     .container-fluid {

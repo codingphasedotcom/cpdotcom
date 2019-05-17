@@ -29,7 +29,7 @@ const IndexPage = ({ data }) => (
           </h2>
 
           <div className="button-area desktop-only">
-            <a href="#americans">LEARN MORE</a>
+            <a href="/leads/can-you-become-a-dev/">Start For Free</a>
             <a href="https://student.codingphase.com/p/all-courses-subscription">
               Register
             </a>
@@ -40,6 +40,9 @@ const IndexPage = ({ data }) => (
           <div class="large-number">$20</div>
           <div class="sub">Per Month</div>
           <div className="button-area mobile-only">
+            <a href="/leads/can-you-become-a-dev/" className="">
+              Start For Free
+            </a>
             <a href="https://student.codingphase.com/p/all-courses-subscription">
               Register
             </a>

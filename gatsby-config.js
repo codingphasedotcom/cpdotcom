@@ -10,6 +10,9 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-transformer-json`,
     {
+      resolve: 'gatsby-plugin-brotli',
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `coursesdata`,

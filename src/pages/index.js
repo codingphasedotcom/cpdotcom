@@ -17,7 +17,7 @@ import kperezIMG from '../../assets/testimonials/kperez.jpeg'
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO
-      title="Home"
+      title="Learn To Code Today!"
       keywords={[`gatsby`, `application`, `react`]}
       thumbnail="https://www.codingphase.com/img/websitethumb.png"
     />
@@ -103,15 +103,23 @@ const IndexPage = ({ data }) => (
         </div>
       </div>
     </section>
-    <section id="popular-courses" />
+    <section id="popular-courses">
+      <div className="bg" />
+      <div className="section-content">
+        <div className="container">
+          <div className="sub-title">Our Most Popular Courses</div>
+          <FavoriteCoursesComp data={data} />
+        </div>
+      </div>
+    </section>
     <section id="no-degree">
       <div className="container">
         <div className="section-content">
-          {/* <div className="students-total">50,000</div>
+          <div className="students-total">50,000</div>
           <div className="sub-title">
             students have taken courses <br />
             from codingphase.com so you are not alone
-          </div> */}
+          </div>
           <div className="testimonials">
             <div className="testimonial">
               <div className="user-img">
@@ -191,7 +199,7 @@ const IndexPage = ({ data }) => (
           <div className="sub-title">
             Companies that have hired our students
           </div>
-          {/* <div className="logos">
+          <div className="logos">
             <div className="logo">
               <img src={movableinkIMG} alt="" />
             </div>
@@ -207,7 +215,7 @@ const IndexPage = ({ data }) => (
             <div className="logo">
               <img src={sonyIMG} alt="" />
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>

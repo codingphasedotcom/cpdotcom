@@ -16,17 +16,23 @@ class Layout extends Component {
 				<div className="Aligner">
 					<div className="Aligner-item">
 						<img src="/img/logo.png" />
-						<h1>Dev-Starter-Kit</h1>
+						<h1>We Are Upgrading The Site!</h1>
 						<div className="menu">
 							<ul>
 								<li>
-									<a href="http://starterkit.codingphase.com" target="new">
-										Documentation
+									<a
+										href="https://student.codingphase.com/courses"
+										target="new"
+									>
+										All Courses
 									</a>
 								</li>
 								<li>
-									<a href="http://www.codingphase.com" target="new">
-										CodingPhase.Com
+									<a
+										href="https://student.codingphase.com/courses/enrolled"
+										target="new"
+									>
+										Student Dashboard
 									</a>
 								</li>
 							</ul>

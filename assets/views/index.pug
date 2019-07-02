@@ -1,6 +1,63 @@
 extends layouts/app 
 
 block content
-  #app 
-  script(src='/js/dist/vendors~FirstComp.js')
-  script(src='/js/dist/FirstComp.js')
+  section#jumbo-top
+    div(class='container-fluid')
+      div(class='headline')
+        h2
+          | The Most Consistent Way To Generate Wealth Is To Learn To Code
+        div(class='button-area desktop-only')
+          a(href='/leads/can-you-become-a-dev/') Start For Free
+          a(href='https://student.codingphase.com/p/all-courses-subscription') Register
+      .price-section
+        .top Only
+        .large-number $20
+        .sub Per Month
+        div(class='button-area mobile-only')
+          a(href='/leads/can-you-become-a-dev/', class='')
+            | Start For Free
+          a(href='https://student.codingphase.com/p/all-courses-subscription')
+            | Register
+  section#americans
+    div(class='bg')
+    div(class='section-content')
+      div(class='container')
+        h1 Why You Should Learn To Code?
+        div(class='sub-title') Lets compare the average american job
+        div(class='info-area')
+          div(class='chart-column')
+            div(class='chartbg')
+              img(src='{chartImg}', alt='')
+          div(class='info-column')
+            div(class='line1') On average it's less than
+            div(class='line2') 35k
+            div(class='line3')
+              | At the same time 
+              br
+              | Developers make an average of
+            div(class='line4') $84,000
+  section#what-you-get
+    div(class='container')
+      h2 What do you get?
+      div(class='list')
+        div(class='item') OVER 300 HOURS OF VIDEOS
+        div(class='item') UNLIMITED ACCESS
+        div(class='item') ALL FILES PROVIDED FOR DOWNLOAD
+        div(class='item') EVERYTHING YOU NEED TO BECOME A DEVELOPER
+        div(class='item') THE SKILLS THAT ARE IN DEMAND
+        div(class='item') WE ARE UPTODATE WITH THE INDUSTRY
+        div(class='item')
+          | 30 DAYS
+          br
+          | MONEY BACK
+  section#pricing-plans
+    div(class='bg')
+    div(class='container')
+      div(class='section-content')
+        div(class='sub-title') Ready To Start?
+        div(class='button-area')
+          a(href='https://student.codingphase.com/p/all-courses-subscription')
+            | Register
+
+  //- script(src='/js/dist/vendors~FirstComp.js')
+  //- script(src='/js/dist/FirstComp.js')

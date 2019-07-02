@@ -6,5 +6,46 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='/css/styles.css')
     script(async='', defer='', src='https://buttons.github.io/buttons.js')
+    script(async='', src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
+    script.
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    // Facebook Pixel Code
+    script.
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '174747862937299');
+      fbq('track', 'PageView');
+    noscript
+    img(height='1', width='1', style='display:none', src='https://www.facebook.com/tr?id=174747862937299&ev=PageView&noscript=1')
+    // End Facebook Pixel Code
+    // Global site tag (gtag.js) - Google Ads: 992381307
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=AW-992381307')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-992381307');
+    script(async='', data-uid='2f89e66125', src='https://f.convertkit.com/2f89e66125/84682d673d.js')
+    script.
+      window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],  t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s); js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+      t._e = []; t.ready = function(f) {
+      t._e.push(f);
+      };
+      return t;
+      }(document, "script", "twitter-wjs"));
+
   body
+    include ../includes/header.pug
     block content
+    

@@ -4,9 +4,16 @@ document.addEventListener('DOMContentLoaded', function() {
 		document.getElementById('mobileMenu').classList.toggle('active');
 	});
 });
-
-if (!navigator.serviceWorker.controller) {
-	navigator.serviceWorker.register('/sw.js').then(function(reg) {
-		console.log('Service worker has been registered for scope: ' + reg.scope);
-	});
+if (navigator.serviceWorker) {
+	navigator.serviceWorker
+		.register('/sw.js')
+		.then(function(registration) {
+			console.log(
+				'ServiceWorker registration successful with scope:',
+				registration.scope
+			);
+		})
+		.catch(function(error) {
+			console.log('ServiceWorker registration failed:', error);
+		});
 }

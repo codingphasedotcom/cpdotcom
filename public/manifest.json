@@ -3,10 +3,10 @@
   "short_name": "CodingPhase",
   "background_color": "#ad38f1",
   "theme_color": "#ad38f1",
-  "start_url": "https://codingphase.com",
+  "start_url": "/",
   "description": "A platform to learn how to code",
   "orientation": "any",
-  "fullscreen": "standalone",
+  "display": "standalone",
   "icons": [
     {
       "src": "img/icons/128.png",

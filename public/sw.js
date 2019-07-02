@@ -1,6 +1,6 @@
-self.addEventListener('install', function(event) {
-	event.waitUntil(preLoad());
-});
+// self.addEventListener('install', function(event) {
+// 	event.waitUntil(preLoad());
+// });
 
 var preLoad = function() {
 	console.log('Installing web app');

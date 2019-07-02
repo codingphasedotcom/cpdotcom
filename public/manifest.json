@@ -1,8 +1,8 @@
 {
   "name": "CodingPhase",
   "short_name": "CodingPhase",
-  "background_color": "#ef37ee",
-  "theme_color": "#ef37ee",
+  "background_color": "#ad38f1",
+  "theme_color": "#ad38f1",
   "start_url": "https://codingphase.com",
   "description": "A platform to learn how to code",
   "orientation": "any",

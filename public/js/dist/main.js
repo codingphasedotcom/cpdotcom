@@ -58,6 +58,6 @@
     return __webpack_require__(__webpack_require__.s = "./assets/js/main.js");
 })({
     "./assets/js/main.js": function(module, exports) {
-        eval("class Test {\n  constructor() {\n    this.main = () => {\n      console.log(swag);\n    };\n  }\n\n}\n\nTest.main();\n\n//# sourceURL=webpack:///./assets/js/main.js?");
+        eval("document.addEventListener('DOMContentLoaded', function () {\n  document.getElementById('hamburger-icon').addEventListener('click', () => {\n    console.log('clicked');\n    document.getElementById('mobileMenu').classList.toggle('active');\n  });\n});\n\n//# sourceURL=webpack:///./assets/js/main.js?");
     }
 });

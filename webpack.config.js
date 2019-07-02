@@ -16,9 +16,9 @@ compress.unused = true;
 module.exports = env => {
 	return {
 		entry: {
-			FirstComp: './assets/js/components/FirstComp.js',
-			SApp: './assets/js/components/svelte/SvelteApp.js',
-			// main: './assets/js/main.js'
+			// FirstComp: './assets/js/components/FirstComp.js',
+			// SApp: './assets/js/components/svelte/SvelteApp.js',
+			main: './assets/js/main.js'
 		},
 		output: {
 			path: path.resolve(__dirname, 'public/js/dist'),

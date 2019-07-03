@@ -16,7 +16,8 @@ compress.unused = true;
 module.exports = env => {
 	return {
 		entry: {
-			// FirstComp: './assets/js/components/FirstComp.js',
+			BecomeDevForm: './assets/js/components/BecomeDevForm.js',
+			ThankYou: './assets/js/components/ThankYou.js',
 			// SApp: './assets/js/components/svelte/SvelteApp.js',
 			main: './assets/js/main.js'
 		},
@@ -48,24 +49,21 @@ module.exports = env => {
 				}
 			]
 		},
-		plugins: [
-			new MiniCssExtractPlugin({
-				filename: 'styles.css' // 'style.[contenthash].css' put this if you want to get hashed files to cache bust
-			}),
-			// new HtmlWebpackPlugin({
-			// 	inject: false,
-			// 	hash: true,
-			// 	template: './assets/index.html',
-			// 	children: false,
-			// 	filename: '../index.html'
-			// }),
-			new WebpackMd5Hash()
-		],
+		plugins: [new WebpackMd5Hash()],
 		optimization: {
 			splitChunks: {
-				chunks: 'all',
-				minSize: 0
+				cacheGroups: {
+					commons: {
+						test: '/[\\/]node_modules[\\/]',
+						name: 'vendors',
+						chunks: 'all'
+					}
+				}
 			},
+			// splitChunks: {
+			// 	chunks: 'all',
+			// 	minSize: 0
+			// },
 			minimize: true,
 			minimizer: [
 				new UglifyJsPlugin({

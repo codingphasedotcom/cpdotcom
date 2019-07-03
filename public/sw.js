@@ -10,13 +10,26 @@ var preLoad = function() {
 	});
 };
 
-self.addEventListener('fetch', function(event) {
-	event.respondWith(
-		checkResponse(event.request).catch(function() {
-			return returnFromCache(event.request);
-		})
-	);
-	event.waitUntil(addToCache(event.request));
+// self.addEventListener('fetch', function(event) {
+// 	event.respondWith(
+// 		checkResponse(event.request).catch(function() {
+// 			return returnFromCache(event.request);
+// 		})
+// 	);
+// 	event.waitUntil(addToCache(event.request));
+// });
+self.addEventListener('fetch', event => {
+	if (
+		event.request.mode === 'navigate' ||
+		(event.request.method === 'GET' &&
+			event.request.headers.get('accept').includes('text/html'))
+	) {
+		event.respondWith(
+			fetch(event.request).catch(error => {
+				return caches.match(OFFLINE_URL);
+			})
+		);
+	}
 });
 
 var checkResponse = function(request) {

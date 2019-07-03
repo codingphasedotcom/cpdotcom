@@ -58,6 +58,6 @@
     return __webpack_require__(__webpack_require__.s = "./assets/js/main.js");
 })({
     "./assets/js/main.js": function(module, exports) {
-        eval("document.addEventListener('DOMContentLoaded', function () {\n  document.getElementById('hamburger-icon').addEventListener('click', () => {\n    console.log('clicked');\n    document.getElementById('mobileMenu').classList.toggle('active');\n  });\n});\n\nif (navigator.serviceWorker) {\n  navigator.serviceWorker.register('/sw.js').then(function (registration) {\n    console.log('ServiceWorker registration successful with scope:', registration.scope);\n  }).catch(function (error) {\n    console.log('ServiceWorker registration failed:', error);\n  });\n}\n\n//# sourceURL=webpack:///./assets/js/main.js?");
+        eval("document.addEventListener('DOMContentLoaded', function () {\n  document.getElementById('hamburger-icon').addEventListener('click', () => {\n    console.log('clicked');\n    document.getElementById('mobileMenu').classList.toggle('active');\n  });\n});\n\nif (navigator.serviceWorker) {\n  navigator.serviceWorker.register('/sw.js').then(function (registration) {// console.log(\n    // \t'ServiceWorker registration successful with scope:',\n    // \tregistration.scope\n    // );\n  }).catch(function (error) {\n    console.log('ServiceWorker registration failed:', error);\n  });\n}\n\n//# sourceURL=webpack:///./assets/js/main.js?");
     }
 });

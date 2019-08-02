@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		document.getElementById('mobileMenu').classList.toggle('active');
 	});
 });
+
 if (navigator.serviceWorker) {
 	navigator.serviceWorker
 		.register('/sw.js')

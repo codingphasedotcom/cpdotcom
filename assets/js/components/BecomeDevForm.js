@@ -20,7 +20,8 @@ class Layout extends Component {
 				email_address: this.state.emailAddress
 			})
 			.then(function(response) {
-				window.location.href = '/leads/thank-you-can-you-become-a-dev/';
+				window.location.href =
+					'/leads/thank-you-can-you-become-a-dev/index.html';
 				console.log(response);
 			})
 			.catch(function(error) {

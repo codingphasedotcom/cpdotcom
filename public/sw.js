@@ -1,17 +1,33 @@
+//Delete all caches and keep only one
+const cachNameToKeep = 'codingphase-2-2-19';
+
+//Deletion should only occur at the activate event
+self.addEventListener('activate', event => {
+	var cacheKeeplist = [cachNameToKeep];
+	event.waitUntil(
+		caches
+			.keys()
+			.then(keyList => {
+				return Promise.all(
+					keyList.map(key => {
+						if (cacheKeeplist.indexOf(key) === -1) {
+							return caches.delete(key);
+						}
+					})
+				);
+			})
+			.then(self.clients.claim())
+	); //this line is important in some contexts
+});
+
 self.addEventListener('install', function(e) {
 	e.waitUntil(
-		caches.open('codingphase').then(function(cache) {
+		caches.open(cachNameToKeep).then(function(cache) {
 			return cache.addAll([
 				'/',
 				'/index.html',
-				'/timeline',
-				'/timeline/index.html',
-				'/reviews',
-				'/reviews/index.html',
 				// '/offline.html',
-				'/css/styles.css',
-				'/js/dist/main.js',
-				'/manifest.json'
+				'/css/styles.css'
 			]);
 		})
 	);

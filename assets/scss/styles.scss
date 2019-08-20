@@ -252,7 +252,14 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    iframe{
+      border-radius: 10px;
+      background: linear-gradient(45deg, #1279fc 1%, #59aeff 100%);
+      box-shadow: 0 20px 38px 0 rgba(53,167,255,0.67);
+      position: relative;
+      z-index: 4;
+      width: 100%;
+    }
     .sub,
     .top {
       font-size: 2rem;
@@ -912,7 +919,17 @@ header {
 
       .headline {
         justify-content: flex-end;
+        h2{
+          margin-top: 100px;
+          margin-bottom: 0;
+        }
       }
+      
+    }
+    .price-section{
+        iframe{
+          margin-bottom: 20px;
+        }
     }
 
     h2 {
@@ -957,6 +974,14 @@ header {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 40px;
       }
+      .info-area {
+        .info-column {
+          .line4{
+            font-size: 4rem;
+          }
+        }
+      }
+      
     }
   }
 

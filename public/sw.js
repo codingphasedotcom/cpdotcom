@@ -1,5 +1,5 @@
 //Delete all caches and keep only one
-const cachNameToKeep = 'codingphase-11-01-19';
+const cachNameToKeep = 'codingphase-11-02-19';
 
 //Deletion should only occur at the activate event
 self.addEventListener('activate', event => {

@@ -22,6 +22,7 @@ self.addEventListener('activate', event => {
 
 //Comment this whole area when working on development mode and then remove commnent when ready for production
 self.addEventListener('install', function(e) {
+	self.skipWaiting();
 	e.waitUntil(
 		caches.open(cachNameToKeep).then(function(cache) {
 			return cache.addAll(['/', '/index.html', '/css/styles.css']);

@@ -1,5 +1,5 @@
 //Delete all caches and keep only one
-const cachNameToKeep = 'codingphase-10-01-19';
+const cachNameToKeep = 'codingphase-11-02-19';
 
 //Deletion should only occur at the activate event
 self.addEventListener('activate', event => {
@@ -22,6 +22,7 @@ self.addEventListener('activate', event => {
 
 //Comment this whole area when working on development mode and then remove commnent when ready for production
 self.addEventListener('install', function(e) {
+	self.skipWaiting();
 	e.waitUntil(
 		caches.open(cachNameToKeep).then(function(cache) {
 			return cache.addAll(['/', '/index.html', '/css/styles.css']);

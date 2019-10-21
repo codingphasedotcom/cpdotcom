@@ -727,6 +727,37 @@ header {
     margin-bottom: 100px;
     text-align: center;
   }
+  h3 {
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  p{
+    line-height: 1.5;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .classlist{
+    padding: 15px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+    -webkit-column-rule: 1px solid lightgrey;
+    -moz-column-rule: 1px solid lightgrey;
+    column-rule: 1px solid lightgrey;
+    margin-bottom: 2rem;
+    li{
+      margin-bottom: 10px;
+      background: black;
+      padding: 5px;
+    }
+  }
 
   .list {
     display: grid;
